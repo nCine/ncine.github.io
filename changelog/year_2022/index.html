@@ -1,0 +1,2682 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="en">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>2022 &middot; nCine</title>
+    <meta name="title" content="2022 &middot; nCine">
+  
+
+  
+  
+    <meta name="description" content="An open-source 2D game engine">
+  
+  
+  
+  
+  <link rel="canonical" href="https://ncine.github.io/changelog/year_2022/">
+  
+
+  
+  
+    <meta name="author" content="nCine">
+  
+  
+    
+      
+        
+          <link href="/feed.xml" rel="me">
+        
+      
+    
+      
+        
+          <link href="https://github.com/nCine/nCine" rel="me">
+        
+      
+    
+      
+        
+          <link href="https://x.com/nCine2D" rel="me">
+        
+      
+    
+      
+        
+          <link href="https://patreon.com/encelo" rel="me">
+        
+      
+    
+      
+        
+          <link href="https://www.youtube.com/@nCine" rel="me">
+        
+      
+    
+      
+        
+          <link href="https://mastodon.gamedev.place/@encelo" rel="me">
+        
+      
+    
+      
+        
+          <link href="https://bsky.app/profile/encelo.github.io" rel="me">
+        
+      
+    
+      
+        
+          <link href="https://itch.io/c/1488339/made-with-ncine" rel="me">
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="https://ncine.github.io/changelog/year_2022/">
+  <meta property="og:site_name" content="nCine">
+  <meta property="og:title" content="2022">
+  <meta property="og:description" content="December 2022 Breaking Changes The animation_index() and frame() functions of the Lua animated sprite have been renamed to get_animation_index() and get_frame() Improvements The Lua API for the Application class has now a function to get the AppConfiguration table Scale down the size of the error messages in apptest_lua if does not fit the screen Added a method to RectAnimation to automatically add multiple rectangles from a spritesheet Added functions to the Lua API to retrieve the array of children of a node Fixes The minimum and maximum values of a joystick axis are now queried on Android When calling Sprite::setTexture() with the same texture the rectangle gets reset Create or destroy the Windows console if changing the console log level with the setter November 2022 Improvements The version of the integrated Tracy has been updated to v0.9 The version of the integrated ImGui has been updated to v1.89.1 It is now possible to choose the render mode used by a TextNode There is a new render mode for colored fonts that uses the sprite shader On Android there is now always a fallback joystick mapping based on the default system configuration Fixes The joystick GUID calculation on Android has been updated to be again compatible with the SDL2 controller database October 2022 Breaking Changes The IGfxDevice::setResolution() method has been removed. Depending on the full screen state, use setWindowSize() or setVideoMode() The inFullscreen and isResizable flags of the AppConfiguration class have been renamed to fullScreen and resizable To query the supported video modes, you have to query the list of connected monitors with IGfxDevice::numMonitors() and IGfxDevice::monitor() New Features It is now possible to enumerate connected monitors on all desktop backends You can now query window scaling and drawable resolution to better support HiDPI monitors The Lua API has been extended to support the new methods of the IGfxDevice class There is a new apptest_scaling application that shows automatic window size scaling Improvements Failing to load a file will now never exit the application Fixes Various fixes about window size, window position, and full screen September 2022 New Features There is a new onFilesDropped() input callback to support drag’n’drop from the system to the application window Improvements The JNI helper classes have been refactored to use global references and be more stable and secure Shader programs now detach shaders before deleting them, so they are really deleted and memory is freed The new NCINE_UNDEFINED_SANITIZER CMake options adds support for the UBSan of GCC and Clang Fixes The Android manifest has been updated to allow compilation on latest Android versions August 2022 Improvements Improvements to ParticleSystem and to particle affector classes It is now possible to add affector steps out of order A new getter method in ParticleSystem allows the manipulation of affectors Affector steps can be manipulated via a new Lua API A new AudioStreamPlayer getter returns the sample offset relative to the whole stream The audio, font, and particles apptests have brand new ImGui interfaces July 2022 Breaking Changes The viewport chain is now an array accessible with the static Viewport::chain() method The Application::rootViewport() method has been renamed to screenViewport() The GLShaderAttributes class have been deleted and its functionalities transferred to GLShaderProgram Added the get_ prefix to some Lua getters of the MeshSprite class The Android sources are now an independant module inside the app directory New Features New Shader and ShaderState classes to support custom user shaders (Lua API too) Mesh sprites now support custom vertex format, if the appropriate shader is provided The script.lua example has been updated to show post-processing using viewports and shaders Added support for multi-texturing and multiple render targets A new apptest_shaders application has been added to test custom shaders with batching It shows post-processing blur, normal mapping, and bloom Improvements The version of the integrated Tracy has been updated to v0.8.2 The render batcher is now able to deal with custom shaders, providing the user writes a batched shader Improved and simplified API for viewports (also ported to Lua) Added methods to set OpenGL debugging labels for shaders, textures, and viewport’s FBOs There is now an onDrawViewport() callback that you can use to set shader uniforms when drawing a particular viewport There is also an onResizeWindow() callback that can be useful to recreate post-processing viewport textures Added missing getters and more methods to the Lua API of the MeshSprite class Updated support for Gradle plugin 7.2.0, build tools 33.0.0, and NDK r25 on Android Added support for the Vector4 class in the Lua API Fixes Added the missing SceneNode::lastFrameUpdated() method to the Lua API You will never see again errors about reserved OpenGL uniforms or attributes not being found (like gl_VertexID) Non-compiling shaders will not fatal assert like they did before Fixes to the methods dealing with vertices and indices of the Lua API of the MeshSprite class The minBatchSize/maxBatchSize rendering settings have been fixed and will not cause flickering when batching June 2022 Breaking Changes Added the get_ prefix to some Lua getters of the Application and IAudioDevice classes Improvements The version of the integrated ImGui has been updated to v1.88 No more crashes when dereferencing Lua light user data pointers of the wrong type The tracking of pointers to C&#43;&#43; objects created in Lua has improved a lot Fixes Trying to play a sound when there are no available audio players will not crash the application Fixed the parameters retrieving of Lua joystick state functions May 2022 Breaking Changes Added the get_ prefix to the Lua getters of the Font class Improvements The version of the integrated Tracy has been updated to v0.8.1 Added a static method to the TextNode class to calculate the boundaries for arbitrary text and font The Font class can now be constructed using an existent Texture object This allows for texture sharing (like an atlas) or textures constructed from texels April 2022 Breaking Changes The DrawableNode::LayerBase enumeration has been deleted This also means that TextNode will not be on a higher layer by default The SceneNode::draw() method now returns a boolean to indicate if it has been rendered New Features You can set the layer of a SceneNode and it will carry this value over to its children A child node with a layer different than 0 will not inherit it from its parent Added a scenegraph visit order when sorting the rendering commands Improvements The apptest_anchor application can now show and modify all the different order and layer values Fixes The apptest_scene and apptest_viewports applications now work correctly on Qt5 March 2022 Breaking Changes The Object::name() method now returns an array of characters Inverted position and rotation view values for the Camera. It will now behave as an object that you move around the scene. Improvements The version of the integrated Tracy has been updated to v0.8 Allow a relative path from executables to data on Linux Fixes Fixed an issue with ImGui and Nuklear uploading VBOs before setting a vertex format (and consequently a VAO) Map and set containers can now perform a rehash when their values or keys are non-copyable classes Updating node transformation before committing uniform blocks February 2022 New Features There is now a new nctl::StaticString class that stores its characters on the stack Improvements The version of the integrated ImGui has been updated to v1.87 Using the new event-based ImGui input API on all backends Math classes like vectors, matrices, and quaternions will now initialize their members in the default constructor Disabling the cursor will now enable a relative mouse motion if supported (SDL and GLFW) The Qt5 widget exposes a flag to disable per-frame updates It is now possible to retrieve last frame AABB of a DrawableNode More information will be presented when the OpenGL debug context is enabled (marker annotations) Fixes The fixed capacity property is now correctly initialized when copy constructing, move constructing, and move assign a String A Sprite or a MeshSprite without a texture would make the application crash when a texture was assigned A TextNode without a font would make the application crash when a font was assigned A scene node with a negative scale factor will invert its rotation sign January 2022 Breaking Changes The public x and y fields of a SceneNode have been made protected for consistency The IGfxDevice interface cannot set the OpenGL viewport and clear color, use viewports instead The ImGui and Nuklear layer settings are part of the GUI settings structure in the Application class New Features Multiple viewports to support offscreen rendering or split screen A camera system to move around without transforming a parent node (slow on the CPU) The viewport and camera systems can also be used via the Lua API A new apptest_viewports application has been added to test the viewport and camera systems Improvements Dirty bits to update shader uniforms only when they change Dirty bits to transform a node or update its AABB only when needed There is now a centralized pool of render commands that serves multiple classes There are now OpenGL state classes to track the viewport and the clear color The Rect class has some new useful manipulation methods (also in the Lua API)">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="changelog">
+    <meta property="article:published_time" content="2022-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-01-01T00:00:00+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="2022">
+  <meta name="twitter:description" content="December 2022 Breaking Changes The animation_index() and frame() functions of the Lua animated sprite have been renamed to get_animation_index() and get_frame() Improvements The Lua API for the Application class has now a function to get the AppConfiguration table Scale down the size of the error messages in apptest_lua if does not fit the screen Added a method to RectAnimation to automatically add multiple rectangles from a spritesheet Added functions to the Lua API to retrieve the array of children of a node Fixes The minimum and maximum values of a joystick axis are now queried on Android When calling Sprite::setTexture() with the same texture the rectangle gets reset Create or destroy the Windows console if changing the console log level with the setter November 2022 Improvements The version of the integrated Tracy has been updated to v0.9 The version of the integrated ImGui has been updated to v1.89.1 It is now possible to choose the render mode used by a TextNode There is a new render mode for colored fonts that uses the sprite shader On Android there is now always a fallback joystick mapping based on the default system configuration Fixes The joystick GUID calculation on Android has been updated to be again compatible with the SDL2 controller database October 2022 Breaking Changes The IGfxDevice::setResolution() method has been removed. Depending on the full screen state, use setWindowSize() or setVideoMode() The inFullscreen and isResizable flags of the AppConfiguration class have been renamed to fullScreen and resizable To query the supported video modes, you have to query the list of connected monitors with IGfxDevice::numMonitors() and IGfxDevice::monitor() New Features It is now possible to enumerate connected monitors on all desktop backends You can now query window scaling and drawable resolution to better support HiDPI monitors The Lua API has been extended to support the new methods of the IGfxDevice class There is a new apptest_scaling application that shows automatic window size scaling Improvements Failing to load a file will now never exit the application Fixes Various fixes about window size, window position, and full screen September 2022 New Features There is a new onFilesDropped() input callback to support drag’n’drop from the system to the application window Improvements The JNI helper classes have been refactored to use global references and be more stable and secure Shader programs now detach shaders before deleting them, so they are really deleted and memory is freed The new NCINE_UNDEFINED_SANITIZER CMake options adds support for the UBSan of GCC and Clang Fixes The Android manifest has been updated to allow compilation on latest Android versions August 2022 Improvements Improvements to ParticleSystem and to particle affector classes It is now possible to add affector steps out of order A new getter method in ParticleSystem allows the manipulation of affectors Affector steps can be manipulated via a new Lua API A new AudioStreamPlayer getter returns the sample offset relative to the whole stream The audio, font, and particles apptests have brand new ImGui interfaces July 2022 Breaking Changes The viewport chain is now an array accessible with the static Viewport::chain() method The Application::rootViewport() method has been renamed to screenViewport() The GLShaderAttributes class have been deleted and its functionalities transferred to GLShaderProgram Added the get_ prefix to some Lua getters of the MeshSprite class The Android sources are now an independant module inside the app directory New Features New Shader and ShaderState classes to support custom user shaders (Lua API too) Mesh sprites now support custom vertex format, if the appropriate shader is provided The script.lua example has been updated to show post-processing using viewports and shaders Added support for multi-texturing and multiple render targets A new apptest_shaders application has been added to test custom shaders with batching It shows post-processing blur, normal mapping, and bloom Improvements The version of the integrated Tracy has been updated to v0.8.2 The render batcher is now able to deal with custom shaders, providing the user writes a batched shader Improved and simplified API for viewports (also ported to Lua) Added methods to set OpenGL debugging labels for shaders, textures, and viewport’s FBOs There is now an onDrawViewport() callback that you can use to set shader uniforms when drawing a particular viewport There is also an onResizeWindow() callback that can be useful to recreate post-processing viewport textures Added missing getters and more methods to the Lua API of the MeshSprite class Updated support for Gradle plugin 7.2.0, build tools 33.0.0, and NDK r25 on Android Added support for the Vector4 class in the Lua API Fixes Added the missing SceneNode::lastFrameUpdated() method to the Lua API You will never see again errors about reserved OpenGL uniforms or attributes not being found (like gl_VertexID) Non-compiling shaders will not fatal assert like they did before Fixes to the methods dealing with vertices and indices of the Lua API of the MeshSprite class The minBatchSize/maxBatchSize rendering settings have been fixed and will not cause flickering when batching June 2022 Breaking Changes Added the get_ prefix to some Lua getters of the Application and IAudioDevice classes Improvements The version of the integrated ImGui has been updated to v1.88 No more crashes when dereferencing Lua light user data pointers of the wrong type The tracking of pointers to C&#43;&#43; objects created in Lua has improved a lot Fixes Trying to play a sound when there are no available audio players will not crash the application Fixed the parameters retrieving of Lua joystick state functions May 2022 Breaking Changes Added the get_ prefix to the Lua getters of the Font class Improvements The version of the integrated Tracy has been updated to v0.8.1 Added a static method to the TextNode class to calculate the boundaries for arbitrary text and font The Font class can now be constructed using an existent Texture object This allows for texture sharing (like an atlas) or textures constructed from texels April 2022 Breaking Changes The DrawableNode::LayerBase enumeration has been deleted This also means that TextNode will not be on a higher layer by default The SceneNode::draw() method now returns a boolean to indicate if it has been rendered New Features You can set the layer of a SceneNode and it will carry this value over to its children A child node with a layer different than 0 will not inherit it from its parent Added a scenegraph visit order when sorting the rendering commands Improvements The apptest_anchor application can now show and modify all the different order and layer values Fixes The apptest_scene and apptest_viewports applications now work correctly on Qt5 March 2022 Breaking Changes The Object::name() method now returns an array of characters Inverted position and rotation view values for the Camera. It will now behave as an object that you move around the scene. Improvements The version of the integrated Tracy has been updated to v0.8 Allow a relative path from executables to data on Linux Fixes Fixed an issue with ImGui and Nuklear uploading VBOs before setting a vertex format (and consequently a VAO) Map and set containers can now perform a rehash when their values or keys are non-copyable classes Updating node transformation before committing uniform blocks February 2022 New Features There is now a new nctl::StaticString class that stores its characters on the stack Improvements The version of the integrated ImGui has been updated to v1.87 Using the new event-based ImGui input API on all backends Math classes like vectors, matrices, and quaternions will now initialize their members in the default constructor Disabling the cursor will now enable a relative mouse motion if supported (SDL and GLFW) The Qt5 widget exposes a flag to disable per-frame updates It is now possible to retrieve last frame AABB of a DrawableNode More information will be presented when the OpenGL debug context is enabled (marker annotations) Fixes The fixed capacity property is now correctly initialized when copy constructing, move constructing, and move assign a String A Sprite or a MeshSprite without a texture would make the application crash when a texture was assigned A TextNode without a font would make the application crash when a font was assigned A scene node with a negative scale factor will invert its rotation sign January 2022 Breaking Changes The public x and y fields of a SceneNode have been made protected for consistency The IGfxDevice interface cannot set the OpenGL viewport and clear color, use viewports instead The ImGui and Nuklear layer settings are part of the GUI settings structure in the Application class New Features Multiple viewports to support offscreen rendering or split screen A camera system to move around without transforming a parent node (slow on the CPU) The viewport and camera systems can also be used via the Lua API A new apptest_viewports application has been added to test the viewport and camera systems Improvements Dirty bits to update shader uniforms only when they change Dirty bits to transform a node or update its AABB only when needed There is now a centralized pool of render commands that serves multiple classes There are now OpenGL state classes to track the viewport and the clear color The Rect class has some new useful manipulation methods (also in the Lua API)">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+      
+      
+        
+      
+      
+        <meta name="twitter:image" content="https://ncine.github.io/author.png">
+        <meta property="og:image" content="https://ncine.github.io/author.png">
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.364ceed36e4ca386ed03767da202981eac370525106106dc60b2af1dd64402e57b8c44b05f258d6f830d7cfe46869b3c84f5a20ef4cf75794432c618fb96a029.css"
+    integrity="sha512-Nkzu025Mo4btA3Z9ogKYHqw3BSUQYQbcYLKvHdZEAuV7jESwXyWNb4MNfP5Ghps8hPWiDvTPdXlEMsYY&#43;5agKQ==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.0e2e7ce1e319db5369cd4badb8265de52c78d08df54617521bdac9c8cd335eea6133a82c83f9cb19baf67b8133335130e7e8ff7cfeaf7171016648dbf5a0578a.js"
+      integrity="sha512-Di584eMZ21NpzUutuCZd5Sx40I31RhdSG9rJyM0zXuphM6gsg/nLGbr2e4EzM1Ew5&#43;j/fP6vcXEBZkjb9aBXig=="
+      data-copy="Copy"
+      data-copied="Copied"></script>
+  
+
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Changelog",
+    "name": "2022",
+    "headline": "2022",
+    
+    "inLanguage": "en",
+    "url" : "https://ncine.github.io/changelog/year_2022/",
+    "author" : {
+      "@type": "Person",
+      "name": "nCine"
+    },
+    "copyrightYear": "2022",
+    "dateCreated": "2022-01-01T00:00:00\u002b00:00",
+    "datePublished": "2022-01-01T00:00:00\u002b00:00",
+    
+    "dateModified": "2022-01-01T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1524"
+  }]
+  </script>
+
+
+
+  
+  
+    
+
+  <script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-Z6YXXLVFNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z6YXXLVFNV');
+</script>
+
+
+
+
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        Skip to main content
+      </a>
+    </div>
+    
+    
+      <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 z-100">
+  <div
+    id="menu-blur"
+    class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl bg-neutral/25 dark:bg-neutral-800/25"></div>
+  <div class="relative m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32">
+    <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+    
+    
+      <div>
+        <a href="/" class="flex">
+          <span class="sr-only">nCine</span>
+          
+            <span class="logo object-scale-down object-left nozoom">
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="600px"
+   height="600px"
+   viewBox="0 0 600 600"
+   enable-background="new 0 0 600 600"
+   xml:space="preserve"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="icon_ink.svg"><metadata
+     id="metadata4159"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs4157" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview4155"
+     showgrid="false"
+     inkscape:zoom="1.4133333"
+     inkscape:cx="300"
+     inkscape:cy="300"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" /><g
+     enable-background="new    "
+     id="g4137"><path
+       fill="#96C43D"
+       d="M510.485,472.483c0,20.9-17.1,38-38,38H127.515c-20.9,0-38-17.1-38-38V127.517c0-20.9,17.1-38,38-38   h344.971c20.9,0,38,17.1,38,38V472.483z"
+       id="path4139" /></g><g
+     id="g4141"><path
+       fill="#FFFFFF"
+       d="M217.232,396.357l-0.35,0.241v-0.702C216.994,396.064,217.114,396.185,217.232,396.357z"
+       id="path4143" /><path
+       fill="#FFFFFF"
+       d="M217.232,396.357l-0.35,0.241v-0.702C216.994,396.064,217.114,396.185,217.232,396.357z"
+       id="path4145" /><g
+       id="g4147"><path
+         fill="#FFFFFF"
+         d="M420.893,299.695c0,62.265-47.189,113.482-107.726,119.96v-27.746l0.043-114.373l19.153,15.48v102.972    c40.124-13.394,68.996-51.293,68.996-95.938c0-2.493-0.105-4.943-0.259-7.426c0,0,0-0.048,0-0.1    c-1.222-16.403-6.367-31.678-14.515-44.97c-0.51-0.917-1.119-1.884-1.734-2.75c-1.176-1.818-2.449-3.598-3.713-5.283    c-1.469-1.991-3.045-3.927-4.648-5.813c-0.541-0.614-1.053-1.224-1.613-1.833c-1.373-1.532-2.796-2.996-4.284-4.42    c-0.763-0.764-1.582-1.53-2.401-2.245c-0.046-0.052-0.098-0.103-0.197-0.155c-0.716-0.714-1.457-1.373-2.271-2.038    c-0.918-0.767-1.838-1.58-2.811-2.295c-0.765-0.613-1.471-1.171-2.244-1.73c-4.806-3.589-9.921-6.731-15.327-9.402    c1.669,0.849,3.308,1.8,4.994,2.787c-14.767-8.443-31.873-13.341-50.092-13.341c-11.302,0-22.166,1.888-32.286,5.29    c-0.215,0.05-0.412,0.15-0.57,0.199c-2.803,1.071-5.589,2.197-8.391,3.469c-14.054,6.421-26.325,15.937-35.999,27.65v-0.103    c-0.816,0.967-1.628,1.988-2.388,2.957c-2.095,2.708-4.036,5.542-5.816,8.449c-4.079,6.579-7.483,13.645-9.975,21.092    c-1.226,3.396-2.244,6.912-3.064,10.481c-0.044,0.304-0.096,0.611-0.151,0.867c-0.767,3.297-1.329,6.61-1.734,9.977    c0,0.149-0.046,0.203-0.046,0.31c-0.413,3.311-0.613,6.661-0.665,10.021c-0.055,0.305-0.101,0.615-0.101,0.914v0.617    c0,0.155,0,0.359,0.046,0.508c-0.046,0.103-0.046,0.153-0.046,0.258v96.287l-19.958,16.125V299.695    c0.159-29.076,10.593-55.809,27.904-76.628c2.397-2.852,4.88-5.659,7.535-8.293c0.662-0.613,1.328-1.273,1.986-1.935    c1.075-1.019,2.138-2.041,3.214-2.956l0.608-0.612c0.106-0.101,0.211-0.207,0.355-0.258c21.177-18.691,49.081-29.99,79.542-29.99    c1.02,0,2.021,0,3.036,0.048c0.046,0,0.046,0,0.046,0c2.146,0.048,4.295,0.151,6.381,0.356c1.987,0.101,3.915,0.306,5.863,0.558    c1.862,0.205,3.7,0.515,5.494,0.868c0.907,0.156,1.825,0.306,2.745,0.515c0.899,0.15,1.832,0.353,2.737,0.559    c0.719,0.151,1.435,0.355,2.142,0.509c1.835,0.404,3.677,0.916,5.398,1.426c0.817,0.255,1.684,0.507,2.499,0.768    c0.312,0.1,0.621,0.199,0.904,0.301c0.823,0.257,1.595,0.511,2.398,0.812c0.973,0.312,1.937,0.668,2.91,1.024    c0.905,0.356,1.836,0.716,2.797,1.122c1.893,0.763,3.729,1.53,5.514,2.398c0.958,0.444,1.832,0.846,2.723,1.306    c0.931,0.458,1.795,0.919,2.655,1.376c0.921,0.459,1.793,0.918,2.655,1.427c0.914,0.459,1.731,0.969,2.593,1.482    c1.026,0.609,1.946,1.171,2.902,1.781c0.958,0.61,1.934,1.279,2.851,1.888c0.916,0.613,1.835,1.274,2.803,1.938    c0.918,0.614,1.831,1.273,2.703,1.969c0.512,0.375,0.971,0.766,1.475,1.126c0.819,0.606,1.636,1.27,2.403,1.935    c0.715,0.561,1.361,1.122,2.07,1.734c1.373,1.223,2.755,2.495,4.126,3.771c0.055,0.048,0.106,0.048,0.158,0.1    c0.66,0.667,1.371,1.327,2.039,2.038c0.709,0.665,1.379,1.322,2.038,2.025c0.706,0.763,1.426,1.479,2.087,2.245    c0.047,0.049,0.104,0.096,0.151,0.153c0.772,0.862,1.58,1.785,2.323,2.647c0.725,0.819,1.386,1.683,2.099,2.5    c0.36,0.509,0.771,0.967,1.174,1.479c2.907,3.567,5.556,7.321,7.955,11.249c0.408,0.613,0.765,1.226,1.117,1.886    c0.099,0.154,0.153,0.255,0.24,0.458c0,0.106,0.048,0.154,0.112,0.208c0.046,0.154,0.103,0.202,0.154,0.353    c0.056,0.103,0.136,0.206,0.189,0.306C415.101,257.327,420.893,277.806,420.893,299.695z"
+         id="path4149" /><path
+         fill="#FFFFFF"
+         d="M204.818,393.59l15.831-12.786V247.609c-9.929,14.919-15.727,32.844-15.831,52.086V393.59z"
+         id="path4151" /><path
+         fill="#FFFFFF"
+         d="M299.984,147.275c-31.877,0-61.504,9.769-85.974,26.477c-1.787,1.206-3.504,2.43-5.221,3.703    c-10.104-14.156-24.672-21.714-37.127-25.763c-12.46-4.041-22.814-4.571-24.491-4.642v293.072h0.1l25.15-20.312V299.695    c0-39.815,18.193-75.354,46.763-98.771c0,0,0,0,0-0.018c1.993-1.645,4.083-3.264,6.21-4.807c0.598-0.492,1.245-0.919,1.869-1.325    c0.26-0.239,0.548-0.429,0.834-0.581c0.296-0.204,0.54-0.408,0.833-0.542c0.409-0.324,0.831-0.58,1.243-0.87    c0.781-0.503,1.545-0.998,2.317-1.496c0.793-0.49,1.552-0.946,2.371-1.408c1.037-0.662,2.072-1.255,3.129-1.833    c1.239-0.694,2.448-1.363,3.696-1.988c1.195-0.597,2.367-1.208,3.581-1.75c5.466-2.585,11.122-4.811,16.989-6.614    c12-3.805,24.763-5.776,37.959-5.776c59.702,0,109.77,40.889,123.782,96.188c0.535,2.038,1.031,4.115,1.432,6.204    c0.23,1.035,0.433,2.069,0.6,3.143c0.171,0.885,0.316,1.752,0.457,2.636c0.364,2.275,0.665,4.604,0.902,6.935    c0.102,1.104,0.203,2.16,0.297,3.244c0.062,1.071,0.128,2.158,0.2,3.265c0.051,0.952,0.068,1.917,0.097,2.874    c0.041,1.085,0.041,2.208,0.041,3.309c0,28.835-9.588,55.487-25.752,76.886c-0.056,0.086-0.096,0.17-0.163,0.252    c-0.749,1.017-1.517,1.981-2.305,2.978c-0.98,1.206-1.991,2.404-2.982,3.586c-0.928,1.067-1.874,2.101-2.824,3.144    c-0.529,0.537-1.03,1.114-1.583,1.665c-0.576,0.624-1.2,1.269-1.822,1.866c-0.707,0.708-1.452,1.426-2.174,2.126    c-0.731,0.695-1.441,1.36-2.156,2.024c-1.559,1.387-3.141,2.784-4.751,4.11c-0.771,0.679-1.584,1.342-2.383,1.922    c-1.614,1.255-3.246,2.469-4.917,3.673c-19.026,13.503-41.892,21.963-66.677,23.345V272.948l-19.154-15.48v42.243l-0.041,95.206    v57.572c3.857,0.307,7.732,0.461,11.645,0.461c84.408,0,152.844-68.431,152.844-152.844    C452.828,215.709,384.393,147.275,299.984,147.275z"
+         id="path4153" /></g></g></svg>
+            </span>
+          
+        </a>
+      </div>
+    
+  
+  
+    <a href="/" class="text-base font-medium truncate min-w-0 shrink">
+      nCine
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav class="flex items-center gap-x-5 h-12">
+  
+    
+      
+  
+    <a
+      href="/news/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="News"
+      title="News">
+      
+      
+        <span class="text-base font-medium break-normal">
+          News
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/features/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="Features"
+      title="Features">
+      
+      
+        <span class="text-base font-medium break-normal">
+          Features
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <div class="nested-menu">
+      <div class="cursor-pointer flex items-center">
+        <a
+          
+            tabindex="0"
+          
+          aria-label="Showcase"
+          class="flex items-center text-base font-medium bf-icon-color-hover"
+          title="">
+          
+          <span class="text-bg font-bg break-normal" title="">
+            Showcase
+          </span>
+          <span>
+            <span class="relative block icon"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+</span>
+          </span>
+        </a>
+      </div>
+      <div class="menuhide">
+        <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl bg-neutral/25 dark:bg-neutral-800/25">
+          <div class="flex flex-col space-y-3">
+            
+              <a
+                href="/gallery/"
+                
+                aria-label="Gallery"
+                class="flex items-center bf-icon-color-hover">
+                
+                <span class="text-sm font-sm" title="Gallery">
+                  Gallery
+                </span>
+              </a>
+            
+              <a
+                href="/showcase_tags/video/"
+                
+                aria-label="Videos"
+                class="flex items-center bf-icon-color-hover">
+                
+                <span class="text-sm font-sm" title="Videos">
+                  Videos
+                </span>
+              </a>
+            
+              <a
+                href="/examples/"
+                
+                aria-label="Examples"
+                class="flex items-center bf-icon-color-hover">
+                
+                <span class="text-sm font-sm" title="Examples">
+                  Examples
+                </span>
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    
+      
+  
+    <div class="nested-menu">
+      <div class="cursor-pointer flex items-center">
+        <a
+          
+            tabindex="0"
+          
+          aria-label="Documentation"
+          class="flex items-center text-base font-medium bf-icon-color-hover"
+          title="">
+          
+          <span class="text-bg font-bg break-normal" title="">
+            Documentation
+          </span>
+          <span>
+            <span class="relative block icon"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+</span>
+          </span>
+        </a>
+      </div>
+      <div class="menuhide">
+        <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl bg-neutral/25 dark:bg-neutral-800/25">
+          <div class="flex flex-col space-y-3">
+            
+              <a
+                href="/about/"
+                
+                aria-label="About"
+                class="flex items-center bf-icon-color-hover">
+                
+                <span class="text-sm font-sm" title="About">
+                  About
+                </span>
+              </a>
+            
+              <a
+                href="/faq/"
+                
+                aria-label="F.A.Q."
+                class="flex items-center bf-icon-color-hover">
+                
+                <span class="text-sm font-sm" title="F.A.Q.">
+                  F.A.Q.
+                </span>
+              </a>
+            
+              <a
+                href="https://github.com/nCine/nCine/wiki/Getting-Started"
+                
+                  target="_blank"
+                
+                aria-label="Getting Started"
+                class="flex items-center bf-icon-color-hover">
+                
+                <span class="text-sm font-sm" title="">
+                  Getting Started
+                </span>
+              </a>
+            
+              <a
+                href="https://ncine.github.io/Lua_Tutorial.html"
+                
+                  target="_blank"
+                
+                aria-label="Lua Tutorial"
+                class="flex items-center bf-icon-color-hover">
+                
+                <span class="text-sm font-sm" title="">
+                  Lua Tutorial
+                </span>
+              </a>
+            
+              <a
+                href="https://ncine.github.io/docs/master"
+                
+                  target="_blank"
+                
+                aria-label="C&#43;&#43; API"
+                class="flex items-center bf-icon-color-hover">
+                
+                <span class="text-sm font-sm" title="">
+                  C++ API
+                </span>
+              </a>
+            
+              <a
+                href="https://ncine.github.io/docs/lua_master"
+                
+                  target="_blank"
+                
+                aria-label="Lua API"
+                class="flex items-center bf-icon-color-hover">
+                
+                <span class="text-sm font-sm" title="">
+                  Lua API
+                </span>
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    
+      
+  
+    <div class="nested-menu">
+      <div class="cursor-pointer flex items-center">
+        <a
+          
+            tabindex="0"
+          
+          aria-label="Community"
+          class="flex items-center text-base font-medium bf-icon-color-hover"
+          title="">
+          
+          <span class="text-bg font-bg break-normal" title="">
+            Community
+          </span>
+          <span>
+            <span class="relative block icon"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+</span>
+          </span>
+        </a>
+      </div>
+      <div class="menuhide">
+        <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl bg-neutral/25 dark:bg-neutral-800/25">
+          <div class="flex flex-col space-y-3">
+            
+              <a
+                href="https://github.com/nCine/nCine"
+                
+                  target="_blank"
+                
+                aria-label="GitHub"
+                class="flex items-center bf-icon-color-hover">
+                
+                  <span class="mr-1">
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span>
+                  </span>
+                
+                <span class="text-sm font-sm" title="">
+                  GitHub
+                </span>
+              </a>
+            
+              <a
+                href="https://discord.gg/495ab6Y"
+                
+                  target="_blank"
+                
+                aria-label="Discord"
+                class="flex items-center bf-icon-color-hover">
+                
+                  <span class="mr-1">
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg>
+</span>
+                  </span>
+                
+                <span class="text-sm font-sm" title="">
+                  Discord
+                </span>
+              </a>
+            
+              <a
+                href="https://github.com/nCine/nCine/discussions"
+                
+                  target="_blank"
+                
+                aria-label="Forum"
+                class="flex items-center bf-icon-color-hover">
+                
+                  <span class="mr-1">
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 32C114.6 32 .0272 125.1 .0272 240c0 49.63 21.35 94.98 56.97 130.7c-12.5 50.37-54.27 95.27-54.77 95.77c-2.25 2.25-2.875 5.734-1.5 8.734C1.979 478.2 4.75 480 8 480c66.25 0 115.1-31.76 140.6-51.39C181.2 440.9 217.6 448 256 448c141.4 0 255.1-93.13 255.1-208S397.4 32 256 32z"/></svg>
+</span>
+                  </span>
+                
+                <span class="text-sm font-sm" title="">
+                  Forum
+                </span>
+              </a>
+            
+              <a
+                href="/donate/"
+                
+                aria-label="Donate"
+                class="flex items-center bf-icon-color-hover">
+                
+                  <span class="mr-1">
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg></span>
+                  </span>
+                
+                <span class="text-sm font-sm" title="Donate">
+                  Donate
+                </span>
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    
+      
+  
+    <div class="nested-menu">
+      <div class="cursor-pointer flex items-center">
+        <a
+          
+            tabindex="0"
+          
+          aria-label="Download"
+          class="flex items-center text-base font-medium bf-icon-color-hover"
+          title="">
+          
+            <span class="mr-1">
+              <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+            </span>
+          
+          <span class="text-bg font-bg break-normal" title="">
+            Download
+          </span>
+          <span>
+            <span class="relative block icon"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+</span>
+          </span>
+        </a>
+      </div>
+      <div class="menuhide">
+        <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl bg-neutral/25 dark:bg-neutral-800/25">
+          <div class="flex flex-col space-y-3">
+            
+              <a
+                href="/download/"
+                
+                aria-label="Instructions"
+                class="flex items-center bf-icon-color-hover">
+                
+                <span class="text-sm font-sm" title="Download Instructions">
+                  Instructions
+                </span>
+              </a>
+            
+              <a
+                href="/changelog/"
+                
+                aria-label="Changelog"
+                class="flex items-center bf-icon-color-hover">
+                
+                <span class="text-sm font-sm" title="Changelog">
+                  Changelog
+                </span>
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search"
+      class="text-base bf-icon-color-hover"
+      title="Search (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base bf-icon-color-hover">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      <div class="flex items-center h-14 gap-4">
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="Search (/)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Dark mode switcher"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+    <input type="checkbox" id="mobile-menu-toggle" autocomplete="off" class="hidden peer">
+    <label for="mobile-menu-toggle" class="flex items-center justify-center cursor-pointer bf-icon-color-hover">
+      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+    </label>
+
+    <div
+      role="dialog"
+      aria-modal="true"
+      style="scrollbar-gutter: stable;"
+      class="fixed inset-0 z-50 invisible overflow-y-auto px-6 py-20 opacity-0 transition-[opacity,visibility] duration-300 peer-checked:visible peer-checked:opacity-100 bg-neutral-50/97 dark:bg-neutral-900/99
+      bf-scrollbar">
+      <label
+        for="mobile-menu-toggle"
+        class="fixed end-8 top-5 flex items-center justify-center z-50 h-12 w-12 cursor-pointer select-none rounded-full bf-icon-color-hover border bf-border-color bf-border-color-hover bg-neutral-50 dark:bg-neutral-900">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </label>
+      <nav class="mx-auto max-w-md space-y-6">
+        
+  
+    
+    <div class="px-2">
+      <a
+        href="/news/"
+        aria-label="News"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+        <span title="News" class="text-2xl font-bold tracking-tight">
+          News
+        </span>
+        
+      </a>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <a
+        href="/features/"
+        aria-label="Features"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+        <span title="Features" class="text-2xl font-bold tracking-tight">
+          Features
+        </span>
+        
+      </a>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <a
+        href=""
+        aria-label="Showcase"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+        <span title="" class="text-2xl font-bold tracking-tight">
+          Showcase
+        </span>
+        
+          <label
+            for="fullscreen-submenu-showcase"
+            class="ms-auto flex items-center justify-center h-10 w-10 cursor-pointer rounded-lg bf-icon-color-hover border bf-border-color bf-border-color-hover">
+            <span class="relative block icon"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+</span>
+          </label>
+        
+      </a>
+
+      
+        <input checked type="checkbox" id="fullscreen-submenu-showcase" autocomplete="off" class="hidden peer/full">
+
+        <div
+          class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 peer-checked/full:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <div class="ms-7 mt-4">
+              
+                <a
+                  href="/gallery/"
+                  aria-label="Gallery"
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                  <span title="Gallery" class="text-lg">
+                    Gallery
+                  </span>
+                </a>
+              
+                <a
+                  href="/showcase_tags/video/"
+                  aria-label="Videos"
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                  <span title="Videos" class="text-lg">
+                    Videos
+                  </span>
+                </a>
+              
+                <a
+                  href="/examples/"
+                  aria-label="Examples"
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                  <span title="Examples" class="text-lg">
+                    Examples
+                  </span>
+                </a>
+              
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <a
+        href=""
+        aria-label="Documentation"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+        <span title="" class="text-2xl font-bold tracking-tight">
+          Documentation
+        </span>
+        
+          <label
+            for="fullscreen-submenu-documentation"
+            class="ms-auto flex items-center justify-center h-10 w-10 cursor-pointer rounded-lg bf-icon-color-hover border bf-border-color bf-border-color-hover">
+            <span class="relative block icon"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+</span>
+          </label>
+        
+      </a>
+
+      
+        <input checked type="checkbox" id="fullscreen-submenu-documentation" autocomplete="off" class="hidden peer/full">
+
+        <div
+          class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 peer-checked/full:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <div class="ms-7 mt-4">
+              
+                <a
+                  href="/about/"
+                  aria-label="About"
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                  <span title="About" class="text-lg">
+                    About
+                  </span>
+                </a>
+              
+                <a
+                  href="/faq/"
+                  aria-label="F.A.Q."
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                  <span title="F.A.Q." class="text-lg">
+                    F.A.Q.
+                  </span>
+                </a>
+              
+                <a
+                  href="https://github.com/nCine/nCine/wiki/Getting-Started"
+                  aria-label="Getting Started"
+                  
+                    target="_blank"
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                  <span title="" class="text-lg">
+                    Getting Started
+                  </span>
+                </a>
+              
+                <a
+                  href="https://ncine.github.io/Lua_Tutorial.html"
+                  aria-label="Lua Tutorial"
+                  
+                    target="_blank"
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                  <span title="" class="text-lg">
+                    Lua Tutorial
+                  </span>
+                </a>
+              
+                <a
+                  href="https://ncine.github.io/docs/master"
+                  aria-label="C&#43;&#43; API"
+                  
+                    target="_blank"
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                  <span title="" class="text-lg">
+                    C++ API
+                  </span>
+                </a>
+              
+                <a
+                  href="https://ncine.github.io/docs/lua_master"
+                  aria-label="Lua API"
+                  
+                    target="_blank"
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                  <span title="" class="text-lg">
+                    Lua API
+                  </span>
+                </a>
+              
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <a
+        href=""
+        aria-label="Community"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+        <span title="" class="text-2xl font-bold tracking-tight">
+          Community
+        </span>
+        
+          <label
+            for="fullscreen-submenu-community"
+            class="ms-auto flex items-center justify-center h-10 w-10 cursor-pointer rounded-lg bf-icon-color-hover border bf-border-color bf-border-color-hover">
+            <span class="relative block icon"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+</span>
+          </label>
+        
+      </a>
+
+      
+        <input checked type="checkbox" id="fullscreen-submenu-community" autocomplete="off" class="hidden peer/full">
+
+        <div
+          class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 peer-checked/full:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <div class="ms-7 mt-4">
+              
+                <a
+                  href="https://github.com/nCine/nCine"
+                  aria-label="GitHub"
+                  
+                    target="_blank"
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                    <span class="flex items-center justify-center h-5 w-5">
+                      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span>
+                    </span>
+                  
+                  <span title="" class="text-lg">
+                    GitHub
+                  </span>
+                </a>
+              
+                <a
+                  href="https://discord.gg/495ab6Y"
+                  aria-label="Discord"
+                  
+                    target="_blank"
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                    <span class="flex items-center justify-center h-5 w-5">
+                      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg>
+</span>
+                    </span>
+                  
+                  <span title="" class="text-lg">
+                    Discord
+                  </span>
+                </a>
+              
+                <a
+                  href="https://github.com/nCine/nCine/discussions"
+                  aria-label="Forum"
+                  
+                    target="_blank"
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                    <span class="flex items-center justify-center h-5 w-5">
+                      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 32C114.6 32 .0272 125.1 .0272 240c0 49.63 21.35 94.98 56.97 130.7c-12.5 50.37-54.27 95.27-54.77 95.77c-2.25 2.25-2.875 5.734-1.5 8.734C1.979 478.2 4.75 480 8 480c66.25 0 115.1-31.76 140.6-51.39C181.2 440.9 217.6 448 256 448c141.4 0 255.1-93.13 255.1-208S397.4 32 256 32z"/></svg>
+</span>
+                    </span>
+                  
+                  <span title="" class="text-lg">
+                    Forum
+                  </span>
+                </a>
+              
+                <a
+                  href="/donate/"
+                  aria-label="Donate"
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                    <span class="flex items-center justify-center h-5 w-5">
+                      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg></span>
+                    </span>
+                  
+                  <span title="Donate" class="text-lg">
+                    Donate
+                  </span>
+                </a>
+              
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <a
+        href=""
+        aria-label="Download"
+        
+        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+        
+          <span class="flex items-center justify-center h-8 w-8 text-2xl">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zM432 456c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+          </span>
+        
+        <span title="" class="text-2xl font-bold tracking-tight">
+          Download
+        </span>
+        
+          <label
+            for="fullscreen-submenu-download"
+            class="ms-auto flex items-center justify-center h-10 w-10 cursor-pointer rounded-lg bf-icon-color-hover border bf-border-color bf-border-color-hover">
+            <span class="relative block icon"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+</span>
+          </label>
+        
+      </a>
+
+      
+        <input checked type="checkbox" id="fullscreen-submenu-download" autocomplete="off" class="hidden peer/full">
+
+        <div
+          class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 peer-checked/full:grid-rows-[1fr]">
+          <div class="overflow-hidden">
+            <div class="ms-7 mt-4">
+              
+                <a
+                  href="/download/"
+                  aria-label="Instructions"
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                  <span title="Download Instructions" class="text-lg">
+                    Instructions
+                  </span>
+                </a>
+              
+                <a
+                  href="/changelog/"
+                  aria-label="Changelog"
+                  
+                  class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+                  
+                  <span title="Changelog" class="text-lg">
+                    Changelog
+                  </span>
+                </a>
+              
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  
+
+        
+  
+
+        
+  
+
+      </nav>
+    </div>
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<script
+  type="text/javascript"
+  src="/js/background-blur.min.605b3b942818f0ab5a717ae446135ec46b8ee5a2ad12ae56fb90dc2a76ce30c388f9fec8bcc18db15bd47e3fa8a09d779fa12aa9c184cf614a315bc72c6c163d.js"
+  integrity="sha512-YFs7lCgY8KtacXrkRhNexGuO5aKtEq5W&#43;5DcKnbOMMOI&#43;f7IvMGNsVvUfj&#43;ooJ13n6EqqcGEz2FKMVvHLGwWPQ=="
+  data-blur-id="menu-blur"></script>
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+      
+      
+      
+      
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+
+  
+  
+    
+    
+  
+
+
+
+
+  
+    
+    
+      
+      
+    
+  
+
+
+
+
+
+  <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom">
+    
+    
+    
+    <img
+      id="background-image"
+      src="/milad-fakurian-rPdxh2xl2-E-unsplash_hu_fa152c3b141b8faa.jpg"
+      role="presentation"
+      loading="eager"
+      decoding="async"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+      >
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal"></div>
+    <div
+      class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal"></div>
+  </div>
+
+  
+    <div
+      id="background-blur"
+      class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-xl bg-neutral-100/75 dark:bg-neutral-800/60"></div>
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/background-blur.min.605b3b942818f0ab5a717ae446135ec46b8ee5a2ad12ae56fb90dc2a76ce30c388f9fec8bcc18db15bd47e3fa8a09d779fa12aa9c184cf614a315bc72c6c163d.js"
+      integrity="sha512-YFs7lCgY8KtacXrkRhNexGuO5aKtEq5W&#43;5DcKnbOMMOI&#43;f7IvMGNsVvUfj&#43;ooJ13n6EqqcGEz2FKMVvHLGwWPQ=="
+      data-blur-id="background-blur"
+      data-image-id="background-image"
+      data-image-url="/milad-fakurian-rPdxh2xl2-E-unsplash_hu_fa152c3b141b8faa.jpg"></script>
+  
+      
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        2022
+      </h1>
+      <h2 class="mt-0 text-2xl font-bold text-neutral-450 dark:text-neutral">
+        
+      </h2>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    </div>
+  
+
+  
+  
+
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+      
+        <div class="order-first lg:ml-auto px-0 lg:order-last lg:ps-8">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]">
+            
+              <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain bf-scrollbar rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#december-2022">December 2022</a>
+      <ul>
+        <li><a href="#breaking-changes">Breaking Changes</a></li>
+        <li><a href="#improvements">Improvements</a></li>
+        <li><a href="#fixes">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#november-2022">November 2022</a>
+      <ul>
+        <li><a href="#improvements-1">Improvements</a></li>
+        <li><a href="#fixes-1">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#october-2022">October 2022</a>
+      <ul>
+        <li><a href="#breaking-changes-1">Breaking Changes</a></li>
+        <li><a href="#new-features">New Features</a></li>
+        <li><a href="#improvements-2">Improvements</a></li>
+        <li><a href="#fixes-2">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#september-2022">September 2022</a>
+      <ul>
+        <li><a href="#new-features-1">New Features</a></li>
+        <li><a href="#improvements-3">Improvements</a></li>
+        <li><a href="#fixes-3">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#august-2022">August 2022</a>
+      <ul>
+        <li><a href="#improvements-4">Improvements</a></li>
+      </ul>
+    </li>
+    <li><a href="#july-2022">July 2022</a>
+      <ul>
+        <li><a href="#breaking-changes-2">Breaking Changes</a></li>
+        <li><a href="#new-features-2">New Features</a></li>
+        <li><a href="#improvements-5">Improvements</a></li>
+        <li><a href="#fixes-4">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#june-2022">June 2022</a>
+      <ul>
+        <li><a href="#breaking-changes-3">Breaking Changes</a></li>
+        <li><a href="#improvements-6">Improvements</a></li>
+        <li><a href="#fixes-5">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#may-2022">May 2022</a>
+      <ul>
+        <li><a href="#breaking-changes-4">Breaking Changes</a></li>
+        <li><a href="#improvements-7">Improvements</a></li>
+      </ul>
+    </li>
+    <li><a href="#april-2022">April 2022</a>
+      <ul>
+        <li><a href="#breaking-changes-5">Breaking Changes</a></li>
+        <li><a href="#new-features-3">New Features</a></li>
+        <li><a href="#improvements-8">Improvements</a></li>
+        <li><a href="#fixes-6">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#march-2022">March 2022</a>
+      <ul>
+        <li><a href="#breaking-changes-6">Breaking Changes</a></li>
+        <li><a href="#improvements-9">Improvements</a></li>
+        <li><a href="#fixes-7">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#february-2022">February 2022</a>
+      <ul>
+        <li><a href="#new-features-4">New Features</a></li>
+        <li><a href="#improvements-10">Improvements</a></li>
+        <li><a href="#fixes-8">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-2022">January 2022</a>
+      <ul>
+        <li><a href="#breaking-changes-7">Breaking Changes</a></li>
+        <li><a href="#new-features-5">New Features</a></li>
+        <li><a href="#improvements-11">Improvements</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#december-2022">December 2022</a>
+      <ul>
+        <li><a href="#breaking-changes">Breaking Changes</a></li>
+        <li><a href="#improvements">Improvements</a></li>
+        <li><a href="#fixes">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#november-2022">November 2022</a>
+      <ul>
+        <li><a href="#improvements-1">Improvements</a></li>
+        <li><a href="#fixes-1">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#october-2022">October 2022</a>
+      <ul>
+        <li><a href="#breaking-changes-1">Breaking Changes</a></li>
+        <li><a href="#new-features">New Features</a></li>
+        <li><a href="#improvements-2">Improvements</a></li>
+        <li><a href="#fixes-2">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#september-2022">September 2022</a>
+      <ul>
+        <li><a href="#new-features-1">New Features</a></li>
+        <li><a href="#improvements-3">Improvements</a></li>
+        <li><a href="#fixes-3">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#august-2022">August 2022</a>
+      <ul>
+        <li><a href="#improvements-4">Improvements</a></li>
+      </ul>
+    </li>
+    <li><a href="#july-2022">July 2022</a>
+      <ul>
+        <li><a href="#breaking-changes-2">Breaking Changes</a></li>
+        <li><a href="#new-features-2">New Features</a></li>
+        <li><a href="#improvements-5">Improvements</a></li>
+        <li><a href="#fixes-4">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#june-2022">June 2022</a>
+      <ul>
+        <li><a href="#breaking-changes-3">Breaking Changes</a></li>
+        <li><a href="#improvements-6">Improvements</a></li>
+        <li><a href="#fixes-5">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#may-2022">May 2022</a>
+      <ul>
+        <li><a href="#breaking-changes-4">Breaking Changes</a></li>
+        <li><a href="#improvements-7">Improvements</a></li>
+      </ul>
+    </li>
+    <li><a href="#april-2022">April 2022</a>
+      <ul>
+        <li><a href="#breaking-changes-5">Breaking Changes</a></li>
+        <li><a href="#new-features-3">New Features</a></li>
+        <li><a href="#improvements-8">Improvements</a></li>
+        <li><a href="#fixes-6">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#march-2022">March 2022</a>
+      <ul>
+        <li><a href="#breaking-changes-6">Breaking Changes</a></li>
+        <li><a href="#improvements-9">Improvements</a></li>
+        <li><a href="#fixes-7">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#february-2022">February 2022</a>
+      <ul>
+        <li><a href="#new-features-4">New Features</a></li>
+        <li><a href="#improvements-10">Improvements</a></li>
+        <li><a href="#fixes-8">Fixes</a></li>
+      </ul>
+    </li>
+    <li><a href="#january-2022">January 2022</a>
+      <ul>
+        <li><a href="#breaking-changes-7">Breaking Changes</a></li>
+        <li><a href="#new-features-5">New Features</a></li>
+        <li><a href="#improvements-11">Improvements</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+<script>
+  (function () {
+    'use strict'
+
+    const SCROLL_OFFSET_RATIO = 0.33
+    const TOC_SELECTOR = '#TableOfContents'
+    const ANCHOR_SELECTOR = '.anchor'
+    const TOC_LINK_SELECTOR = 'a[href^="#"]'
+    const NESTED_LIST_SELECTOR = 'li ul'
+    const ACTIVE_CLASS = 'active'
+    let isJumpingToAnchor = false
+
+    function getActiveAnchorId(anchors, offsetRatio) {
+      const threshold = window.scrollY + window.innerHeight * offsetRatio
+      const tocLinks = [...document.querySelectorAll('#TableOfContents a[href^="#"]')]
+      const tocIds = new Set(tocLinks.map(link => link.getAttribute('href').substring(1)))
+
+      if (isJumpingToAnchor) {
+        for (let i = 0; i < anchors.length; i++) {
+          const anchor = anchors[i]
+          if (!tocIds.has(anchor.id)) continue
+          const top = anchor.getBoundingClientRect().top + window.scrollY
+          if (Math.abs(window.scrollY - top) < 100) {
+            return anchor.id
+          }
+        }
+      }
+
+      for (let i = anchors.length - 1; i >= 0; i--) {
+        const top = anchors[i].getBoundingClientRect().top + window.scrollY
+        if (top <= threshold && tocIds.has(anchors[i].id)) {
+          return anchors[i].id
+        }
+      }
+      return anchors.find(anchor => tocIds.has(anchor.id))?.id || ''
+    }
+
+    function updateTOC({ toc, anchors, links, scrollOffset, collapseInactive }) {
+      const activeId = getActiveAnchorId(anchors, scrollOffset)
+      if (!activeId) return
+
+      links.forEach(link => {
+        const isActive = link.getAttribute('href') === `#${activeId}`
+        link.classList.toggle(ACTIVE_CLASS, isActive)
+
+        if (collapseInactive) {
+          const ul = link.closest('li')?.querySelector('ul')
+          if (ul) ul.style.display = isActive ? '' : 'none'
+        }
+      })
+
+      if (collapseInactive) {
+        const activeLink = toc.querySelector(`a[href="#${CSS.escape(activeId)}"]`)
+        let el = activeLink
+        while (el && el !== toc) {
+          if (el.tagName === 'UL') el.style.display = ''
+          if (el.tagName === 'LI') el.querySelector('ul')?.style.setProperty('display', '')
+          el = el.parentElement
+        }
+      }
+    }
+
+    function initTOC() {
+      const toc = document.querySelector(TOC_SELECTOR)
+      if (!toc) return
+
+      const collapseInactive = false
+      const anchors = [...document.querySelectorAll(ANCHOR_SELECTOR)]
+      const links = [...toc.querySelectorAll(TOC_LINK_SELECTOR)]
+
+      if (collapseInactive) {
+        toc.querySelectorAll(NESTED_LIST_SELECTOR).forEach(ul => ul.style.display = 'none')
+      }
+
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          isJumpingToAnchor = true
+        })
+      })
+
+      const config = {
+        toc,
+        anchors,
+        links,
+        scrollOffset: SCROLL_OFFSET_RATIO,
+        collapseInactive
+      }
+
+      window.addEventListener('scroll', () => updateTOC(config), { passive: true })
+      window.addEventListener('hashchange', () => updateTOC(config), { passive: true })
+
+      updateTOC(config)
+    }
+
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', initTOC)
+      : initTOC()
+  })()
+</script>
+
+
+            
+            
+          </div>
+        </div>
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          
+<h2 class="relative group">December 2022
+    <div id="december-2022" class="anchor"></div>
+    
+</h2>
+
+<h3 class="relative group">Breaking Changes
+    <div id="breaking-changes" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The <code>animation_index()</code> and <code>frame()</code> functions of the Lua animated sprite have been renamed to <code>get_animation_index()</code> and <code>get_frame()</code></li>
+</ul>
+
+<h3 class="relative group">Improvements
+    <div id="improvements" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The Lua API for the <code>Application</code> class has now a function to get the <code>AppConfiguration</code> table</li>
+<li>Scale down the size of the error messages in <code>apptest_lua</code> if does not fit the screen</li>
+<li>Added a method to <code>RectAnimation</code> to automatically add multiple rectangles from a spritesheet</li>
+<li>Added functions to the Lua API to retrieve the array of children of a node</li>
+</ul>
+
+<h3 class="relative group">Fixes
+    <div id="fixes" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The minimum and maximum values of a joystick axis are now queried on Android</li>
+<li>When calling <code>Sprite::setTexture()</code> with the same texture the rectangle gets reset</li>
+<li>Create or destroy the Windows console if changing the console log level with the setter</li>
+</ul>
+
+<h2 class="relative group">November 2022
+    <div id="november-2022" class="anchor"></div>
+    
+</h2>
+
+<h3 class="relative group">Improvements
+    <div id="improvements-1" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The version of the integrated Tracy has been updated to <a href="https://github.com/wolfpld/tracy/releases/tag/v0.9"  target="_blank" rel="noreferrer">v0.9</a></li>
+<li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.89.1"  target="_blank" rel="noreferrer">v1.89.1</a></li>
+<li>It is now possible to choose the render mode used by a <code>TextNode</code>
+<ul>
+<li>There is a new render mode for colored fonts that uses the sprite shader</li>
+</ul>
+</li>
+<li>On Android there is now always a fallback joystick mapping based on the default system configuration</li>
+</ul>
+
+<h3 class="relative group">Fixes
+    <div id="fixes-1" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The joystick GUID calculation on Android has been updated to be again compatible with the SDL2 controller database</li>
+</ul>
+
+<h2 class="relative group">October 2022
+    <div id="october-2022" class="anchor"></div>
+    
+</h2>
+
+<h3 class="relative group">Breaking Changes
+    <div id="breaking-changes-1" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The <code>IGfxDevice::setResolution()</code> method has been removed. Depending on the full screen state, use <code>setWindowSize()</code> or <code>setVideoMode()</code></li>
+<li>The <code>inFullscreen</code> and <code>isResizable</code> flags of the <code>AppConfiguration</code> class have been renamed to <code>fullScreen</code> and <code>resizable</code></li>
+<li>To query the supported video modes, you have to query the list of connected monitors with <code>IGfxDevice::numMonitors()</code> and <code>IGfxDevice::monitor()</code></li>
+</ul>
+
+<h3 class="relative group">New Features
+    <div id="new-features" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>It is now possible to enumerate connected monitors on all desktop backends
+<ul>
+<li>You can now query window scaling and drawable resolution to better support HiDPI monitors</li>
+<li>The Lua API has been extended to support the new methods of the <code>IGfxDevice</code> class</li>
+<li>There is a new <code>apptest_scaling</code> application that shows automatic window size scaling</li>
+</ul>
+</li>
+</ul>
+
+<h3 class="relative group">Improvements
+    <div id="improvements-2" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>Failing to load a file will now never exit the application</li>
+</ul>
+
+<h3 class="relative group">Fixes
+    <div id="fixes-2" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>Various fixes about window size, window position, and full screen</li>
+</ul>
+
+<h2 class="relative group">September 2022
+    <div id="september-2022" class="anchor"></div>
+    
+</h2>
+
+<h3 class="relative group">New Features
+    <div id="new-features-1" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>There is a new <code>onFilesDropped()</code> input callback to support drag&rsquo;n&rsquo;drop from the system to the application window</li>
+</ul>
+
+<h3 class="relative group">Improvements
+    <div id="improvements-3" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The JNI helper classes have been refactored to use global references and be more stable and secure</li>
+<li>Shader programs now detach shaders before deleting them, so they are really deleted and memory is freed</li>
+<li>The new <code>NCINE_UNDEFINED_SANITIZER</code> CMake options adds support for the UBSan of GCC and Clang</li>
+</ul>
+
+<h3 class="relative group">Fixes
+    <div id="fixes-3" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The Android manifest has been updated to allow compilation on latest Android versions</li>
+</ul>
+
+<h2 class="relative group">August 2022
+    <div id="august-2022" class="anchor"></div>
+    
+</h2>
+
+<h3 class="relative group">Improvements
+    <div id="improvements-4" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>Improvements to <code>ParticleSystem</code> and to particle affector classes
+<ul>
+<li>It is now possible to add affector steps out of order</li>
+<li>A new getter method in <code>ParticleSystem</code> allows the manipulation of affectors</li>
+<li>Affector steps can be manipulated via a new Lua API</li>
+</ul>
+</li>
+<li>A new <code>AudioStreamPlayer</code> getter returns the sample offset relative to the whole stream</li>
+<li>The audio, font, and particles apptests have brand new ImGui interfaces</li>
+</ul>
+
+<h2 class="relative group">July 2022
+    <div id="july-2022" class="anchor"></div>
+    
+</h2>
+
+<h3 class="relative group">Breaking Changes
+    <div id="breaking-changes-2" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The viewport chain is now an array accessible with the static <code>Viewport::chain()</code> method</li>
+<li>The <code>Application::rootViewport()</code> method has been renamed to <code>screenViewport()</code></li>
+<li>The <code>GLShaderAttributes</code> class have been deleted and its functionalities transferred to <code>GLShaderProgram</code></li>
+<li>Added the <code>get_</code> prefix to some Lua getters of the <code>MeshSprite</code> class</li>
+<li>The Android sources are now an independant module inside the <code>app</code> directory</li>
+</ul>
+
+<h3 class="relative group">New Features
+    <div id="new-features-2" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>New <code>Shader</code> and <code>ShaderState</code> classes to support custom user shaders (Lua API too)
+<ul>
+<li>Mesh sprites now support custom vertex format, if the appropriate shader is provided</li>
+<li>The <code>script.lua</code> example has been updated to show post-processing using viewports and shaders</li>
+</ul>
+</li>
+<li>Added support for multi-texturing and multiple render targets</li>
+<li>A new <code>apptest_shaders</code> application has been added to test custom shaders with batching
+<ul>
+<li>It shows post-processing blur, normal mapping, and bloom</li>
+</ul>
+</li>
+</ul>
+
+<h3 class="relative group">Improvements
+    <div id="improvements-5" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The version of the integrated Tracy has been updated to <a href="https://github.com/wolfpld/tracy/releases/tag/v0.8.2"  target="_blank" rel="noreferrer">v0.8.2</a></li>
+<li>The render batcher is now able to deal with custom shaders, providing the user writes a batched shader</li>
+<li>Improved and simplified API for viewports (also ported to Lua)</li>
+<li>Added methods to set OpenGL debugging labels for shaders, textures, and viewport&rsquo;s FBOs</li>
+<li>There is now an <code>onDrawViewport()</code> callback that you can use to set shader uniforms when drawing a particular viewport</li>
+<li>There is also an <code>onResizeWindow()</code> callback that can be useful to recreate post-processing viewport textures</li>
+<li>Added missing getters and more methods to the Lua API of the <code>MeshSprite</code> class</li>
+<li>Updated support for Gradle plugin 7.2.0, build tools 33.0.0, and NDK r25 on Android</li>
+<li>Added support for the <code>Vector4</code> class in the Lua API</li>
+</ul>
+
+<h3 class="relative group">Fixes
+    <div id="fixes-4" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>Added the missing SceneNode::lastFrameUpdated() method to the Lua API</li>
+<li>You will never see again errors about reserved OpenGL uniforms or attributes not being found (like <code>gl_VertexID</code>)</li>
+<li>Non-compiling shaders will not fatal assert like they did before</li>
+<li>Fixes to the methods dealing with vertices and indices of the Lua API of the <code>MeshSprite</code> class</li>
+<li>The <code>minBatchSize</code>/<code>maxBatchSize</code> rendering settings have been fixed and will not cause flickering when batching</li>
+</ul>
+
+<h2 class="relative group">June 2022
+    <div id="june-2022" class="anchor"></div>
+    
+</h2>
+
+<h3 class="relative group">Breaking Changes
+    <div id="breaking-changes-3" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>Added the <code>get_</code> prefix to some Lua getters of the <code>Application</code> and <code>IAudioDevice</code> classes</li>
+</ul>
+
+<h3 class="relative group">Improvements
+    <div id="improvements-6" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.88"  target="_blank" rel="noreferrer">v1.88</a></li>
+<li>No more crashes when dereferencing Lua light user data pointers of the wrong type
+<ul>
+<li>The tracking of pointers to C++ objects created in Lua has improved a lot</li>
+</ul>
+</li>
+</ul>
+
+<h3 class="relative group">Fixes
+    <div id="fixes-5" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>Trying to play a sound when there are no available audio players will not crash the application</li>
+<li>Fixed the parameters retrieving of Lua joystick state functions</li>
+</ul>
+
+<h2 class="relative group">May 2022
+    <div id="may-2022" class="anchor"></div>
+    
+</h2>
+
+<h3 class="relative group">Breaking Changes
+    <div id="breaking-changes-4" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>Added the <code>get_</code> prefix to the Lua getters of the <code>Font</code> class</li>
+</ul>
+
+<h3 class="relative group">Improvements
+    <div id="improvements-7" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The version of the integrated Tracy has been updated to <a href="https://github.com/wolfpld/tracy/releases/tag/v0.8.1"  target="_blank" rel="noreferrer">v0.8.1</a></li>
+<li>Added a static method to the <code>TextNode</code> class to calculate the boundaries for arbitrary text and font</li>
+<li>The <code>Font</code> class can now be constructed using an existent <code>Texture</code> object
+<ul>
+<li>This allows for texture sharing (like an atlas) or textures constructed from texels</li>
+</ul>
+</li>
+</ul>
+
+<h2 class="relative group">April 2022
+    <div id="april-2022" class="anchor"></div>
+    
+</h2>
+
+<h3 class="relative group">Breaking Changes
+    <div id="breaking-changes-5" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The <code>DrawableNode::LayerBase</code> enumeration has been deleted
+<ul>
+<li>This also means that <code>TextNode</code> will not be on a higher layer by default</li>
+</ul>
+</li>
+<li>The <code>SceneNode::draw()</code> method now returns a boolean to indicate if it has been rendered</li>
+</ul>
+
+<h3 class="relative group">New Features
+    <div id="new-features-3" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>You can set the layer of a <code>SceneNode</code> and it will carry this value over to its children
+<ul>
+<li>A child node with a layer different than 0 will not inherit it from its parent</li>
+</ul>
+</li>
+<li>Added a scenegraph visit order when sorting the rendering commands</li>
+</ul>
+
+<h3 class="relative group">Improvements
+    <div id="improvements-8" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The <code>apptest_anchor</code> application can now show and modify all the different order and layer values</li>
+</ul>
+
+<h3 class="relative group">Fixes
+    <div id="fixes-6" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The <code>apptest_scene</code> and <code>apptest_viewports</code> applications now work correctly on Qt5</li>
+</ul>
+
+<h2 class="relative group">March 2022
+    <div id="march-2022" class="anchor"></div>
+    
+</h2>
+
+<h3 class="relative group">Breaking Changes
+    <div id="breaking-changes-6" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The <code>Object::name()</code> method now returns an array of characters</li>
+<li>Inverted position and rotation view values for the <code>Camera</code>. It will now behave as an object that you move around the scene.</li>
+</ul>
+
+<h3 class="relative group">Improvements
+    <div id="improvements-9" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The version of the integrated Tracy has been updated to <a href="https://github.com/wolfpld/tracy/releases/tag/v0.8"  target="_blank" rel="noreferrer">v0.8</a></li>
+<li>Allow a relative path from executables to data on Linux</li>
+</ul>
+
+<h3 class="relative group">Fixes
+    <div id="fixes-7" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>Fixed an issue with ImGui and Nuklear uploading VBOs before setting a vertex format (and consequently a VAO)</li>
+<li>Map and set containers can now perform a rehash when their values or keys are non-copyable classes</li>
+<li>Updating node transformation before committing uniform blocks</li>
+</ul>
+
+<h2 class="relative group">February 2022
+    <div id="february-2022" class="anchor"></div>
+    
+</h2>
+
+<h3 class="relative group">New Features
+    <div id="new-features-4" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>There is now a new <code>nctl::StaticString</code> class that stores its characters on the stack</li>
+</ul>
+
+<h3 class="relative group">Improvements
+    <div id="improvements-10" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.87"  target="_blank" rel="noreferrer">v1.87</a></li>
+<li>Using the new event-based ImGui input API on all backends</li>
+<li>Math classes like vectors, matrices, and quaternions will now initialize their members in the default constructor</li>
+<li>Disabling the cursor will now enable a relative mouse motion if supported (SDL and GLFW)</li>
+<li>The Qt5 widget exposes a flag to disable per-frame updates</li>
+<li>It is now possible to retrieve last frame AABB of a <code>DrawableNode</code></li>
+<li>More information will be presented when the OpenGL debug context is enabled (marker annotations)</li>
+</ul>
+
+<h3 class="relative group">Fixes
+    <div id="fixes-8" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The fixed capacity property is now correctly initialized when copy constructing, move constructing, and move assign a <code>String</code></li>
+<li>A <code>Sprite</code> or a <code>MeshSprite</code> without a texture would make the application crash when a texture was assigned</li>
+<li>A <code>TextNode</code> without a font would make the application crash when a font was assigned</li>
+<li>A scene node with a negative scale factor will invert its rotation sign</li>
+</ul>
+
+<h2 class="relative group">January 2022
+    <div id="january-2022" class="anchor"></div>
+    
+</h2>
+
+<h3 class="relative group">Breaking Changes
+    <div id="breaking-changes-7" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>The public <code>x</code> and <code>y</code> fields of a <code>SceneNode</code> have been made protected for consistency</li>
+<li>The <code>IGfxDevice</code> interface cannot set the OpenGL viewport and clear color, use viewports instead</li>
+<li>The ImGui and Nuklear layer settings are part of the GUI settings structure in the <code>Application</code> class</li>
+</ul>
+
+<h3 class="relative group">New Features
+    <div id="new-features-5" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>Multiple viewports to support offscreen rendering or split screen</li>
+<li>A camera system to move around without transforming a parent node (slow on the CPU)</li>
+<li>The viewport and camera systems can also be used via the Lua API</li>
+<li>A new <code>apptest_viewports</code> application has been added to test the viewport and camera systems</li>
+</ul>
+
+<h3 class="relative group">Improvements
+    <div id="improvements-11" class="anchor"></div>
+    
+</h3>
+<ul>
+<li>Dirty bits to update shader uniforms only when they change</li>
+<li>Dirty bits to transform a node or update its AABB only when needed</li>
+<li>There is now a centralized pool of render commands that serves multiple classes</li>
+<li>There are now OpenGL state classes to track the viewport and the clear color</li>
+<li>The <code>Rect</code> class has some new useful manipulation methods (also in the Lua API)</li>
+</ul>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+
+      
+      
+        
+        
+          
+          
+        
+        
+        
+        <script
+          type="text/javascript"
+          src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js"
+          integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="
+          data-oid="views_changelog/year_2022.md"
+          data-oid-likes="likes_changelog/year_2022.md"></script>
+      
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top"
+    title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      
+      
+      <nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400 overflow-x-auto py-2">
+        <ul class="flex list-none flex-row">
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 me-4">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="/feed.xml"
+                title="">
+                
+                  <span >
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 64C0 46.3 14.3 32 32 32c229.8 0 416 186.2 416 416c0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96C14.3 96 0 81.7 0 64zM128 416c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zM32 160c159.1 0 288 128.9 288 288c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg></span>
+                  </span>
+                
+                
+              </a>
+            </li>
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 me-4">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="https://github.com/nCine/nCine"
+                title="">
+                
+                  <span >
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span>
+                  </span>
+                
+                
+              </a>
+            </li>
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 me-4">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="https://x.com/nCine2D"
+                title="">
+                
+                  <span >
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</span>
+                  </span>
+                
+                
+              </a>
+            </li>
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 me-4">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="https://www.youtube.com/@nCine"
+                title="">
+                
+                  <span >
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+</span>
+                  </span>
+                
+                
+              </a>
+            </li>
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 me-4">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="https://discord.gg/495ab6Y"
+                title="">
+                
+                  <span >
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg>
+</span>
+                  </span>
+                
+                
+              </a>
+            </li>
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 me-4">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="https://itch.io/c/1488339/made-with-ncine"
+                title="">
+                
+                  <span >
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" height="235.452" width="261.728" viewBox="0 0 245.37069 220.73612"><path fill="currentColor" d="M31.99 1.365C21.287 7.72.2 31.945 0 38.298v10.516C0 62.144 12.46 73.86 23.773 73.86c13.584 0 24.902-11.258 24.903-24.62 0 13.362 10.93 24.62 24.515 24.62 13.586 0 24.165-11.258 24.165-24.62 0 13.362 11.622 24.62 25.207 24.62h.246c13.586 0 25.208-11.258 25.208-24.62 0 13.362 10.58 24.62 24.164 24.62 13.585 0 24.515-11.258 24.515-24.62 0 13.362 11.32 24.62 24.903 24.62 11.313 0 23.773-11.714 23.773-25.046V38.298c-.2-6.354-21.287-30.58-31.988-36.933C180.118.197 157.056-.005 122.685 0c-34.37.003-81.228.54-90.697 1.365zm65.194 66.217a28.025 28.025 0 0 1-4.78 6.155c-5.128 5.014-12.157 8.122-19.906 8.122a28.482 28.482 0 0 1-19.948-8.126c-1.858-1.82-3.27-3.766-4.563-6.032l-.006.004c-1.292 2.27-3.092 4.215-4.954 6.037a28.5 28.5 0 0 1-19.948 8.12c-.934 0-1.906-.258-2.692-.528-1.092 11.372-1.553 22.24-1.716 30.164l-.002.045c-.02 4.024-.04 7.333-.06 11.93.21 23.86-2.363 77.334 10.52 90.473 19.964 4.655 56.7 6.775 93.555 6.788h.006c36.854-.013 73.59-2.133 93.554-6.788 12.883-13.14 10.31-66.614 10.52-90.474-.022-4.596-.04-7.905-.06-11.93l-.003-.045c-.162-7.926-.623-18.793-1.715-30.165-.786.27-1.757.528-2.692.528a28.5 28.5 0 0 1-19.948-8.12c-1.862-1.822-3.662-3.766-4.955-6.037l-.006-.004c-1.294 2.266-2.705 4.213-4.563 6.032a28.48 28.48 0 0 1-19.947 8.125c-7.748 0-14.778-3.11-19.906-8.123a28.025 28.025 0 0 1-4.78-6.155 27.99 27.99 0 0 1-4.736 6.155 28.49 28.49 0 0 1-19.95 8.124c-.27 0-.54-.012-.81-.02h-.007c-.27.008-.54.02-.813.02a28.49 28.49 0 0 1-19.95-8.123 27.992 27.992 0 0 1-4.736-6.155zm-20.486 26.49l-.002.01h.015c8.113.017 15.32 0 24.25 9.746 7.028-.737 14.372-1.105 21.722-1.094h.006c7.35-.01 14.694.357 21.723 1.094 8.93-9.747 16.137-9.73 24.25-9.746h.014l-.002-.01c3.833 0 19.166 0 29.85 30.007L210 165.244c8.504 30.624-2.723 31.373-16.727 31.4-20.768-.773-32.267-15.855-32.267-30.935-11.496 1.884-24.907 2.826-38.318 2.827h-.006c-13.412 0-26.823-.943-38.318-2.827 0 15.08-11.5 30.162-32.267 30.935-14.004-.027-25.23-.775-16.726-31.4L46.85 124.08c10.684-30.007 26.017-30.007 29.85-30.007zm45.985 23.582v.006c-.02.02-21.863 20.08-25.79 27.215l14.304-.573v12.474c0 .584 5.74.346 11.486.08h.006c5.744.266 11.485.504 11.485-.08v-12.474l14.304.573c-3.928-7.135-25.79-27.215-25.79-27.215v-.006l-.003.002z"/></svg></span>
+                  </span>
+                
+                
+              </a>
+            </li>
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 me-4">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="/donate"
+                title="">
+                
+                  <span >
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg></span>
+                  </span>
+                
+                
+              </a>
+            </li>
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 me-4">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="/credits"
+                title="">
+                
+                  <span >
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+</span>
+                  </span>
+                
+                
+              </a>
+            </li>
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 me-4">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="/gpg"
+                title="">
+                
+                  <span >
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zm40-176c-22.1 0-40-17.9-40-40s17.9-40 40-40s40 17.9 40 40s-17.9 40-40 40z"/></svg></span>
+                  </span>
+                
+                
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"  target="_blank" rel="noreferrer">CC BY-NC-SA 4.0</a>
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js"
+    integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+    <script src="/js/artifact-download.js" defer></script>
+
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="https://ncine.github.io/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

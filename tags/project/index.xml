@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project on nCine</title>
+    <link>https://ncine.github.io/tags/project/</link>
+    <description>Recent content in Project on nCine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)</copyright>
+    <lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ncine.github.io/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Wet Paper</title>
+      <link>https://ncine.github.io/news/2025-06-30-wet-paper/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-06-30-wet-paper/</guid>
+      <description>&lt;p&gt;The complete &lt;a href=&#34;https://github.com/encelo/WetPaper&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;source code&lt;/a&gt; and &lt;a href=&#34;https://github.com/encelo/WetPaper-data&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;game data&lt;/a&gt; for &lt;a href=&#34;https://encelo.itch.io/wet-paper&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Wet Paper&lt;/a&gt; are now available on GitHub!&lt;/p&gt;&#xA;&lt;p&gt;You can also play it &lt;a href=&#34;https://ncine.github.io/wet_paper&#34; &gt;online&lt;/a&gt; and watch a video on the &lt;a href=&#34;https://ncine.github.io/videos&#34; &gt;Videos&lt;/a&gt; page.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine at the GGJ 2025</title>
+      <link>https://ncine.github.io/news/2025-01-27-ncine-global-game-jam-2025/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-01-27-ncine-global-game-jam-2025/</guid>
+      <description>&lt;p&gt;This past weekend me and &lt;a href=&#34;https://bsky.app/profile/cominu.bsky.social&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Cominu&lt;/a&gt; have participated to the Global Game Jam 2025 in &lt;a href=&#34;https://globalgamejam.granadajam.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Granada&lt;/a&gt;.&#xA;I was there as both a jammer and an official sponsor with the nCine! &amp;#x1f4aa;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Fireman game for GMTK 2023</title>
+      <link>https://ncine.github.io/news/2023-07-09-fireman-gmtk/</link>
+      <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2023-07-09-fireman-gmtk/</guid>
+      <description>&lt;p&gt;Made by &lt;a href=&#34;https://ana30.itch.io&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Ana30&lt;/a&gt; as a submission for the &lt;a href=&#34;https://itch.io/jam/gmtk-2023&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;GMTK Game Jam 2023&lt;/a&gt;, &lt;a href=&#34;https://ana30.itch.io/fireman&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Fireman&lt;/a&gt; is an nCine game where you play as the web browser.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Native version of Jazz² Resurrection</title>
+      <link>https://ncine.github.io/news/2022-07-15-jazz2-native-github/</link>
+      <pubDate>Fri, 15 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2022-07-15-jazz2-native-github/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://deat.tk/jazz2/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Jazz² Resurrection&lt;/a&gt; is reimplementation of Jazz Jackrabbit 2, a 1998 platform game by Epic Games (at the time called Epic MegaGames).&#xA;The author, &lt;a href=&#34;https://github.com/deathkiller&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;DeathKiller&lt;/a&gt;, used C# and parts of the Duality 2D framework to put together the project.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ncJump on the Steam Deck</title>
+      <link>https://ncine.github.io/news/2022-03-28-ncjump-on-steam-deck/</link>
+      <pubDate>Mon, 28 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2022-03-28-ncjump-on-steam-deck/</guid>
+      <description>&lt;p&gt;I have recorded a video of &lt;a href=&#34;https://github.com/Fahien/ncJump&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncJump&lt;/a&gt; running (and jumping &amp;#x1f609;) on the Steam Deck!&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;lazy&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/ZKdDtJiIUdo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;ncJump running on the Steam Deck&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SpookyGhost released on GitHub!</title>
+      <link>https://ncine.github.io/news/2021-05-23-spookyghost-foss/</link>
+      <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2021-05-23-spookyghost-foss/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.itch.io/spookyghost&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;SpookyGhost&lt;/a&gt;, the procedural sprite animation tool made with the nCine, has been released as FOSS.&lt;/p&gt;&#xA;&lt;p&gt;Not only it has now a MIT license but it has also been updated with many new features and bug fixes.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ncJump</title>
+      <link>https://ncine.github.io/news/2021-04-09-ncjump/</link>
+      <pubDate>Fri, 09 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2021-04-09-ncjump/</guid>
+      <description>&lt;p&gt;A new &lt;a href=&#34;https://github.com/Fahien/ncJump/releases/tag/2021.04&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;release&lt;/a&gt; of ncJump has been published today by &lt;a href=&#34;https://www.antoniocaggiano.eu/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Antonio &amp;ldquo;Fahien&amp;rdquo; Caggiano&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;ncJump is a platform game that uses Box2D for the physics, ImGui for the editor and of course the nCine.&#xA;It has been developed as an nCine reference version of the &lt;a href=&#34;https://cs50.harvard.edu/games/2018/weeks/4/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;CS50&amp;rsquo;s lecture 4&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ncTiledViewer</title>
+      <link>https://ncine.github.io/news/2021-01-25-nctiledviewer/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2021-01-25-nctiledviewer/</guid>
+      <description>&lt;p&gt;ncTiledViewer is a viewer for &lt;a href=&#34;https://www.mapeditor.org/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Tiled&lt;/a&gt; maps with an ImGui interface. It is able to parse TMX and TSX files using &lt;a href=&#34;https://pugixml.org/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;pugixml&lt;/a&gt; and then display the map using sprites.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>JugiMapGuiDemo</title>
+      <link>https://ncine.github.io/news/2020-11-24-jugimap-guidemo/</link>
+      <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-11-24-jugimap-guidemo/</guid>
+      <description>&lt;p&gt;There is a new &lt;a href=&#34;https://github.com/Jugilus/JugiMapFramework&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;JugiMap Framework&lt;/a&gt; demo published by &lt;a href=&#34;https://github.com/Jugilus/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Jugilus&lt;/a&gt; that shows the new GUI system.&lt;/p&gt;&#xA;&lt;p&gt;On GitHub you will find the &lt;a href=&#34;https://github.com/nCine/ncJugiMapGuiDemo&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncJugiMapGuiDemo&lt;/a&gt; and the &lt;a href=&#34;https://github.com/nCine/ncJugiMapGuiDemo-data&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncJugiMapGuiDemo-data&lt;/a&gt; repositories for you to build the test.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ncTracer</title>
+      <link>https://ncine.github.io/news/2020-10-12-nctracer/</link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-10-12-nctracer/</guid>
+      <description>&lt;p&gt;Today I decided to publish &lt;a href=&#34;https://github.com/encelo/pmTracer&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;pmTracer&lt;/a&gt; and &lt;a href=&#34;https://github.com/encelo/ncTracer&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncTracer&lt;/a&gt; on my personal GitHub space.&#xA;You will also find online the &lt;a href=&#34;https://github.com/encelo/ncTracer-data&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncTracer-data&lt;/a&gt; and the &lt;a href=&#34;https://github.com/encelo/ncTracer-artifacts&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncTracer-artifacts&lt;/a&gt; repositories.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>JugiMapSpriteTimelineAnimation demo</title>
+      <link>https://ncine.github.io/news/2020-06-27-jugimap-spritetimelineanimation/</link>
+      <pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-06-27-jugimap-spritetimelineanimation/</guid>
+      <description>&lt;p&gt;The third &lt;a href=&#34;https://github.com/Jugilus/JugiMapFramework&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;JugiMap Framework&lt;/a&gt; demo by &lt;a href=&#34;https://github.com/Jugilus/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Jugilus&lt;/a&gt; that shows how to animate sprites with the new timeline feature has been published on GitHub.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>JugiMapParallaxScrolling demo</title>
+      <link>https://ncine.github.io/news/2020-03-30-jugimap-parallaxscrolling/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-03-30-jugimap-parallaxscrolling/</guid>
+      <description>&lt;p&gt;There is a new &lt;a href=&#34;https://github.com/Jugilus/JugiMapFramework&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;JugiMap Framework&lt;/a&gt; demo published by &lt;a href=&#34;https://github.com/Jugilus/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Jugilus&lt;/a&gt; that shows how to render a beautiful parallax scrolling landscape.&lt;/p&gt;&#xA;&lt;p&gt;On GitHub you will find the &lt;a href=&#34;https://github.com/nCine/ncJugiMapParallaxScrolling&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncJugiMapParallaxScrolling&lt;/a&gt; and the &lt;a href=&#34;https://github.com/nCine/ncJugiMapParallaxScrolling-data&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncJugiMapParallaxScrolling-data&lt;/a&gt; repositories for you to build the test.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SpookyGhost available on itch.io</title>
+      <link>https://ncine.github.io/news/2020-01-30-spookyghost/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-01-30-spookyghost/</guid>
+      <description>&lt;p&gt;An initial demo of &lt;a href=&#34;https://encelo.itch.io/spookyghost&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;SpookyGhost&lt;/a&gt; has been published on itch.io.&lt;/p&gt;&#xA;&lt;p&gt;SpookyGhost is a procedural sprite animation tool made with the nCine.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>JugiMap supports the nCine!</title>
+      <link>https://ncine.github.io/news/2019-12-17-jugimap/</link>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-12-17-jugimap/</guid>
+      <description>&lt;p&gt;A new version of the &lt;a href=&#34;http://jugimap.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;JugiMap&lt;/a&gt; map editor tool has been released and it now officially supports the nCine!&#xA;You can use the &lt;a href=&#34;https://github.com/Jugilus/JugiMapFramework&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;JugiMap Framework&lt;/a&gt; to load a map created with the tool.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ncline</title>
+      <link>https://ncine.github.io/news/2019-09-17-ncline/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-09-17-ncline/</guid>
+      <description>&lt;p&gt;ncline is a tool to automate the download, configuration and compilation processes for the engine and its accompanying projects.&#xA;It has been uploaded on GitHub where you will find the &lt;a href=&#34;https://github.com/nCine/ncline&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncline&lt;/a&gt; and the &lt;a href=&#34;https://github.com/nCine/ncline-artifacts&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncline-artifacts&lt;/a&gt; repositories.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ncTemplate</title>
+      <link>https://ncine.github.io/news/2019-07-29-template-project/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-07-29-template-project/</guid>
+      <description>&lt;p&gt;If you go on GitHub today you will find the &lt;a href=&#34;https://github.com/nCine/ncTemplate&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncTemplate&lt;/a&gt; and &lt;a href=&#34;https://github.com/nCine/ncTemplate-data&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncTemplate-data&lt;/a&gt; repositories.&lt;/p&gt;&#xA;&lt;p&gt;You can use them as a starting point for your nCine projects.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ncInvaders</title>
+      <link>https://ncine.github.io/news/2019-07-25-ncinvaders/</link>
+      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-07-25-ncinvaders/</guid>
+      <description>&lt;p&gt;ncInvaders, a simplified version of Space Invaders made with the nCine, has been uploaded on GitHub.&#xA;You will find the usual &lt;a href=&#34;https://github.com/nCine/ncInvaders&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncInvaders&lt;/a&gt;, &lt;a href=&#34;https://github.com/nCine/ncInvaders-data&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncInvaders-data&lt;/a&gt; and &lt;a href=&#34;https://github.com/nCine/ncInvaders-artifacts&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncInvaders-artifacts&lt;/a&gt; repositories online.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

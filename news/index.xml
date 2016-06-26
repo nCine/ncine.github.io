@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on nCine</title>
+    <link>https://ncine.github.io/news/</link>
+    <description>Recent content in News on nCine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)</copyright>
+    <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ncine.github.io/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Signed Commits</title>
+      <link>https://ncine.github.io/news/2025-11-05-signed-commits/</link>
+      <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-11-05-signed-commits/</guid>
+      <description>&lt;p&gt;Starting today, all nCine-related repositories will feature &lt;a href=&#34;https://docs.github.com/en/authentication/managing-commit-signature-verification&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;verified commits&lt;/a&gt; on GitHub.&lt;/p&gt;&#xA;&lt;p&gt;This allows anyone to confirm that changes to the codebase are authentic and originate from the &lt;a href=&#34;https://encelo.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;project maintainer&lt;/a&gt;.&#xA;The signing key is published on the site and can be found at the following page: &lt;a href=&#34;https://ncine.github.io/gpg/&#34; &gt;GnuPG Public Key&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>A New Site</title>
+      <link>https://ncine.github.io/news/2025-09-28-new-site/</link>
+      <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-09-28-new-site/</guid>
+      <description>&lt;p&gt;After many years with &lt;a href=&#34;https://jekyllrb.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Jekyll&lt;/a&gt; and the &lt;a href=&#34;https://beautifuljekyll.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Beautiful Jekyll&lt;/a&gt; theme by &lt;a href=&#34;https://attalitech.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Dean Attali&lt;/a&gt;, the nCine official site gets a revamp thanks to &lt;a href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Hugo&lt;/a&gt; and powered by the &lt;a href=&#34;https://blowfish.page/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Blowfish&lt;/a&gt; theme by &lt;a href=&#34;https://n9o.xyz/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Nuno Coração&lt;/a&gt;. &amp;#x1f680;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Compilation Benchmark 3</title>
+      <link>https://ncine.github.io/news/2025-09-22-ncine-compilation-benchmark-3/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-09-22-ncine-compilation-benchmark-3/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2025-09-22-ncine-compilation-benchmark-3/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2025-09-22-ncine-compilation-benchmark-3/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 22</title>
+      <link>https://ncine.github.io/news/2025-09-21-ncine-dev-update-22/</link>
+      <pubDate>Sun, 21 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-09-21-ncine-dev-update-22/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2025-09-21-ncine-dev-update-22/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2025-09-21-ncine-dev-update-22/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Wet Paper</title>
+      <link>https://ncine.github.io/news/2025-06-30-wet-paper/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-06-30-wet-paper/</guid>
+      <description>&lt;p&gt;The complete &lt;a href=&#34;https://github.com/encelo/WetPaper&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;source code&lt;/a&gt; and &lt;a href=&#34;https://github.com/encelo/WetPaper-data&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;game data&lt;/a&gt; for &lt;a href=&#34;https://encelo.itch.io/wet-paper&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Wet Paper&lt;/a&gt; are now available on GitHub!&lt;/p&gt;&#xA;&lt;p&gt;You can also play it &lt;a href=&#34;https://ncine.github.io/wet_paper&#34; &gt;online&lt;/a&gt; and watch a video on the &lt;a href=&#34;https://ncine.github.io/videos&#34; &gt;Videos&lt;/a&gt; page.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Presented at /dev/games</title>
+      <link>https://ncine.github.io/news/2025-06-05-dev-games-2025/</link>
+      <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-06-05-dev-games-2025/</guid>
+      <description>&lt;p&gt;On June 5th I attended &lt;a href=&#34;https://devgames.org&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;/dev/games&lt;/a&gt;, a two-day game development conference held in Rome.&lt;/p&gt;&#xA;&lt;p&gt;I gave a talk about my 14-year journey developing nCine, sharing both challenges and achievements, and diving into a selection of technical details.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Video from /dev/games</title>
+      <link>https://ncine.github.io/news/2025-11-19-dev-games-2025-video/</link>
+      <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-11-19-dev-games-2025-video/</guid>
+      <description>&lt;p&gt;On June 5th I attended &lt;a href=&#34;https://devgames.org&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;/dev/games&lt;/a&gt;, a two-day game development conference held in Rome.&lt;/p&gt;&#xA;&lt;p&gt;Now, after five months, the recording of the talk about my 14-year journey developing nCine, has been published on YouTube on the official conference &lt;a href=&#34;https://www.youtube.com/@devgamesconf&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;channel&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Getting Started with CLion</title>
+      <link>https://ncine.github.io/news/2025-05-11-getting-started-clion/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-05-11-getting-started-clion/</guid>
+      <description>&lt;p&gt;It has been only a bunch of days since JetBrains &lt;a href=&#34;https://blog.jetbrains.com/clion/2025/05/clion-is-now-free-for-non-commercial-use/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;announced&lt;/a&gt; that its C++ IDE is now free for non-commercial use.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine at the GGJ 2025</title>
+      <link>https://ncine.github.io/news/2025-01-27-ncine-global-game-jam-2025/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-01-27-ncine-global-game-jam-2025/</guid>
+      <description>&lt;p&gt;This past weekend me and &lt;a href=&#34;https://bsky.app/profile/cominu.bsky.social&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Cominu&lt;/a&gt; have participated to the Global Game Jam 2025 in &lt;a href=&#34;https://globalgamejam.granadajam.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Granada&lt;/a&gt;.&#xA;I was there as both a jammer and an official sponsor with the nCine! &amp;#x1f4aa;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 21</title>
+      <link>https://ncine.github.io/news/2025-01-14-ncine-dev-update-21/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-01-14-ncine-dev-update-21/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2025-01-14-ncine-dev-update-21/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2025-01-14-ncine-dev-update-21/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>LDoc Lua API documentation</title>
+      <link>https://ncine.github.io/news/2024-12-18-ldoc-lua-documentation/</link>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2024-12-18-ldoc-lua-documentation/</guid>
+      <description>&lt;p&gt;The Lua development experience is getting even better!&lt;/p&gt;&#xA;&lt;p&gt;The documentation already available through the &lt;a href=&#34;https://luals.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Lua Language Server&lt;/a&gt; is now available &lt;a href=&#34;https://ncine.github.io/docs/lua_master&#34; &gt;online&lt;/a&gt;, thanks to &lt;a href=&#34;https://lunarmodules.github.io/ldoc/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;LDoc&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Lua Language Server support</title>
+      <link>https://ncine.github.io/news/2024-12-04-lua-language-server/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2024-12-04-lua-language-server/</guid>
+      <description>&lt;p&gt;Today you can find the nCine among the &lt;a href=&#34;https://luals.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Lua Language Server&lt;/a&gt; official &lt;a href=&#34;https://github.com/LuaLS/LLS-Addons/tree/main/addons/ncine&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;addons&lt;/a&gt;!&lt;/p&gt;&#xA;&lt;p&gt;If you are using Visual Studio Code, autocomplete, type checking, and full API documentation are only one click away.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine article in SUGO</title>
+      <link>https://ncine.github.io/news/2024-10-19-sugo-magazine/</link>
+      <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2024-10-19-sugo-magazine/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://sugo.gameloop.it/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;SUGO&lt;/a&gt; is a new Italian magazine about indie game development in Italy, with a nice impagination derived from traditional medias and distributed as a PDF.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>One thousand stars!</title>
+      <link>https://ncine.github.io/news/2024-06-27-one-thousand-stars/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2024-06-27-one-thousand-stars/</guid>
+      <description>&lt;p&gt;After thirteen years of development and five years on GitHub, the nCine has surpassed one thousand &lt;a href=&#34;https://github.com/nCine/nCine/stargazers&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;stars&lt;/a&gt;! &amp;#x2b50;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;One thousand stars!&#34;&#xA;    src=&#34;https://ncine.github.io/img/posts/one_thousand_stars.png&#34;&#xA;    &gt;&lt;figcaption&gt;One thousand stars!&lt;/figcaption&gt;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Getting started guide</title>
+      <link>https://ncine.github.io/news/2024-03-22-getting-started-guide/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2024-03-22-getting-started-guide/</guid>
+      <description>&lt;p&gt;There is a new &lt;a href=&#34;https://github.com/nCine/nCine/wiki/Getting-Started&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Getting Started&lt;/a&gt; guide in the project wiki.&#xA;It comes with many screenshots, covers both Lua and C++, and it should be easy to follow.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Custom engines presentation</title>
+      <link>https://ncine.github.io/news/2024-03-06-custom-engines-presentation/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2024-03-06-custom-engines-presentation/</guid>
+      <description>&lt;p&gt;Today I gave a presentation for &lt;a href=&#34;https://twitter.com/GRinteractiva&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;GRInteractiva&lt;/a&gt; about in-house custom engines: why they are so important, what are some indie games based on custom technology and, of course, a small overview of the nCine.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 20</title>
+      <link>https://ncine.github.io/news/2023-12-12-ncine-dev-update-20/</link>
+      <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2023-12-12-ncine-dev-update-20/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2023-12-12-ncine-dev-update-20/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2023-12-12-ncine-dev-update-20/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Fireman game for GMTK 2023</title>
+      <link>https://ncine.github.io/news/2023-07-09-fireman-gmtk/</link>
+      <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2023-07-09-fireman-gmtk/</guid>
+      <description>&lt;p&gt;Made by &lt;a href=&#34;https://ana30.itch.io&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Ana30&lt;/a&gt; as a submission for the &lt;a href=&#34;https://itch.io/jam/gmtk-2023&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;GMTK Game Jam 2023&lt;/a&gt;, &lt;a href=&#34;https://ana30.itch.io/fireman&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Fireman&lt;/a&gt; is an nCine game where you play as the web browser.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Compilation Benchmark 2</title>
+      <link>https://ncine.github.io/news/2022-10-06-ncine-compilation-benchmark-2/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2022-10-06-ncine-compilation-benchmark-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2022-10-06-ncine-compilation-benchmark-2/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2022-10-06-ncine-compilation-benchmark-2/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 19</title>
+      <link>https://ncine.github.io/news/2022-09-07-ncine-dev-update-19/</link>
+      <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2022-09-07-ncine-dev-update-19/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2022-09-07-ncine-dev-update-19/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2022-09-07-ncine-dev-update-19/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Native version of Jazz² Resurrection</title>
+      <link>https://ncine.github.io/news/2022-07-15-jazz2-native-github/</link>
+      <pubDate>Fri, 15 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2022-07-15-jazz2-native-github/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://deat.tk/jazz2/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Jazz² Resurrection&lt;/a&gt; is reimplementation of Jazz Jackrabbit 2, a 1998 platform game by Epic Games (at the time called Epic MegaGames).&#xA;The author, &lt;a href=&#34;https://github.com/deathkiller&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;DeathKiller&lt;/a&gt;, used C# and parts of the Duality 2D framework to put together the project.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ncJump on the Steam Deck</title>
+      <link>https://ncine.github.io/news/2022-03-28-ncjump-on-steam-deck/</link>
+      <pubDate>Mon, 28 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2022-03-28-ncjump-on-steam-deck/</guid>
+      <description>&lt;p&gt;I have recorded a video of &lt;a href=&#34;https://github.com/Fahien/ncJump&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncJump&lt;/a&gt; running (and jumping &amp;#x1f609;) on the Steam Deck!&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;lazy&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/ZKdDtJiIUdo?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;ncJump running on the Steam Deck&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 18</title>
+      <link>https://ncine.github.io/news/2022-01-30-ncine-dev-update-18/</link>
+      <pubDate>Sun, 30 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2022-01-30-ncine-dev-update-18/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2022-01-30-ncine-dev-update-18/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2022-01-30-ncine-dev-update-18/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine used at university</title>
+      <link>https://ncine.github.io/news/2021-10-11-artificial-intelligence-course/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2021-10-11-artificial-intelligence-course/</guid>
+      <description>&lt;p&gt;The nCine has been recommended as the framework to be used by students for the second lesson homerwork of the &lt;a href=&#34;https://gamedev.cuni.cz/study/courses-history/courses-2021-2022/artificial-intelligence-for-computer-games-winter-2021-22/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Artificial Intelligence for Computer Games&lt;/a&gt; course at the prestigious Charles University in Prague.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>The Runtime Podcast</title>
+      <link>https://ncine.github.io/news/2021-07-23-runtime-podcast/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2021-07-23-runtime-podcast/</guid>
+      <description>&lt;p&gt;The nCine and its ten years of development are the main focus of the &lt;a href=&#34;https://runtimepodcast.com/#5&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;fifth episode&lt;/a&gt; of &lt;em&gt;The Runtime&lt;/em&gt;, a podcast about software development.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 17</title>
+      <link>https://ncine.github.io/news/2021-06-28-ncine-dev-update-17/</link>
+      <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2021-06-28-ncine-dev-update-17/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2021-06-28-ncine-dev-update-17/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2021-06-28-ncine-dev-update-17/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Ten years of nCine</title>
+      <link>https://ncine.github.io/news/2021-06-21-ten-years-retrospective/</link>
+      <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2021-06-21-ten-years-retrospective/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2021-06-21-ten-years-ncine/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2021-06-21-ten-years-ncine/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Ten years anniversary</title>
+      <link>https://ncine.github.io/news/2021-06-19-ten-years/</link>
+      <pubDate>Sat, 19 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2021-06-19-ten-years/</guid>
+      <description>&lt;p&gt;Today marks the tenth anniversary since the first &lt;a href=&#34;https://github.com/nCine/nCine/commit/6bf318de68ed5c453eaacd867c8e83c853f64edc&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;commit&lt;/a&gt; in 2011!&lt;/p&gt;&#xA;&lt;p&gt;Happy birthday to the nCine! &amp;#x1f37e;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SpookyGhost released on GitHub!</title>
+      <link>https://ncine.github.io/news/2021-05-23-spookyghost-foss/</link>
+      <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2021-05-23-spookyghost-foss/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.itch.io/spookyghost&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;SpookyGhost&lt;/a&gt;, the procedural sprite animation tool made with the nCine, has been released as FOSS.&lt;/p&gt;&#xA;&lt;p&gt;Not only it has now a MIT license but it has also been updated with many new features and bug fixes.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ncJump</title>
+      <link>https://ncine.github.io/news/2021-04-09-ncjump/</link>
+      <pubDate>Fri, 09 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2021-04-09-ncjump/</guid>
+      <description>&lt;p&gt;A new &lt;a href=&#34;https://github.com/Fahien/ncJump/releases/tag/2021.04&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;release&lt;/a&gt; of ncJump has been published today by &lt;a href=&#34;https://www.antoniocaggiano.eu/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Antonio &amp;ldquo;Fahien&amp;rdquo; Caggiano&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;ncJump is a platform game that uses Box2D for the physics, ImGui for the editor and of course the nCine.&#xA;It has been developed as an nCine reference version of the &lt;a href=&#34;https://cs50.harvard.edu/games/2018/weeks/4/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;CS50&amp;rsquo;s lecture 4&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ncTiledViewer</title>
+      <link>https://ncine.github.io/news/2021-01-25-nctiledviewer/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2021-01-25-nctiledviewer/</guid>
+      <description>&lt;p&gt;ncTiledViewer is a viewer for &lt;a href=&#34;https://www.mapeditor.org/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Tiled&lt;/a&gt; maps with an ImGui interface. It is able to parse TMX and TSX files using &lt;a href=&#34;https://pugixml.org/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;pugixml&lt;/a&gt; and then display the map using sprites.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Icculus Microgrant 2020</title>
+      <link>https://ncine.github.io/news/2021-01-08-icculus-microgrant/</link>
+      <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2021-01-08-icculus-microgrant/</guid>
+      <description>&lt;p&gt;The new year brings great news: the nCine has been &lt;a href=&#34;https://icculus.org/microgrant2020/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;awarded&lt;/a&gt; one of the $250 microgrants from &lt;a href=&#34;https://twitter.com/icculus&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;icculus&lt;/a&gt;!&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;icculus sponsor&#34;&#xA;    src=&#34;https://ncine.github.io/img/posts/icculus_sponsor.png&#34;&#xA;    &gt;&lt;figcaption&gt;icculus sponsor&lt;/figcaption&gt;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 16</title>
+      <link>https://ncine.github.io/news/2020-11-28-ncine-dev-update-16/</link>
+      <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-11-28-ncine-dev-update-16/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2020-11-28-ncine-dev-update-16/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2020-11-28-ncine-dev-update-16/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>JugiMapGuiDemo</title>
+      <link>https://ncine.github.io/news/2020-11-24-jugimap-guidemo/</link>
+      <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-11-24-jugimap-guidemo/</guid>
+      <description>&lt;p&gt;There is a new &lt;a href=&#34;https://github.com/Jugilus/JugiMapFramework&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;JugiMap Framework&lt;/a&gt; demo published by &lt;a href=&#34;https://github.com/Jugilus/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Jugilus&lt;/a&gt; that shows the new GUI system.&lt;/p&gt;&#xA;&lt;p&gt;On GitHub you will find the &lt;a href=&#34;https://github.com/nCine/ncJugiMapGuiDemo&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncJugiMapGuiDemo&lt;/a&gt; and the &lt;a href=&#34;https://github.com/nCine/ncJugiMapGuiDemo-data&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncJugiMapGuiDemo-data&lt;/a&gt; repositories for you to build the test.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>C.I. migrated to GitHub Actions</title>
+      <link>https://ncine.github.io/news/2020-11-04-github-actions/</link>
+      <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-11-04-github-actions/</guid>
+      <description>&lt;p&gt;All nCine projects are now continuously integrated using &lt;a href=&#34;https://github.com/features/actions&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;GitHub Actions&lt;/a&gt; workflows.&#xA;The old &lt;a href=&#34;https://dev.azure.com/encelo/nCine/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Azure Pipelines&lt;/a&gt; setup has been disabled and it will not be used anymore.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ncTracer</title>
+      <link>https://ncine.github.io/news/2020-10-12-nctracer/</link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-10-12-nctracer/</guid>
+      <description>&lt;p&gt;Today I decided to publish &lt;a href=&#34;https://github.com/encelo/pmTracer&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;pmTracer&lt;/a&gt; and &lt;a href=&#34;https://github.com/encelo/ncTracer&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncTracer&lt;/a&gt; on my personal GitHub space.&#xA;You will also find online the &lt;a href=&#34;https://github.com/encelo/ncTracer-data&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncTracer-data&lt;/a&gt; and the &lt;a href=&#34;https://github.com/encelo/ncTracer-artifacts&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncTracer-artifacts&lt;/a&gt; repositories.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 15</title>
+      <link>https://ncine.github.io/news/2020-07-14-ncine-dev-update-15/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-07-14-ncine-dev-update-15/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2020-07-14-ncine-dev-update-15/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2020-07-14-ncine-dev-update-15/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>JugiMapSpriteTimelineAnimation demo</title>
+      <link>https://ncine.github.io/news/2020-06-27-jugimap-spritetimelineanimation/</link>
+      <pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-06-27-jugimap-spritetimelineanimation/</guid>
+      <description>&lt;p&gt;The third &lt;a href=&#34;https://github.com/Jugilus/JugiMapFramework&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;JugiMap Framework&lt;/a&gt; demo by &lt;a href=&#34;https://github.com/Jugilus/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Jugilus&lt;/a&gt; that shows how to animate sprites with the new timeline feature has been published on GitHub.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Release 2020.05</title>
+      <link>https://ncine.github.io/news/2020-05-19-release-202005/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-05-19-release-202005/</guid>
+      <description>&lt;p&gt;A new release has been just finalised: &lt;a href=&#34;https://github.com/nCine/nCine/releases/tag/2020.05&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;nCine 2020.05&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Some of its highlights are covered by the following video:&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;lazy&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/uSysGQPMZ4U?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;nCine Release 2020.05&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;p&gt;Most notable entries from the &lt;a href=&#34;https://ncine.github.io/reveal.js/nCine_release_2020-05.html&#34; &gt;slides&lt;/a&gt;:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>JugiMapParallaxScrolling demo</title>
+      <link>https://ncine.github.io/news/2020-03-30-jugimap-parallaxscrolling/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-03-30-jugimap-parallaxscrolling/</guid>
+      <description>&lt;p&gt;There is a new &lt;a href=&#34;https://github.com/Jugilus/JugiMapFramework&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;JugiMap Framework&lt;/a&gt; demo published by &lt;a href=&#34;https://github.com/Jugilus/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Jugilus&lt;/a&gt; that shows how to render a beautiful parallax scrolling landscape.&lt;/p&gt;&#xA;&lt;p&gt;On GitHub you will find the &lt;a href=&#34;https://github.com/nCine/ncJugiMapParallaxScrolling&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncJugiMapParallaxScrolling&lt;/a&gt; and the &lt;a href=&#34;https://github.com/nCine/ncJugiMapParallaxScrolling-data&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncJugiMapParallaxScrolling-data&lt;/a&gt; repositories for you to build the test.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Intel Mesa 20 Driver Benchmark</title>
+      <link>https://ncine.github.io/news/2020-03-30-ncine-i965-vs-iris-benchmark/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-03-30-ncine-i965-vs-iris-benchmark/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2020-03-30-2020-03-30-ncine-i965-vs-iris-benchmark/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2020-03-30-2020-03-30-ncine-i965-vs-iris-benchmark/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 14</title>
+      <link>https://ncine.github.io/news/2020-03-23-ncine-dev-update-14/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-03-23-ncine-dev-update-14/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2020-03-23-ncine-dev-update-14/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2020-03-23-ncine-dev-update-14/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine as a custom Qt5 widget</title>
+      <link>https://ncine.github.io/news/2020-02-20-qt5-backend/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-02-20-qt5-backend/</guid>
+      <description>&lt;p&gt;It is now possible to use &lt;a href=&#34;https://www.qt.io/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Qt5&lt;/a&gt; as an input and window management backend on desktop platforms.&lt;/p&gt;&#xA;&lt;p&gt;The engine will render inside a custom &lt;code&gt;QOpenGLWidget&lt;/code&gt; and receive all input events from Qt5.&#xA;if &lt;a href=&#34;https://doc.qt.io/qt-5/qtgamepad-index.html&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Qt Gamepad&lt;/a&gt; is available gamepad events will be received as well.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SpookyGhost available on itch.io</title>
+      <link>https://ncine.github.io/news/2020-01-30-spookyghost/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2020-01-30-spookyghost/</guid>
+      <description>&lt;p&gt;An initial demo of &lt;a href=&#34;https://encelo.itch.io/spookyghost&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;SpookyGhost&lt;/a&gt; has been published on itch.io.&lt;/p&gt;&#xA;&lt;p&gt;SpookyGhost is a procedural sprite animation tool made with the nCine.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 13</title>
+      <link>https://ncine.github.io/news/2019-12-24-ncine-dev-update-13/</link>
+      <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-12-24-ncine-dev-update-13/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2019-12-24-ncine-dev-update-13/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2019-12-24-ncine-dev-update-13/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>JugiMap supports the nCine!</title>
+      <link>https://ncine.github.io/news/2019-12-17-jugimap/</link>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-12-17-jugimap/</guid>
+      <description>&lt;p&gt;A new version of the &lt;a href=&#34;http://jugimap.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;JugiMap&lt;/a&gt; map editor tool has been released and it now officially supports the nCine!&#xA;You can use the &lt;a href=&#34;https://github.com/Jugilus/JugiMapFramework&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;JugiMap Framework&lt;/a&gt; to load a map created with the tool.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Release 2019.10</title>
+      <link>https://ncine.github.io/news/2019-10-21-release-201910/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-10-21-release-201910/</guid>
+      <description>&lt;p&gt;The culmination of five months of work is finally here: &lt;a href=&#34;https://github.com/nCine/nCine/releases/tag/2019.10&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;nCine 2019.10&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Some of the highlights for this release are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://emscripten.org/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Emscripten&lt;/a&gt; is supported as target platform: you can use the nCine for web games! &amp;#x1f578;&amp;#xfe0f;&lt;/li&gt;&#xA;&lt;li&gt;New AngelCode&amp;rsquo;s &lt;a href=&#34;http://www.angelcode.com/products/bmfont/doc/file_format.html&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;FNT&lt;/a&gt; format parser&lt;/li&gt;&#xA;&lt;li&gt;When you compile the engine you can choose to disable the support for various dependency libraries and features&lt;/li&gt;&#xA;&lt;li&gt;The user can now query the available fullscreen video modes on PC and choose one&lt;/li&gt;&#xA;&lt;li&gt;Fixes and enhancements to OpenAL implementation&lt;/li&gt;&#xA;&lt;li&gt;It is possible to defer shader checks and queries for a decreased starting time&lt;/li&gt;&#xA;&lt;li&gt;Refactoring of the clock and timestamp classes&lt;/li&gt;&#xA;&lt;li&gt;Update of Tracy integration to &lt;a href=&#34;https://bitbucket.org/wolfpld/tracy/src/v0.5/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;v0.5&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Update of ImGui integration to &lt;a href=&#34;https://github.com/ocornut/imgui/releases/tag/v1.73&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;v1.73&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;During the same time there has been a lot of work in side projects with the addition of:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Video Tutorials</title>
+      <link>https://ncine.github.io/news/2019-10-20-video-tutorials/</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-10-20-video-tutorials/</guid>
+      <description>&lt;p&gt;There is a new &lt;a href=&#34;https://ncine.github.io/video-tutorials&#34; &gt;Video Tutorials&lt;/a&gt; page in the &lt;em&gt;Learn&lt;/em&gt; section.&#xA;It contains a list of tutorials videos from the nCine &lt;a href=&#34;https://www.youtube.com/channel/UCpSq3HhW55r8pCY7vqXEsoA&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;channel&lt;/a&gt; on YouTube.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 12</title>
+      <link>https://ncine.github.io/news/2019-09-21-ncine-dev-update-12/</link>
+      <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-09-21-ncine-dev-update-12/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2019-09-21-ncine-dev-update-12/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2019-09-21-ncine-dev-update-12/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ncline</title>
+      <link>https://ncine.github.io/news/2019-09-17-ncline/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-09-17-ncline/</guid>
+      <description>&lt;p&gt;ncline is a tool to automate the download, configuration and compilation processes for the engine and its accompanying projects.&#xA;It has been uploaded on GitHub where you will find the &lt;a href=&#34;https://github.com/nCine/ncline&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncline&lt;/a&gt; and the &lt;a href=&#34;https://github.com/nCine/ncline-artifacts&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncline-artifacts&lt;/a&gt; repositories.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ncTemplate</title>
+      <link>https://ncine.github.io/news/2019-07-29-template-project/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-07-29-template-project/</guid>
+      <description>&lt;p&gt;If you go on GitHub today you will find the &lt;a href=&#34;https://github.com/nCine/ncTemplate&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncTemplate&lt;/a&gt; and &lt;a href=&#34;https://github.com/nCine/ncTemplate-data&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncTemplate-data&lt;/a&gt; repositories.&lt;/p&gt;&#xA;&lt;p&gt;You can use them as a starting point for your nCine projects.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ncInvaders</title>
+      <link>https://ncine.github.io/news/2019-07-25-ncinvaders/</link>
+      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-07-25-ncinvaders/</guid>
+      <description>&lt;p&gt;ncInvaders, a simplified version of Space Invaders made with the nCine, has been uploaded on GitHub.&#xA;You will find the usual &lt;a href=&#34;https://github.com/nCine/ncInvaders&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncInvaders&lt;/a&gt;, &lt;a href=&#34;https://github.com/nCine/ncInvaders-data&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncInvaders-data&lt;/a&gt; and &lt;a href=&#34;https://github.com/nCine/ncInvaders-artifacts&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ncInvaders-artifacts&lt;/a&gt; repositories online.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 11</title>
+      <link>https://ncine.github.io/news/2019-07-16-ncine-dev-update-11/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-07-16-ncine-dev-update-11/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2019-07-16-ncine-dev-update-11/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2019-07-16-ncine-dev-update-11/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Emscripten port</title>
+      <link>https://ncine.github.io/news/2019-07-14-emscripten/</link>
+      <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-07-14-emscripten/</guid>
+      <description>&lt;p&gt;A new and exciting platform has been added to the nCine already long list: &lt;a href=&#34;https://emscripten.org/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Emscripten&lt;/a&gt;.&#xA;It means that you can now easily port your games and tools to the web!&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 10</title>
+      <link>https://ncine.github.io/news/2019-07-03-ncine-dev-update-10/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-07-03-ncine-dev-update-10/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2019-07-03-ncine-dev-update-10/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2019-07-03-ncine-dev-update-10/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Eight years in the works</title>
+      <link>https://ncine.github.io/news/2019-06-19-eight-years/</link>
+      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-06-19-eight-years/</guid>
+      <description>&lt;p&gt;This is not the first anniversary post on the site, but there is an interesting difference this year.&lt;/p&gt;&#xA;&lt;p&gt;Now that the source code have been released you can have a look at that very first &lt;a href=&#34;https://github.com/nCine/nCine/commit/6bf318de68ed5c453eaacd867c8e83c853f64edc&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;commit&lt;/a&gt; from eight years ago!&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Article on GameFromScratch</title>
+      <link>https://ncine.github.io/news/2019-06-17-game-from-scratch/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-06-17-game-from-scratch/</guid>
+      <description>&lt;p&gt;Today &lt;a href=&#34;https://www.gamefromscratch.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;GameFromScratch&lt;/a&gt; has talked about the nCine!&lt;/p&gt;&#xA;&lt;p&gt;With an &lt;a href=&#34;https://www.gamefromscratch.com/post/2019/06/17/nCine-2D-Open-Source-Game-Engine.aspx&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;article&lt;/a&gt; on the site, a &lt;a href=&#34;https://twitter.com/gamefromscratch/status/1140649100867751936&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;tweet&lt;/a&gt; (actually &lt;a href=&#34;https://twitter.com/gamefromscratch/status/1140649916609568769&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;two&lt;/a&gt; &amp;#x1f604;) and a ten minutes overview &lt;a href=&#34;https://www.youtube.com/watch?v=RdwuMKq2BmU&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;video&lt;/a&gt; on YouTube.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Article on Phoronix</title>
+      <link>https://ncine.github.io/news/2019-06-01-phoronix/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-06-01-phoronix/</guid>
+      <description>&lt;p&gt;It is an honor for the nCine to appear in an &lt;a href=&#34;https://www.phoronix.com/scan.php?page=news_item&amp;amp;px=nCine-Game-Engine&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;article&lt;/a&gt; on &lt;a href=&#34;https://www.phoronix.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Phoronix&lt;/a&gt; today!&lt;/p&gt;&#xA;&lt;p&gt;Many thanks to &lt;a href=&#34;https://michaellarabel.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Michael Larabel&lt;/a&gt; for the very first press coverage about the project.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Source code released</title>
+      <link>https://ncine.github.io/news/2019-05-30-source-released/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-05-30-source-released/</guid>
+      <description>&lt;p&gt;The time has come, the source code has been released!&#xA;Go on GitHub and take a look at the &lt;a href=&#34;https://github.com/nCine&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;nCine organization&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 9</title>
+      <link>https://ncine.github.io/news/2019-05-14-ncine-dev-update-9/</link>
+      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-05-14-ncine-dev-update-9/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2019-05-14-ncine-dev-update-9/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2019-05-14-ncine-dev-update-9/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 8</title>
+      <link>https://ncine.github.io/news/2019-04-01-ncine-dev-update-8/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-04-01-ncine-dev-update-8/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2019-04-01-ncine-dev-update-8/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2019-04-01-ncine-dev-update-8/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 7</title>
+      <link>https://ncine.github.io/news/2019-01-08-ncine-dev-update-7/</link>
+      <pubDate>Tue, 08 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-01-08-ncine-dev-update-7/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2019-01-08-ncine-dev-update-7/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2019-01-08-ncine-dev-update-7/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 6</title>
+      <link>https://ncine.github.io/news/2018-12-16-ncine-dev-update-6/</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2018-12-16-ncine-dev-update-6/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2018-12-16-ncine-dev-update-6/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2018-12-16-ncine-dev-update-6/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 5</title>
+      <link>https://ncine.github.io/news/2018-09-29-ncine-dev-update-5/</link>
+      <pubDate>Sat, 29 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2018-09-29-ncine-dev-update-5/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2018-09-29-ncine-dev-update-5/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2018-09-29-ncine-dev-update-5/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 4</title>
+      <link>https://ncine.github.io/news/2018-08-06-ncine-dev-update-4/</link>
+      <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2018-08-06-ncine-dev-update-4/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2018-08-06-ncine-dev-update-4/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2018-08-06-ncine-dev-update-4/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Compilation Benchmark</title>
+      <link>https://ncine.github.io/news/2018-03-04-ncine-compilation-benchmark/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2018-03-04-ncine-compilation-benchmark/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2018-03-04-ncine-compilation-benchmark/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2018-03-04-ncine-compilation-benchmark/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 3</title>
+      <link>https://ncine.github.io/news/2018-02-10-ncine-dev-update-3/</link>
+      <pubDate>Sat, 10 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2018-02-10-ncine-dev-update-3/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2018-02-10-ncine-dev-update-3/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2018-02-10-ncine-dev-update-3/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 2</title>
+      <link>https://ncine.github.io/news/2017-10-22-ncine-dev-update-2/</link>
+      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2017-10-22-ncine-dev-update-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2017-10-22-ncine-dev-update-2/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2017-10-22-ncine-dev-update-2/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine Dev Update 1</title>
+      <link>https://ncine.github.io/news/2017-09-18-ncine-dev-update-1/</link>
+      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2017-09-18-ncine-dev-update-1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2017-09-18-ncine-dev-update-1/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2017-09-18-ncine-dev-update-1/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Get to know the nCine</title>
+      <link>https://ncine.github.io/news/2017-08-20-get-to-know-the-ncine/</link>
+      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2017-08-20-get-to-know-the-ncine/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://encelo.github.io/2017-08-20-get-to-know-the-ncine/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;https://encelo.github.io/2017-08-20-get-to-know-the-ncine/&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Six years ago</title>
+      <link>https://ncine.github.io/news/2017-06-19-six-years/</link>
+      <pubDate>Mon, 19 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2017-06-19-six-years/</guid>
+      <description>&lt;p&gt;Another year has passed and the project activity is still as high as it was in the very beginning!&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Closed beta</title>
+      <link>https://ncine.github.io/news/2016-06-26-closed-beta/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2016-06-26-closed-beta/</guid>
+      <description>&lt;p&gt;A short testing period among a small group of testers has just started.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Five years ago</title>
+      <link>https://ncine.github.io/news/2016-06-19-five-years/</link>
+      <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2016-06-19-five-years/</guid>
+      <description>&lt;p&gt;Five years ago, on June the 19th of 2011, the initial source code for the nCine was committed in Mercurial.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

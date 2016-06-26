@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Showcase_tags on nCine</title>
+    <link>https://ncine.github.io/showcase_tags/</link>
+    <description>Recent content in Showcase_tags on nCine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)</copyright>
+    <lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ncine.github.io/showcase_tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Emscripten</title>
+      <link>https://ncine.github.io/showcase_tags/emscripten/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/showcase_tags/emscripten/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Game</title>
+      <link>https://ncine.github.io/showcase_tags/game/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/showcase_tags/game/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Jam</title>
+      <link>https://ncine.github.io/showcase_tags/jam/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/showcase_tags/jam/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Videos</title>
+      <link>https://ncine.github.io/showcase_tags/video/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/showcase_tags/video/</guid>
+      <description>&lt;p&gt;Showcase projects or tests with videos.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Community</title>
+      <link>https://ncine.github.io/showcase_tags/community/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/showcase_tags/community/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Tool</title>
+      <link>https://ncine.github.io/showcase_tags/tool/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/showcase_tags/tool/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>https://ncine.github.io/showcase_tags/project/</link>
+      <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/showcase_tags/project/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>AppTest</title>
+      <link>https://ncine.github.io/showcase_tags/apptest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/showcase_tags/apptest/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
