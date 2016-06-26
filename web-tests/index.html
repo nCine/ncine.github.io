@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  
+
+  <title>Web Tests | nCine</title>
+
+  
+  
+  <meta name="author" content="Angelo Theodorou">
+  
+
+  <meta name="description" content="This page lists some of the tools, applications, and tests developed with the nCine. Most of them are available on the web using [Emscripten](https://emscripten.org/). ### SpookyGhost ([web version](/spookyghost)) ![SpookyGhost](/img/gallery/SpookyGhost.png &quot;SpookyGhost&quot;){: .center-block :} **SpookyGhost** is a cross-platform open-source procedural animation tool for sprites. You can read more about it on its...">
+
+  
+  <meta name="theme-color" content="#96D43D">
+  
+
+  
+  <meta name="keywords" content="engine,2d,gamedev,programming,game programming,development,game development">
+  
+
+  
+  <link rel="alternate" type="application/rss+xml" title="nCine" href="/feed.xml">
+  
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6YXXLVFNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z6YXXLVFNV');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/custom-styles.css">
+    
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="nCine">
+  <meta property="og:title" content="Web Tests | nCine">
+  <meta property="og:description" content="This page lists some of the tools, applications, and tests developed with the nCine. Most of them are available on the web using [Emscripten](https://emscripten.org/). ### SpookyGhost ([web version](/spookyghost)) ![SpookyGhost](/img/gallery/SpookyGhost.png &quot;SpookyGhost&quot;){: .center-block :} **SpookyGhost** is a cross-platform open-source procedural animation tool for sprites. You can read more about it on its...">
+
+  
+  <meta property="og:image" content="/img/avatar-icon.png">
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/web-tests/">
+  <link rel="canonical" href="/web-tests/">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@nCine2D">
+  <meta name="twitter:creator" content="@nCine2D">
+
+  <meta property="twitter:title" content="Web Tests | nCine">
+  <meta property="twitter:description" content="This page lists some of the tools, applications, and tests developed with the nCine. Most of them are available on the web using [Emscripten](https://emscripten.org/). ### SpookyGhost ([web version](/spookyghost)) ![SpookyGhost](/img/gallery/SpookyGhost.png &quot;SpookyGhost&quot;){: .center-block :} **SpookyGhost** is a cross-platform open-source procedural animation tool for sprites. You can read more about it on its...">
+
+  
+  <meta name="twitter:image" content="/img/avatar-icon.png">
+  
+
+  
+
+
+  
+
+  
+  
+  <link rel="icon" href="/favicon.ico" />
+  
+
+  
+
+</head>
+
+
+<body>
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="/">nCine</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/features">Features</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Showcase</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/gallery">Gallery</a>
+                  <a class="dropdown-item" href="/videos">Videos</a>
+                  <a class="dropdown-item" href="/web-tests">Web Tests</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Documentation</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/why">Why nCine?</a>
+                  <a class="dropdown-item" href="/faq">F.A.Q.</a>
+                  <a class="dropdown-item" href="https://github.com/nCine/nCine/wiki/Getting-Started">Getting Started</a>
+                  <a class="dropdown-item" href="/Lua_Tutorial.html">Lua Tutorial</a>
+                  <a class="dropdown-item" href="/docs/master">Documentation (master)</a>
+                  <a class="dropdown-item" href="/docs/lua_master">Lua API (master)</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="https://github.com/nCine/nCine/discussions">Forum</a>
+                  <a class="dropdown-item" href="https://discord.gg/495ab6Y">Discord</a>
+                  <a class="dropdown-item" href="https://github.com/nCine/nCine">GitHub</a>
+                  <a class="dropdown-item" href="/donate">Donate</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/download">General Info</a>
+                  <a class="dropdown-item" href="/changelog">Changelog</a>
+                  <a class="dropdown-item" href="/artifacts">Artifacts</a>
+            </div>
+          </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="/">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/img/avatar-icon.png" />
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: '/assets/data/searchcorpus.json' 
+    });
+  </script>
+</div>
+
+
+
+
+
+  
+
+
+
+<header class="header-section ">
+<div class="intro-header ">
+  
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>Web Tests</h1>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+
+</header>
+
+
+<main class=" container-md ">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+      
+
+      <p>This page lists some of the tools, applications, and tests developed with the nCine. Most of them are available on the web using <a href="https://emscripten.org/">Emscripten</a>.</p>
+
+<h3 id="spookyghost-web-version">SpookyGhost (<a href="/spookyghost">web version</a>)</h3>
+
+<p><img src="/img/gallery/SpookyGhost.png" alt="SpookyGhost" title="SpookyGhost" class="center-block" /></p>
+
+<p><strong>SpookyGhost</strong> is a cross-platform open-source procedural animation tool for sprites.
+You can read more about it on its <a href="https://encelo.itch.io/spookyghost">website</a>.</p>
+
+<p><strong>Video</strong>: <a href="https://www.youtube.com/watch?v=PqrigZ-3JoM">How I animate pixel trees using SpookyGhost</a><br />
+<strong>Controls</strong>: Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface.
+The ImGui menu items will show their keyboard shortcuts. More information is in the <a href="https://spookyghost2d.github.io/docs/">documentation</a>.</p>
+
+<h3 id="ncjump-web-version">ncJump (<a href="https://www.antoniocaggiano.eu/ncJump-artifacts">web version</a>)</h3>
+
+<p><img src="/img/gallery/ncJump.png" alt="ncJump" title="ncJump" class="center-block" /></p>
+
+<p><strong>ncJump</strong> is a platform game built with the nCine by <a href="https://github.com/Fahien">Fahien</a>, with an ImGui level editor and using Box2D for the physics.</p>
+
+<p><strong>Video</strong>: <a href="https://www.youtube.com/watch?v=ZKdDtJiIUdo">ncJump running on the Steam Deck</a><br />
+<strong>Devlogs</strong>: <a href="https://github.com/nCine/nCine/discussions/">NcJump: a jumping project</a><br />
+<strong>Controls</strong>:</p>
+<ul>
+  <li>Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">W</code>/<code class="language-plaintext highlighter-rouge">A</code>/<code class="language-plaintext highlighter-rouge">S</code>/<code class="language-plaintext highlighter-rouge">D</code> on the keyboard, or moving the left gamepad stick will move the character</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Space</code> on the keyboard or <code class="language-plaintext highlighter-rouge">A</code> on the gamepad will make the character jump</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">CTRL + Q</code> on the keyboard will quit the game</li>
+</ul>
+
+<h3 id="ncjugimapguidemo-web-version">ncJugiMapGuiDemo (<a href="/ncjugimap_guidemo">web version</a>)</h3>
+
+<p><img src="/img/gallery/ncJugiMapGuiDemo.png" alt="ncJugiMapGuiDemo" title="ncJugiMapGuiDemo" class="center-block" /></p>
+
+<p><strong>ncJugiMapGuiDemo</strong> is the fourth of four framework demos of the <a href="http://jugimap.com/">JugiMap</a> map editor.
+It shows the custom GUI toolkit of JugiMap in action.</p>
+
+<p><strong>Video</strong>: <a href="https://www.youtube.com/watch?v=XczWtdoh4kE">ncJugiMapGuiDemo</a><br />
+<strong>Controls</strong>: Use the mouse or the touch screen to interact with the interface.</p>
+
+<h3 id="ncjugimapspritetimelineanimation-web-version">ncJugiMapSpriteTimelineAnimation (<a href="/ncjugimap_spritetimelineanimation">web version</a>)</h3>
+
+<p><img src="/img/gallery/ncJugiMapSpriteTimelineAnimation.png" alt="ncJugiMapSpriteTimelineAnimation" title="ncJugiMapSpriteTimelineAnimation" class="center-block" /></p>
+
+<p><strong>ncJugiMapSpriteTimelineAnimation</strong> is the third of four framework demos of the <a href="http://jugimap.com/">JugiMap</a> map editor.
+It shows the camera moving around in a level while different objects and props are animated.</p>
+
+<p><strong>Video</strong>: <a href="https://www.youtube.com/watch?v=rjMSLY5pl7A">ncJugiMapSpriteTimelineAnimation</a><br />
+<strong>Controls</strong>: Pressing the left mouse button or touching the screen will temporarily pause the camera movement.</p>
+
+<h3 id="ncjugimapparallaxscrolling-web-version">ncJugiMapParallaxScrolling (<a href="/ncjugimap_parallaxscrolling">web version</a>)</h3>
+
+<p><img src="/img/gallery/ncJugiMapParallaxScrolling.png" alt="ncJugiMapParallaxScrolling" title="ncJugiMapParallaxScrolling" class="center-block" /></p>
+
+<p><strong>ncJugiMapParallaxScrolling</strong> is the second of four framework demos of the <a href="http://jugimap.com/">JugiMap</a> map editor.
+It shows the camera moving horizontally on a background made of multiple layers with parallax scrolling.</p>
+
+<p><strong>Video</strong>: <a href="https://www.youtube.com/watch?v=0gfgShTNvSw">ncJugiMapParallaxScrolling</a><br />
+<strong>Controls</strong>: Pressing the left mouse button or touching the screen will temporarily pause the camera movement.</p>
+
+<h3 id="ncjugimapframeworkdemo-web-version">ncJugiMapFrameworkDemo (<a href="/ncjugimap_frameworkdemo">web version</a>)</h3>
+
+<p><img src="/img/gallery/ncJugiMapFrameworkDemo.png" alt="ncJugiMapFrameworkDemo" title="ncJugiMapFrameworkDemo" class="center-block" /></p>
+
+<p><strong>ncJugiMapFrameworkDemo</strong> is the first of four framework demos of the <a href="http://jugimap.com/">JugiMap</a> map editor.
+It shows sprites walking in a level while the camera moves around.</p>
+
+<p><strong>Video</strong>: <a href="https://www.youtube.com/watch?v=3TBFN3VwXZ4">ncJugiMapFrameworkDemo</a><br />
+<strong>Controls</strong>: Use the mouse or the touch screen to interact with the interface.</p>
+
+<h3 id="nctiledviewer-web-version">ncTiledViewer (<a href="/nctiledviewer">web version</a>)</h3>
+
+<p><img src="/img/gallery/ncTiledViewer.png" alt="ncTiledViewer" title="ncTiledViewer" class="center-block" /></p>
+
+<p><strong>ncTiledViewer</strong> is a viewer for some of the map types that you can create with <a href="https://www.mapeditor.org/">Tiled</a>.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">B</code> on the keyboard or <code class="language-plaintext highlighter-rouge">A</code> on the gamepad will toggle batching</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">C</code> on the keyboard or <code class="language-plaintext highlighter-rouge">B</code> on the gamepad will toggle culling</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">H</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Start</code> on the gamepad will hide or show the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will close the file dialog window</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">CTRL + Q</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Guide</code> on the gamepad will quit the application</li>
+</ul>
+
+<h3 id="ncparticleeditor-web-version">ncParticleEditor (<a href="/ncparticleeditor">web version</a>)</h3>
+
+<p><img src="/img/gallery/ncParticleEditor.png" alt="ncParticleEditor" title="ncParticleEditor" class="center-block" /></p>
+
+<p><strong>ncParticleEditor</strong> is a particle editor with an ImGui interface that uses the nCine particle emitter API for its effects.</p>
+
+<p><strong>Controls</strong>: Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface.
+The ImGui menu items will show their keyboard shortcuts. Pressing <code class="language-plaintext highlighter-rouge">CTRL + Q</code> on the keyboard will quit the application.</p>
+
+<h3 id="nctracer-web-version">ncTracer (<a href="/nctracer">web version</a>)</h3>
+
+<p><img src="/img/gallery/ncTracer.png" alt="ncTracer" title="ncTracer" class="center-block" /></p>
+
+<p><strong>ncTracer</strong> is an ImGui interface for the <a href="https://github.com/encelo/pmTracer">Poor Man’s Tracer</a>, a very simple and minimal ray tracing and path tracing library.</p>
+
+<p><strong>Controls</strong>: Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface.
+Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application.</p>
+
+<h3 id="ncinvaders-web-version">ncInvaders (<a href="/ncinvaders">web version</a>)</h3>
+
+<p><img src="/img/gallery/ncInvaders.png" alt="ncInvaders" title="ncInvaders" class="center-block" /></p>
+
+<p><strong>ncInvaders</strong> is a simplified Space Invaders clone made with the nCine as an example game.</p>
+
+<p><strong>Video</strong>: <a href="https://www.youtube.com/watch?v=31k4adykiNA">ncInvaders - a simplified version of Space Invaders made with the nCine</a><br />
+<strong>Controls</strong>:</p>
+<ul>
+  <li>Pressing the left/right arrow keys, clicking or touching the screen on the left or right side, or moving the left gamepad stick left/right will move the spaceship</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Space</code> on the keyboard, or the <code class="language-plaintext highlighter-rouge">A</code> button on the gamepad, or clicking or touching the center of the screen will make the spaceship fire a rocket</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">R</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Start</code> on the gamepad will reset the game</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">P</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Back</code> on the gamepad will toggle the pause</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Guide</code> on the gamepad will quit the game</li>
+</ul>
+
+<h3 id="ncpong-web-version">ncPong (<a href="/ncpong">web version</a>)</h3>
+
+<p><img src="/img/gallery/ncPong.png" alt="ncPong" title="ncPong" class="center-block" /></p>
+
+<p><strong>ncPong</strong> is a minimal Pong clone made with the nCine as an example game.</p>
+
+<p><strong>Video</strong>: <a href="https://www.youtube.com/watch?v=5lSYZtRQhgQ">ncPong - an example game made with the nCine</a><br />
+<strong>Controls</strong>:</p>
+<ul>
+  <li>Pressing the up/down or <code class="language-plaintext highlighter-rouge">W</code>/<code class="language-plaintext highlighter-rouge">S</code> keys, clicking or touching the screen, or moving the left gamepad stick up/down will move the paddle</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">R</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Start</code> on the gamepad will reset the game</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Guide</code> on the gamepad will quit the game</li>
+</ul>
+
+<h3 id="apptest_allocators-web-version">apptest_allocators (<a href="/apptests/apptest_allocators.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_allocators.png" alt="apptest_allocators" title="apptest_allocators" class="center-block" /></p>
+
+<p>This is a test for the various custom allocators available when compiling with the <code class="language-plaintext highlighter-rouge">NCINE_WITH_ALLOCATORS=ON</code> CMake option.
+The ImGui interface will allow you to create different types of allocators and to allocate and free memory blocks of different sizes and alignment requirements.</p>
+
+<p><strong>Video</strong>: <a href="https://www.youtube.com/watch?v=2kAoyVvgLyo">nCine Custom Memory Allocators Test</a><br />
+<strong>Controls</strong>: Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface.
+Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application.</p>
+
+<h3 id="apptest_anchor-web-version">apptest_anchor (<a href="/apptests/apptest_anchor.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_anchor.png" alt="apptest_anchor" title="apptest_anchor" class="center-block" /></p>
+
+<p>This test shows how different scene nodes (sprites, text nodes, and particles) are transformed when you change their anchor point.<br />
+It has evolved to show other advanced features like blending and layer ordering options.</p>
+
+<p><strong>Video</strong>: <a href="https://www.youtube.com/watch?v=5g30K6ktEc8">apptest_anchor - a nCine example about advanced sprite features</a><br />
+<strong>Controls</strong>:</p>
+<ul>
+  <li>Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">CTRL + H</code> on the keyboard will show or hide the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application</li>
+</ul>
+
+<h3 id="apptest_animsprites-web-version">apptest_animsprites (<a href="/apptests/apptest_animsprites.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_animsprites.png" alt="apptest_animsprites" title="apptest_animsprites" class="center-block" /></p>
+
+<p>One of the oldest and simplest tests, it shows how to make a sprite walk using a spritesheet and an <code class="language-plaintext highlighter-rouge">AnimatedSprite</code> class.</p>
+
+<p><strong>Controls</strong>: Use the mouse, the joystick, or the touchscreen to move the sprite around.<br />
+Pressing <code class="language-plaintext highlighter-rouge">F</code> on the keyboard will toggle full screen.<br />
+Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application.</p>
+
+<h3 id="apptest_audio-web-version">apptest_audio (<a href="/apptests/apptest_audio.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_audio.png" alt="apptest_audio" title="apptest_audio" class="center-block" /></p>
+
+<p>This test shows how to play sound effects with an <code class="language-plaintext highlighter-rouge">AudioBufferPlayer</code>, and how to play music using an <code class="language-plaintext highlighter-rouge">AudioStreamPlayer</code>.
+It also allows you to change some player properties and apply effects and filters.
+If the nCine has been compiled with ImGui some of those properties can be tweaked with an interface.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">M</code> on the keyboard or <code class="language-plaintext highlighter-rouge">A</code> on the gamepad will play or pause the music</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Space</code> on the keyboard or <code class="language-plaintext highlighter-rouge">B</code> on the gamepad will play or pause the sound</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">A</code>/<code class="language-plaintext highlighter-rouge">S</code>/<code class="language-plaintext highlighter-rouge">D</code> will play/stop/pause the sound</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">L</code> will toggle sound looping</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">T</code> will start or stop the stress test for audio sources</li>
+</ul>
+
+<p>Change the pitch, gain, and horizontal position of the sound with the numeric keypad or the gamepad:</p>
+<ul>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">KP7</code>/<code class="language-plaintext highlighter-rouge">KP8</code>/<code class="language-plaintext highlighter-rouge">KP9</code> will decrease/reset/increase the pitch (use the right trigger on the gamepad)</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">KP4</code>/<code class="language-plaintext highlighter-rouge">KP5</code>/<code class="language-plaintext highlighter-rouge">KP6</code> will decrease/reset/increase the gain (use the left trigger on the gamepad</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">KP1</code>/<code class="language-plaintext highlighter-rouge">KP2</code>/<code class="language-plaintext highlighter-rouge">KP3</code> will decrease/reset/increase the horizontal position (use the left stick on the gamepad)</li>
+  <li>
+    <p>Pressing <code class="language-plaintext highlighter-rouge">KP0</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Y</code> on the gamepad will reset all properties to their default values</p>
+  </li>
+  <li>Pressing the left/right arrow keys or D-pad directions, or the left bumper will change the music file</li>
+  <li>Pressing the up/down arrow keys or D-pad directions, or the right bumper will change the sound file</li>
+  <li>Pressing the <code class="language-plaintext highlighter-rouge">Start</code> on the gamepad will start or stop the stress test for audio sources</li>
+  <li>Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface.</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">CTRL + H</code> on the keyboard will show or hide the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application</li>
+</ul>
+
+<h3 id="apptest_bunnymark-web-version">apptest_bunnymark (<a href="/apptests/apptest_bunnymark.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_bunnymark.png" alt="apptest_bunnymark" title="apptest_bunnymark" class="center-block" /></p>
+
+<p>The nCine version of the classic BunnyMark demo.
+If the nCine has been compiled with ImGui you can tweak some options with an interface.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Pressing the left mouse button, tapping the right half of the screen, pressing <code class="language-plaintext highlighter-rouge">Space</code> on the keyboard or <code class="language-plaintext highlighter-rouge">A</code> on the gamepad will add some bunnies</li>
+  <li>Pressing the right mouse button, tapping the left half of the screen, pressing <code class="language-plaintext highlighter-rouge">R</code> on the keyboard or <code class="language-plaintext highlighter-rouge">B</code> on the gamepad will reset the number of bunnies</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">V</code> on the keyboard or <code class="language-plaintext highlighter-rouge">X</code> on the gamepad will toggle the V-Sync</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">B</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Y</code> on the gamepad will toggle batching</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">F</code> on the keyboard will toggle full screen</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">P</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Start</code> on the gamepad will pause the application</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">CTRL + H</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Back</code> on the gamepad will show or hide the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Guide</code> on the gamepad will quit the application</li>
+</ul>
+
+<h3 id="apptest_camera-web-version">apptest_camera (<a href="/apptests/apptest_camera.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_camera.png" alt="apptest_camera" title="apptest_camera" class="center-block" /></p>
+
+<p>This is the default test that will run if you debug with Visual Studio, if you double-click the macOS bundle, or if you build an Android APK.
+It shows some sprites randomly moving while you can move the camera around. The camera used to be simulated by moving the sprites in the opposite direction of the input but it now supports the <code class="language-plaintext highlighter-rouge">Viewport</code> and <code class="language-plaintext highlighter-rouge">Camera</code> classes.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">W</code>/<code class="language-plaintext highlighter-rouge">A</code>/<code class="language-plaintext highlighter-rouge">S</code>/<code class="language-plaintext highlighter-rouge">D</code>, dragging while pressing the left mouse button, touching with one finger, or moving the left gamepad stick will pan the camera</li>
+  <li>Pressing the left/right arrow keys, dragging horizontally while pressing the right mouse button or touching with two fingers, or moving the right gamepad stick left/right will rotate the camera</li>
+  <li>Pressing the up/down arrow keys, dragging vertically while pressing the right mouse button or touching with two fingers, or moving the right gamepad stick up/down will zoom the camera</li>
+  <li>Scrolling the mouse wheel will also zoom the camera</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">T</code> on the keyboard or <code class="language-plaintext highlighter-rouge">X</code> on the gamepad will toggle between individual textures and a texture atlas (more chances for batching)</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">V</code> on the keyboard or the right bumper on the gamepad will toggle between simulating a camera by moving sprites in the opposite direction or using a <code class="language-plaintext highlighter-rouge">Viewport</code> and a <code class="language-plaintext highlighter-rouge">Camera</code> objects</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">R</code> on the keyboard, <code class="language-plaintext highlighter-rouge">Y</code> on the gamepad, or double-clicking/double-tapping will reset the camera position, rotation, and scale</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">B</code> on the keyboard or <code class="language-plaintext highlighter-rouge">A</code> on the gamepad will toggle batching</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">C</code> on the keyboard or <code class="language-plaintext highlighter-rouge">B</code> on the gamepad will toggle culling</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">F</code> on the keyboard will toggle full screen</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">P</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Start</code> on the gamepad will pause the application</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Guide</code> on the gamepad will quit the application</li>
+</ul>
+
+<h3 id="apptest_clones-web-version">apptest_clones (<a href="/apptests/apptest_clones.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_clones.png" alt="apptest_clones" title="apptest_clones" class="center-block" /></p>
+
+<p>This test is not interactive and only stresses the object cloning system to highlight errors.</p>
+
+<p><strong>Controls</strong>: Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application.</p>
+
+<h3 id="apptest_filebrowser-web-version">apptest_filebrowser (<a href="/apptests/apptest_filebrowser.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_filebrowser.png" alt="apptest_filebrowser" title="apptest_filebrowser" class="center-block" /></p>
+
+<p>A basic but working file browser based on ImGui, with a list of pinned directories, custom coloring, permissions support, multiple sorting types, file types, and extension filters.<br />
+The same code is used in <a href="https://encelo.itch.io/spookyghost/devlog/132134/new-file-dialog-window">SpookyGhost</a> with the addition of icons.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface and navigate the filesystem.</li>
+  <li>Drag and dropping directories to the pinned list on the left by will add them to the list.</li>
+  <li>Drag and dropping a directory/file to the browser on the right will go to that/the containing directory.</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application.</li>
+</ul>
+
+<h3 id="apptest_font-web-version">apptest_font (<a href="/apptests/apptest_font.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_font.png" alt="apptest_font" title="apptest_font" class="center-block" /></p>
+
+<p>A test that loads some fonts and displays strings in text nodes, with and without kerning.
+If the nCine has been compiled with ImGui some of those options can be tweaked with an interface.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">CTRL + H</code> on the keyboard will show or hide the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application</li>
+</ul>
+
+<h3 id="apptest_joystick-web-version">apptest_joystick (<a href="/apptests/apptest_joystick.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_joystick.png" alt="apptest_joystick" title="apptest_joystick" class="center-block" /></p>
+
+<p>Gamepad support has always been very important for the nCine and this test shows information about the connected gamepad and visual feedback about its axes, buttons, and hats.</p>
+
+<p><strong>Controls</strong>: Connect a gamepad to see visual feedback about the state of its axes and buttons. Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application.</p>
+
+<h3 id="apptest_loading-web-version">apptest_loading (<a href="/apptests/apptest_loading.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_loading.png" alt="apptest_loading" title="apptest_loading" class="center-block" /></p>
+
+<p>A test for the loading system of all types of resources: textures, sounds, fonts, Lua scripts, and shaders.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">CTRL + H</code> on the keyboard will show or hide the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application</li>
+</ul>
+
+<h3 id="apptest_lua-web-version">apptest_lua (<a href="/apptests/apptest_lua.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_lua.png" alt="apptest_lua" title="apptest_lua" class="center-block" /></p>
+
+<p>By default, this test will load the example <code class="language-plaintext highlighter-rouge">script.lua</code> but you can supply another script as the first parameter when launching it on the command line.
+When running on a platform with writable files, the loaded script can be edited, reloaded, and executed again with the changes.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Press the left or the right mouse buttons to set the positions of the sprites</li>
+  <li>Press <code class="language-plaintext highlighter-rouge">V</code> to toggle the screen blur using viewports and custom shaders</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">F</code> on the keyboard will toggle full screen</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">F5</code> or <code class="language-plaintext highlighter-rouge">5</code> on the keyboard will reload the same script</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">CTRL + H</code> on the keyboard will show or hide the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application</li>
+</ul>
+
+<h3 id="apptest_luareload-web-version">apptest_luareload (<a href="/apptests/apptest_luareload.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_luareload.png" alt="apptest_luareload" title="apptest_luareload" class="center-block" /></p>
+
+<p>This test shows you how to pass data between the C++ application and a Lua script with ad-hoc custom tables.
+It also shows how to hot-reload a script to update the parameters of your program without recompiling or restarting it.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Pressing the left button and dragging the mouse around will move the particle system</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">F5</code> or <code class="language-plaintext highlighter-rouge">5</code> on the keyboard will reload the same script with a different parameter that will result in different particle colors</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application</li>
+</ul>
+
+<h3 id="apptest_meshdeform-web-version">apptest_meshdeform (<a href="/apptests/apptest_meshdeform.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_meshdeform.png" alt="apptest_meshdeform" title="apptest_meshdeform" class="center-block" /></p>
+
+<p>This test shows one big <code class="language-plaintext highlighter-rouge">MeshSprite</code> object being deformed and animated.
+You can choose between three types of deformations and three different animations, or deform it freely with the mouse, the touch, or the gamepad.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">A</code> or the left arrow on the keyboard, clicking or tapping the left half of the screen, or pressing the left gamepad bumper will change the deformation</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">D</code> or the right arrow on the keyboard, clicking or tapping the right half of the screen, or pressing the right gamepad bumper will change the animation</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">B</code> on the keyboard or <code class="language-plaintext highlighter-rouge">A</code> on the gamepad will toggle batching</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">C</code> on the keyboard or <code class="language-plaintext highlighter-rouge">B</code> on the gamepad will toggle culling</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">P</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Start</code> on the gamepad will pause the application</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Guide</code> on the gamepad will quit the application</li>
+</ul>
+
+<h3 id="apptest_meshsprites-web-version">apptest_meshsprites (<a href="/apptests/apptest_meshsprites.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_meshsprites.png" alt="apptest_meshsprites" title="apptest_meshsprites" class="center-block" /></p>
+
+<p>The test shows the same scene using regular <code class="language-plaintext highlighter-rouge">Sprite</code> objects with blending, or with <code class="language-plaintext highlighter-rouge">MeshSprite</code> objects composed of an inner opaque part and a transparent border.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">B</code> on the keyboard or <code class="language-plaintext highlighter-rouge">A</code> on the gamepad will toggle batching</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">C</code> on the keyboard or <code class="language-plaintext highlighter-rouge">B</code> on the gamepad will toggle culling</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">T</code> on the keyboard or <code class="language-plaintext highlighter-rouge">X</code> on the gamepad will toggle between individual textures and a texture atlas (more chances for batching)</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">V</code> on the keyboard or the right bumper on the gamepad will toggle between simulating a camera by moving sprites in the opposite direction or using a <code class="language-plaintext highlighter-rouge">Viewport</code> and a <code class="language-plaintext highlighter-rouge">Camera</code> objects</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">M</code> on the keyboard or the left bumper on the gamepad will toggle between using <code class="language-plaintext highlighter-rouge">Sprite</code> or <code class="language-plaintext highlighter-rouge">MeshSprite</code> objects</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">P</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Start</code> on the gamepad will pause the application</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">1</code>, <code class="language-plaintext highlighter-rouge">2</code>, <code class="language-plaintext highlighter-rouge">3</code>, <code class="language-plaintext highlighter-rouge">4</code>, or <code class="language-plaintext highlighter-rouge">8</code> will progressively animate fewer sprites</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">R</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Y</code> on the gamepad, or double-clicking or double-tapping will reset the camera zoom</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">F</code> on the keyboard will toggle full screen</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Guide</code> on the gamepad will quit the application</li>
+</ul>
+
+<h3 id="apptest_multitouch">apptest_multitouch</h3>
+
+<p><img src="/img/apptests/apptest_multitouch.png" alt="apptest_multitouch" title="apptest_multitouch" class="center-block" /></p>
+
+<p>On Android or a laptop with a touch screen, this test will show you the position of your fingers on the screen.</p>
+
+<p><strong>Controls</strong>: Use the touch screen to tap with multiple fingers. Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application.</p>
+
+<h3 id="apptest_particles-web-version">apptest_particles (<a href="/apptests/apptest_particles.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_particles.png" alt="apptest_particles" title="apptest_particles" class="center-block" /></p>
+
+<p>A test that shows a particle emitter with some preset affectors and emitting particles.
+If the nCine has been compiled with ImGui some options can be tweaked with an interface.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">W</code>/<code class="language-plaintext highlighter-rouge">A</code>/<code class="language-plaintext highlighter-rouge">S</code>/<code class="language-plaintext highlighter-rouge">D</code>, dragging while pressing the left mouse button, touching with one finger, or moving the left gamepad stick will move the particle emitter</li>
+  <li>Pressing the arrow keys, dragging while pressing the right mouse button, touching with two fingers, or moving the right gamepad stick will move the emission direction</li>
+  <li>Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">CTRL + H</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Back</code> on the gamepad will show or hide the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application</li>
+</ul>
+
+<h3 id="apptest_rotozoom-web-version">apptest_rotozoom (<a href="/apptests/apptest_rotozoom.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_rotozoom.png" alt="apptest_rotozoom" title="apptest_rotozoom" class="center-block" /></p>
+
+<p>A very simple test showing a bunch of sprites rotating, zooming, and moving around while maintaining a square formation.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">B</code> on the keyboard or <code class="language-plaintext highlighter-rouge">A</code> on the gamepad will toggle batching</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">C</code> on the keyboard or <code class="language-plaintext highlighter-rouge">B</code> on the gamepad will toggle culling</li>
+  <li>Pressing the left bumper on the gamepad, or the left mouse button, or tapping the screen with one finger will pause sprites rotation</li>
+  <li>Pressing the right bumper on the gamepad, or the right mouse button, or tapping the screen with two fingers will pause the square sprites formation</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">F</code> on the keyboard will toggle full screen</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">P</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Start</code> on the gamepad will pause both the sprite rotation and the square formation</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Guide</code> on the gamepad will quit the application</li>
+</ul>
+
+<h3 id="apptest_scaling-web-version">apptest_scaling (<a href="/apptests/apptest_scaling.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_scaling.png" alt="apptest_scaling" title="apptest_scaling" class="center-block" /></p>
+
+<p>A test showing nCine support for the window scale factor of a monitor.
+You can drag around the window on a monitor with a different scale factor to see it automatically resized.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">1</code>, <code class="language-plaintext highlighter-rouge">2</code>, <code class="language-plaintext highlighter-rouge">3</code>, or <code class="language-plaintext highlighter-rouge">4</code> will center the window on the first, second, third or fourth monitor</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">5</code>, <code class="language-plaintext highlighter-rouge">6</code>, <code class="language-plaintext highlighter-rouge">7</code>, or <code class="language-plaintext highlighter-rouge">8</code> will go full screen on the first, second, third or fourth monitor</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">CTRL + H</code> on the keyboard will show or hide the ImGui interfaces</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">F</code> on the keyboard will toggle full screen</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application</li>
+</ul>
+
+<h3 id="apptest_scene-web-version">apptest_scene (<a href="/apptests/apptest_scene.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_scene.png" alt="apptest_scene" title="apptest_scene" class="center-block" /></p>
+
+<p>A test showing some bouncing sprites and interfaces to control some parameters.
+Based on the enabled integrations and the preferred backend you might see the ImGui, Nuklear, and Qt5 interfaces, even all at once!</p>
+
+<p><strong>Video</strong>:<a href="https://www.youtube.com/watch?v=PpVLD3ShiCw">nCine as a custom Qt5 widget</a><br />
+<strong>Controls</strong>:</p>
+<ul>
+  <li>Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the interfaces</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">P</code> on the keyboard, or the left mouse button, or tapping the screen if no interface is available will pause the application</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">CTRL + H</code> on the keyboard will show or hide the ImGui and the Nuklear interfaces</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application</li>
+</ul>
+
+<h3 id="apptest_shaders-web-version">apptest_shaders (<a href="/apptests/apptest_shaders.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_shaders.png" alt="apptest_shaders" title="apptest_shaders" class="center-block" /></p>
+
+<p>A test that shows the custom shaders API and how to do post-processing with viewports.
+You will see regular sprites, mesh sprites, and some multi-textured normal mapped sprites, all using custom shaders and with batching!
+The ImGui interface will allow you to tweak the lighting parameters for normal mapped sprites and change the post-processing between bloom (using multiple render targets and downsampling) and a separable Gaussian blur.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface</li>
+  <li>Dragging the mouse while pressing the left button, touching with one finger, or moving the left gamepad stick will move the light</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">B</code> on the keyboard or <code class="language-plaintext highlighter-rouge">A</code> on the gamepad will toggle batching</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">C</code> on the keyboard or <code class="language-plaintext highlighter-rouge">B</code> on the gamepad will toggle culling</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">T</code> on the keyboard or <code class="language-plaintext highlighter-rouge">X</code> on the gamepad will toggle between individual textures and a texture atlas (more chances for batching)</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Y</code> on the gamepad will reset the light position to the center of the screen</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">R</code> on the keyboard will toggle between the original and the custom shader for regular and mesh sprites</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">V</code> on the keyboard will toggle between different no post-processing and blur</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">L</code> on the keyboard will toggle between different no post-processing and bloom</li>
+  <li>Pressing the right bumper on the gamepad will cycle between no post-processing, blur, and bloom</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">1</code>, <code class="language-plaintext highlighter-rouge">2</code>, or <code class="language-plaintext highlighter-rouge">3</code> will change the number of blur passes in post-processing</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">CTRL + H</code> on the keyboard will show or hide the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">F</code> on the keyboard will toggle full screen</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">P</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Start</code> on the gamepad will pause the application</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Guide</code> on the gamepad will quit the application</li>
+</ul>
+
+<h3 id="apptest_simdbench-web-version">apptest_simdbench (<a href="/apptests/apptest_simdbench.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_simdbench.png" alt="apptest_simdbench" title="apptest_simdbench" class="center-block" /></p>
+
+<p>This test was made while researching Intel and ARM Neon SIMD intrinsics and their performance.
+The branch with intrinsics was not merged back as auto-vectorization seemed fast enough, while this benchmark was added to the rest of the tests.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application</li>
+</ul>
+
+<h3 id="apptest_sinescroller-web-version">apptest_sinescroller (<a href="/apptests/apptest_sinescroller.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_sinescroller.png" alt="apptest_sinescroller" title="apptest_sinescroller" class="center-block" /></p>
+
+<p>A small homage to old-skool demoscene sine scrollers, with letters forming a message and bouncing in a sine wave.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">B</code> on the keyboard or <code class="language-plaintext highlighter-rouge">A</code> on the gamepad will toggle batching</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">I</code> on the keyboard or <code class="language-plaintext highlighter-rouge">X</code> on the gamepad will toggle batching with indices</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">F</code> on the keyboard will toggle full screen</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">P</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Start</code> on the gamepad will pause the application</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application</li>
+</ul>
+
+<h3 id="apptest_texformats-web-version">apptest_texformats (<a href="/apptests/apptest_texformats.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_texformats.png" alt="apptest_texformats" title="apptest_texformats" class="center-block" /></p>
+
+<p>This is a test for different texture format loaders, especially for GPU compressed formats (like ASTC, DXT, or ETC), and for container formats (like PVR, KTX, or DDS).</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Pressing the left/right or <code class="language-plaintext highlighter-rouge">A</code>/<code class="language-plaintext highlighter-rouge">D</code> keys, clicking or touching the screen on the left or right side, moving the left gamepad stick left/right, pressing the D-pad left/right, or using the bumpers will change the texture</li>
+  <li>Pressing the up/down or <code class="language-plaintext highlighter-rouge">W</code>/<code class="language-plaintext highlighter-rouge">S</code> keys, clicking or touching the screen on the upper or lower side, moving the left gamepad stick up/down will change the MIP level</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Guide</code> on the gamepad will quit the application</li>
+</ul>
+
+<h3 id="apptest_viewports-web-version">apptest_viewports (<a href="/apptests/apptest_viewports.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/apptest_viewports.png" alt="apptest_viewports" title="apptest_viewports" class="center-block" /></p>
+
+<p>This is a test for the <code class="language-plaintext highlighter-rouge">Viewport</code> and <code class="language-plaintext highlighter-rouge">Camera</code> classes. It shows multiple viewports arranged in a vertical split screen and with picture-in-picture.
+You can tweak both the viewport and the camera parameters with an ImGui interface.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Use the mouse, the keyboard, the gamepad, or the touch screen to interact with the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">W</code>/<code class="language-plaintext highlighter-rouge">A</code>/<code class="language-plaintext highlighter-rouge">S</code>/<code class="language-plaintext highlighter-rouge">D</code>, dragging while pressing the left mouse button, touching with one finger, or moving the left gamepad stick will pan the camera</li>
+  <li>Pressing the left/right arrow keys, dragging horizontally while pressing the right mouse button or touching with two fingers, or moving the right gamepad stick left/right will rotate the camera</li>
+  <li>Pressing the up/down arrow keys, dragging vertically while pressing the right mouse button or touching with two fingers, or moving the right gamepad stick up/down will zoom the camera</li>
+  <li>Scrolling the mouse wheel will also zoom the camera</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">R</code> or double-clicking will reset the camera position, rotation, and scale</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">B</code> on the keyboard will toggle batching</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">C</code> on the keyboard will toggle culling</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">I</code> on the keyboard will enable or disable the mouse input</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">CTRL + H</code> on the keyboard will show or hide the ImGui interface</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">F</code> on the keyboard will toggle full screen</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">P</code> will pause the application</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard will quit the application</li>
+</ul>
+
+<h3 id="glapptest_fbo_cube-web-version">glapptest_fbo_cube (<a href="/apptests/glapptest_fbo_cube.html">web version</a>)</h3>
+
+<p><img src="/img/apptests/glapptest_fbo_cube.png" alt="glapptest_fbo_cube" title="glapptest_fbo_cube" class="center-block" /></p>
+
+<p>This test is only available when the nCine is built as a static library and it uses the OpenGL API layer directly, bypassing the scenegraph and the sprite systems.</p>
+
+<p><strong>Controls</strong>:</p>
+<ul>
+  <li>Pressing the left bumper on the gamepad, or the left mouse button, or tapping the screen with one finger will pause the triangle animation</li>
+  <li>Pressing the right bumper on the gamepad, or the right mouse button, or tapping the screen with two fingers will pause the cube animation</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">F</code> on the keyboard will toggle full screen</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">P</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Start</code> on the gamepad will pause both the triangle and the cube animations</li>
+  <li>Pressing <code class="language-plaintext highlighter-rouge">Escape</code> on the keyboard or <code class="language-plaintext highlighter-rouge">Guide</code> on the gamepad will quit the application</li>
+</ul>
+
+
+      
+
+      
+
+    </div>
+  </div>
+</main>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      
+<ul class="list-inline text-center footer-links"><li class="list-inline-item">
+    <a href="/feed.xml" title="RSS">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">RSS</span>
+    </a>
+  </li><li class="list-inline-item">
+    <a href="https://github.com/nCine" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://twitter.com/nCine2D" title="X (Twitter)">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">X (Twitter)</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://patreon.com/encelo" title="Patreon">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-patreon fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Patreon</span>
+    </a>
+  </li><li class="list-inline-item">
+    <a href="https://www.youtube.com/@nCine" title="YouTube">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">YouTube</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a rel="me" href="https://mastodon.gamedev.place/@encelo" title="Mastodon">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Mastodon</span>
+    </a>
+  </li><li class="list-inline-item">
+    <a href="https://discord.com/invite/495ab6Y" title="Discord">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Discord</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://encelo.itch.io/" title="Itchio">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-itch-io fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Itchio</span>
+   </a>
+  </li></ul>
+
+
+      
+      <p class="copyright text-muted">
+      
+        Angelo Theodorou
+        &nbsp;&bull;&nbsp;
+      
+      2025
+
+      
+        &nbsp;&bull;&nbsp;
+        <span class="author-site">
+          <a href="/">ncine.github.io</a>
+        </span>
+      
+
+      
+
+      
+
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>

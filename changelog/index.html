@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  
+
+  <title>Changelog | nCine</title>
+
+  
+  
+  <meta name="author" content="Angelo Theodorou">
+  
+
+  <meta name="description" content="## February 2025 ### Improvements - Added various utility constructors and conversion methods for the rectangle and vector classes - Added a `NCPROJECT_DEBUG` compiler definition for when projects are compiled in debug - Added a new `NCPROJECT_ALWAYS_FIND_PACKAGES` that can be useful when creating a Linux package with a dynamic nCine...">
+
+  
+  <meta name="theme-color" content="#96D43D">
+  
+
+  
+  <meta name="keywords" content="engine,2d,gamedev,programming,game programming,development,game development">
+  
+
+  
+  <link rel="alternate" type="application/rss+xml" title="nCine" href="/feed.xml">
+  
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6YXXLVFNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z6YXXLVFNV');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/custom-styles.css">
+    
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="nCine">
+  <meta property="og:title" content="Changelog | nCine">
+  <meta property="og:description" content="## February 2025 ### Improvements - Added various utility constructors and conversion methods for the rectangle and vector classes - Added a `NCPROJECT_DEBUG` compiler definition for when projects are compiled in debug - Added a new `NCPROJECT_ALWAYS_FIND_PACKAGES` that can be useful when creating a Linux package with a dynamic nCine...">
+
+  
+  <meta property="og:image" content="/img/avatar-icon.png">
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/changelog/">
+  <link rel="canonical" href="/changelog/">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@nCine2D">
+  <meta name="twitter:creator" content="@nCine2D">
+
+  <meta property="twitter:title" content="Changelog | nCine">
+  <meta property="twitter:description" content="## February 2025 ### Improvements - Added various utility constructors and conversion methods for the rectangle and vector classes - Added a `NCPROJECT_DEBUG` compiler definition for when projects are compiled in debug - Added a new `NCPROJECT_ALWAYS_FIND_PACKAGES` that can be useful when creating a Linux package with a dynamic nCine...">
+
+  
+  <meta name="twitter:image" content="/img/avatar-icon.png">
+  
+
+  
+
+
+  
+
+  
+  
+  <link rel="icon" href="/favicon.ico" />
+  
+
+  
+
+</head>
+
+
+<body>
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="/">nCine</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/features">Features</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Showcase</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/gallery">Gallery</a>
+                  <a class="dropdown-item" href="/videos">Videos</a>
+                  <a class="dropdown-item" href="/web-tests">Web Tests</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Documentation</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/why">Why nCine?</a>
+                  <a class="dropdown-item" href="/faq">F.A.Q.</a>
+                  <a class="dropdown-item" href="https://github.com/nCine/nCine/wiki/Getting-Started">Getting Started</a>
+                  <a class="dropdown-item" href="/Lua_Tutorial.html">Lua Tutorial</a>
+                  <a class="dropdown-item" href="/docs/master">Documentation (master)</a>
+                  <a class="dropdown-item" href="/docs/lua_master">Lua API (master)</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="https://github.com/nCine/nCine/discussions">Forum</a>
+                  <a class="dropdown-item" href="https://discord.gg/495ab6Y">Discord</a>
+                  <a class="dropdown-item" href="https://github.com/nCine/nCine">GitHub</a>
+                  <a class="dropdown-item" href="/donate">Donate</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/download">General Info</a>
+                  <a class="dropdown-item" href="/changelog">Changelog</a>
+                  <a class="dropdown-item" href="/artifacts">Artifacts</a>
+            </div>
+          </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li>
+</ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="/">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/img/avatar-icon.png">
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: '/assets/data/searchcorpus.json' 
+    });
+  </script>
+</div>
+
+
+
+
+
+  
+
+
+
+<header class="header-section ">
+<div class="intro-header ">
+  
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>Changelog</h1>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+
+</header>
+
+
+<main class=" container-md ">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+      
+
+      <h2 id="february-2025">February 2025</h2>
+
+<h3 id="improvements">Improvements</h3>
+<ul>
+  <li>Added various utility constructors and conversion methods for the rectangle and vector classes</li>
+  <li>Added a <code class="language-plaintext highlighter-rouge">NCPROJECT_DEBUG</code> compiler definition for when projects are compiled in debug</li>
+  <li>Added a new <code class="language-plaintext highlighter-rouge">NCPROJECT_ALWAYS_FIND_PACKAGES</code> that can be useful when creating a Linux package with a dynamic nCine library</li>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.91.8">v1.91.8</a>
+</li>
+  <li>The version of the integrated Google Test has been updated to <a href="https://github.com/google/googletest/releases/tag/v1.16.0">v1.16.0</a>
+</li>
+</ul>
+
+<h2 id="january-2025">January 2025</h2>
+
+<h3 id="improvements-1">Improvements</h3>
+<ul>
+  <li>Script and callbacks errors are now shown on screen in <code class="language-plaintext highlighter-rouge">apptest_lua</code>/<code class="language-plaintext highlighter-rouge">ncinelua</code>
+</li>
+  <li>Added tabular character support to the <code class="language-plaintext highlighter-rouge">TextNode</code> class, with configurable tab size (also in the Lua API)</li>
+  <li>Implemented introspective sort for render queues, making the sorting faster and more robust</li>
+</ul>
+
+<h2 id="december-2024">December 2024</h2>
+
+<h3 id="breaking-changes">Breaking Changes</h3>
+<ul>
+  <li>Renamed <code class="language-plaintext highlighter-rouge">ncine.audiobuffer</code> to <code class="language-plaintext highlighter-rouge">ncine.audio_buffer</code> in the Lua API</li>
+  <li>Renamed <code class="language-plaintext highlighter-rouge">ncine.audiobuffer_player</code> to <code class="language-plaintext highlighter-rouge">ncine.audio_buffer_player</code> in the Lua API
+    <ul>
+      <li>Renamed <code class="language-plaintext highlighter-rouge">get_audiobuffer()</code> and <code class="language-plaintext highlighter-rouge">set_audiobuffer()</code> to <code class="language-plaintext highlighter-rouge">get_audio_buffer()</code> and <code class="language-plaintext highlighter-rouge">set_audio_buffer()</code>
+</li>
+    </ul>
+  </li>
+  <li>Renamed <code class="language-plaintext highlighter-rouge">ncine.audiostream_player</code> to <code class="language-plaintext highlighter-rouge">ncine.audio_stream_player</code> in the Lua API
+    <ul>
+      <li>Renamed <code class="language-plaintext highlighter-rouge">num_samples_in_streambuffer()</code> and <code class="language-plaintext highlighter-rouge">streambuffer_size()</code> to <code class="language-plaintext highlighter-rouge">num_samples_in_stream_buffer()</code> and <code class="language-plaintext highlighter-rouge">stream_buffer_size()</code>
+</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="improvements-2">Improvements</h3>
+<ul>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.91.6">v1.91.6</a>
+</li>
+  <li>The version of the integrated Google Benchmark has been updated to <a href="https://github.com/google/benchmark/releases/tag/v1.9.1">v1.9.1</a>
+</li>
+  <li>The GameController mapping database has been updated to the one in SDL 2.30.10</li>
+</ul>
+
+<h2 id="november-2024">November 2024</h2>
+
+<h3 id="breaking-changes-1">Breaking Changes</h3>
+<ul>
+  <li>Renamed <code class="language-plaintext highlighter-rouge">permissions()</code> to <code class="language-plaintext highlighter-rouge">get_permissions()</code> in the filesystem table of the Lua API</li>
+  <li>Removed the <code class="language-plaintext highlighter-rouge">get_</code> prefix from <code class="language-plaintext highlighter-rouge">get_num_vertices()</code>, <code class="language-plaintext highlighter-rouge">get_num_bytes()</code>, and <code class="language-plaintext highlighter-rouge">get_num_indices()</code> in the mesh sprite Lua functions</li>
+</ul>
+
+<h3 id="improvements-3">Improvements</h3>
+<ul>
+  <li>Lua statistics are now disabled by default to enable hooking by external debuggers like the <a href="https://github.com/tomblind/local-lua-debugger-vscode">Lua Local Debugger</a>
+</li>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.91.5">v1.91.5</a>
+</li>
+  <li>Multiple additions, fixes, and expansions to the Doxygen documentation</li>
+  <li>Added some new Lua API functions
+    <ul>
+      <li>Added <code class="language-plaintext highlighter-rouge">input.num_joymappings()</code> to return the number of available mappings for joysticks</li>
+      <li>Added <code class="language-plaintext highlighter-rouge">particle_affector.get_base_scale()</code> to return the base scale factor of a size affector</li>
+      <li>Added a constructor overload that takes the position as a vector for animated and mesh sprites</li>
+    </ul>
+  </li>
+  <li>Many viewport, shader, and shaderstate Lua functions now return a boolean to indicate the result</li>
+  <li>When calling the Lua <code class="language-plaintext highlighter-rouge">particle_system.add_size_affector()</code> function, you can now use a <code class="language-plaintext highlighter-rouge">vec2</code> for the scale factors</li>
+</ul>
+
+<h3 id="fixes">Fixes</h3>
+<ul>
+  <li>Added missing overload constructors for mesh and animated sprites in the Lua API</li>
+  <li>Added some missing button names for mapped joysticks in the Lua API</li>
+  <li>Minimum CMake version has been raised to 3.10 to avoid a deprecation warning</li>
+  <li>Added the missing <code class="language-plaintext highlighter-rouge">dpi</code> field to the Lua table returned by <code class="language-plaintext highlighter-rouge">gfx_device.get_monitor()</code>
+</li>
+  <li>Fixed the Lua <code class="language-plaintext highlighter-rouge">viewport.set_camera()</code> function to accept <code class="language-plaintext highlighter-rouge">nil</code> as a camera parameter</li>
+  <li>Added missing joystick buttons to Lua input event tables</li>
+</ul>
+
+<h2 id="october-2024">October 2024</h2>
+
+<h3 id="improvements-4">Improvements</h3>
+<ul>
+  <li>Add <code class="language-plaintext highlighter-rouge">MemoryFile</code> class constructors that own a memory buffer</li>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.91.4">v1.91.4</a>
+</li>
+  <li>The version of the integrated Google Test has been updated to <a href="https://github.com/google/googletest/releases/tag/v1.15.2">v1.15.2</a>
+</li>
+  <li>The version of the integrated Google Benchmark has been updated to <a href="https://github.com/google/benchmark/releases/tag/v1.9.0">v1.9.0</a>
+</li>
+</ul>
+
+<h2 id="september-2024">September 2024</h2>
+
+<h3 id="improvements-5">Improvements</h3>
+<ul>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.91.2">v1.91.2</a>
+</li>
+  <li>The version of the integrated Tracy has been updated to <a href="https://github.com/wolfpld/tracy/releases/tag/v0.11.1">v0.11.1</a>
+</li>
+  <li>Swap deprecated <code class="language-plaintext highlighter-rouge">ALooper_pollAll()</code> function for <code class="language-plaintext highlighter-rouge">ALooper_pollOnce()</code> on Android</li>
+</ul>
+
+<h2 id="july-2024">July 2024</h2>
+
+<h3 id="improvements-6">Improvements</h3>
+<ul>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.90.9">v1.90.9</a>
+</li>
+</ul>
+
+<h2 id="june-2024">June 2024</h2>
+
+<h3 id="new-features">New Features</h3>
+<ul>
+  <li>Added many new OpenAL source properties to the audio players</li>
+  <li>Added support for some useful OpenAL extensions
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge">pause_device</code>, <code class="language-plaintext highlighter-rouge">deferred_updates</code>, <code class="language-plaintext highlighter-rouge">source_spatialize</code>
+</li>
+    </ul>
+  </li>
+  <li>Added optional support for EFX effects and filters, also in the Lua API</li>
+</ul>
+
+<h3 id="improvements-7">Improvements</h3>
+<ul>
+  <li>The sound sources are now arranged in a pool for the players to pick, fixing some issues with playing</li>
+  <li>Handling the <code class="language-plaintext highlighter-rouge">OV_HOLE</code> vorbisfile error code by continue decoding instead of fatal asserting</li>
+  <li>Added a stress test mode to <code class="language-plaintext highlighter-rouge">apptest_audio</code>
+</li>
+  <li>Added support for joystick axes mapped as buttons</li>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.90.8">v1.90.8</a>
+</li>
+  <li>The version of the integrated Google Benchmark has been updated to <a href="https://github.com/google/benchmark/releases/tag/v1.8.4">v1.8.4</a>
+</li>
+</ul>
+
+<h3 id="fixes-1">Fixes</h3>
+<ul>
+  <li>Fixed a couple of alignment faults with Emscripten and some apptests</li>
+</ul>
+
+<h2 id="april-2024">April 2024</h2>
+
+<h3 id="breaking-changes-2">Breaking Changes</h3>
+<ul>
+  <li>Renamed <code class="language-plaintext highlighter-rouge">nc::IAudioDevice::PlayerType::AUDIOSTREAM</code> to <code class="language-plaintext highlighter-rouge">nc::IAudioDevice::PlayerType::STREAM</code>
+</li>
+</ul>
+
+<h2 id="march-2024">March 2024</h2>
+
+<h3 id="breaking-changes-3">Breaking Changes</h3>
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">freezePlayers()</code>/<code class="language-plaintext highlighter-rouge">unfreezePlayers()</code> methods of the audio device have been removed
+    <ul>
+      <li>The Lua functions <code class="language-plaintext highlighter-rouge">freeze_players()</code>/<code class="language-plaintext highlighter-rouge">unfreeze_players()</code> have been removed too</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="february-2024">February 2024</h2>
+
+<h3 id="improvements-8">Improvements</h3>
+<ul>
+  <li>Added support for custom memory allocators and window position hints of GLFW 3.4</li>
+  <li>Some minor changes to the <code class="language-plaintext highlighter-rouge">IAllocator</code> methods that handle debug allocation entries</li>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.90.4">v1.90.4</a>
+</li>
+</ul>
+
+<h2 id="january-2024">January 2024</h2>
+
+<h3 id="improvements-9">Improvements</h3>
+<ul>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.90.1">v1.90.1</a>
+</li>
+</ul>
+
+<h3 id="fixes-2">Fixes</h3>
+<ul>
+  <li>Fixed compilation when enabling the custom memory allocators</li>
+  <li>Moved <code class="language-plaintext highlighter-rouge">Particle.h</code> to public headers to fix compilation warnings
+    <ul>
+      <li>The header should not be directly included by users</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="november-2023">November 2023</h2>
+
+<h3 id="new-features-1">New Features</h3>
+<ul>
+  <li>There is now an option to use binary shaders: they will be compiled on the first run and then cached on disk
+    <ul>
+      <li>Default shaders will use this feature as well, if enabled in the configuration</li>
+      <li>Batched shaders can be compiled twice to query the max number of batches for the UBO size</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="improvements-10">Improvements</h3>
+<ul>
+  <li>A new class has been added to calculate a 64-bit hash from strings or from file information (also in the Lua API)</li>
+  <li>Emscripten stack size has been increased from the default 64 Kb to 128 Kb</li>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.90">v1.90</a>
+</li>
+</ul>
+
+<h2 id="october-2023">October 2023</h2>
+
+<h3 id="breaking-changes-4">Breaking Changes</h3>
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">Timer::sleep()</code> method now needs an integer number of milliseconds instead of a float number of seconds.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">join()</code> and <code class="language-plaintext highlighter-rouge">exit()</code> methods of the <code class="language-plaintext highlighter-rouge">Thread</code> class do not support custom return values anymore</li>
+</ul>
+
+<h3 id="improvements-11">Improvements</h3>
+<ul>
+  <li>The version of the integrated Tracy has been updated to <a href="https://github.com/wolfpld/tracy/releases/tag/v0.10">v0.10</a>
+</li>
+</ul>
+
+<h3 id="fixes-3">Fixes</h3>
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">Thread</code> class can be be move constructed or move assigned without causing random crashes</li>
+</ul>
+
+<h2 id="september-2023">September 2023</h2>
+
+<h3 id="improvements-12">Improvements</h3>
+<ul>
+  <li>Updated support for Gradle plugin 8.1.0 and build tools 33.0.1 on Android</li>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.89.9">v1.89.9</a>
+</li>
+  <li>The version of the integrated Google Test has been updated to <a href="https://github.com/google/googletest/releases/tag/v1.14.0">v1.14.0</a>
+</li>
+  <li>The version of the integrated Google Benchmark has been updated to <a href="https://github.com/google/benchmark/releases/tag/v1.8.3">v1.8.3</a>
+</li>
+</ul>
+
+<h2 id="july-2023">July 2023</h2>
+
+<h3 id="improvements-13">Improvements</h3>
+<ul>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.89.7">v1.89.7</a>
+</li>
+</ul>
+
+<h2 id="june-2023">June 2023</h2>
+
+<h3 id="improvements-14">Improvements</h3>
+<ul>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.89.6">v1.89.6</a>
+</li>
+</ul>
+
+<h2 id="may-2023">May 2023</h2>
+
+<h3 id="new-features-2">New Features</h3>
+<ul>
+  <li>Add a new <code class="language-plaintext highlighter-rouge">apptest_bunnymark</code>, an nCine port of the famous BunyMark benchmark</li>
+</ul>
+
+<h3 id="improvements-15">Improvements</h3>
+<ul>
+  <li>Added an interface class to tweak the frame timer options
+    <ul>
+      <li>A second timer has been added to the frame timer to calculate averages</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="april-2023">April 2023</h2>
+
+<h3 id="breaking-changes-5">Breaking Changes</h3>
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">homeDir()</code> method of the <code class="language-plaintext highlighter-rouge">FileSystem</code> class have been renamed to <code class="language-plaintext highlighter-rouge">homePath()</code>
+</li>
+  <li>The <code class="language-plaintext highlighter-rouge">get_home_dir()</code> function of the Lua filesystem table has been renamed to <code class="language-plaintext highlighter-rouge">get_home_path()</code>
+</li>
+  <li>The <code class="language-plaintext highlighter-rouge">get_datapath()</code> and <code class="language-plaintext highlighter-rouge">get_savepath()</code> functions of the Lua filesystem table have been renamed to <code class="language-plaintext highlighter-rouge">get_data_path()</code> and <code class="language-plaintext highlighter-rouge">get_save_path()</code>
+</li>
+</ul>
+
+<h3 id="new-features-3">New Features</h3>
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">apptest_lua</code> has a new ImGui interface and can now automatically reload a modified Lua script</li>
+</ul>
+
+<h3 id="improvements-16">Improvements</h3>
+<ul>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.89.5">v1.89.5</a>
+</li>
+  <li>The version of the integrated Google Test has been updated to <a href="https://github.com/google/googletest/releases/tag/v1.13.0">v1.13.0</a>
+</li>
+  <li>There is now a new method in the <code class="language-plaintext highlighter-rouge">FileSystem</code> class to return the path to store cached files</li>
+</ul>
+
+<h2 id="march-2023">March 2023</h2>
+
+<h3 id="improvements-17">Improvements</h3>
+<ul>
+  <li>The version of the integrated Tracy has been updated to <a href="https://github.com/wolfpld/tracy/releases/tag/v0.9.1">v0.9.1</a>
+</li>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.89.4">v1.89.4</a>
+</li>
+</ul>
+
+<h2 id="february-2023">February 2023</h2>
+
+<h3 id="improvements-18">Improvements</h3>
+<ul>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.89.3">v1.89.3</a>
+</li>
+</ul>
+
+<h2 id="january-2023">January 2023</h2>
+<ul>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.89.2">v1.89.2</a>
+</li>
+</ul>
+
+<h2 id="december-2022">December 2022</h2>
+
+<h3 id="breaking-changes-6">Breaking Changes</h3>
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">animation_index()</code> and <code class="language-plaintext highlighter-rouge">frame()</code> functions of the Lua animated sprite have been renamed to <code class="language-plaintext highlighter-rouge">get_animation_index()</code> and <code class="language-plaintext highlighter-rouge">get_frame()</code>
+</li>
+</ul>
+
+<h3 id="improvements-19">Improvements</h3>
+<ul>
+  <li>The Lua API for the <code class="language-plaintext highlighter-rouge">Application</code> class has now a function to get the <code class="language-plaintext highlighter-rouge">AppConfiguration</code> table</li>
+  <li>Scale down the size of the error messages in <code class="language-plaintext highlighter-rouge">apptest_lua</code> if does not fit the screen</li>
+  <li>Added a method to <code class="language-plaintext highlighter-rouge">RectAnimation</code> to automatically add multiple rectangles from a spritesheet</li>
+  <li>Added functions to the Lua API to retrieve the array of children of a node</li>
+</ul>
+
+<h3 id="fixes-4">Fixes</h3>
+<ul>
+  <li>The minimum and maximum values of a joystick axis are now queried on Android</li>
+  <li>When calling <code class="language-plaintext highlighter-rouge">Sprite::setTexture()</code> with the same texture the rectangle gets reset</li>
+  <li>Create or destroy the Windows console if changing the console log level with the setter</li>
+</ul>
+
+<h2 id="november-2022">November 2022</h2>
+
+<h3 id="improvements-20">Improvements</h3>
+<ul>
+  <li>The version of the integrated Tracy has been updated to <a href="https://github.com/wolfpld/tracy/releases/tag/v0.9">v0.9</a>
+</li>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.89.1">v1.89.1</a>
+</li>
+  <li>It is now possible to choose the render mode used by a <code class="language-plaintext highlighter-rouge">TextNode</code>
+    <ul>
+      <li>There is a new render mode for colored fonts that uses the sprite shader</li>
+    </ul>
+  </li>
+  <li>On Android there is now always a fallback joystick mapping based on the default system configuration</li>
+</ul>
+
+<h3 id="fixes-5">Fixes</h3>
+<ul>
+  <li>The joystick GUID calculation on Android has been updated to be again compatible with the SDL2 controller database</li>
+</ul>
+
+<h2 id="october-2022">October 2022</h2>
+
+<h3 id="breaking-changes-7">Breaking Changes</h3>
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">IGfxDevice::setResolution()</code> method has been removed. Depending on the full screen state, use <code class="language-plaintext highlighter-rouge">setWindowSize()</code> or <code class="language-plaintext highlighter-rouge">setVideoMode()</code>
+</li>
+  <li>The <code class="language-plaintext highlighter-rouge">inFullscreen</code> and <code class="language-plaintext highlighter-rouge">isResizable</code> flags of the <code class="language-plaintext highlighter-rouge">AppConfiguration</code> class have been renamed to <code class="language-plaintext highlighter-rouge">fullScreen</code> and <code class="language-plaintext highlighter-rouge">resizable</code>
+</li>
+  <li>To query the supported video modes, you have to query the list of connected monitors with <code class="language-plaintext highlighter-rouge">IGfxDevice::numMonitors()</code> and <code class="language-plaintext highlighter-rouge">IGfxDevice::monitor()</code>
+</li>
+</ul>
+
+<h3 id="new-features-4">New Features</h3>
+<ul>
+  <li>It is now possible to enumerate connected monitors on all desktop backends
+    <ul>
+      <li>You can now query window scaling and drawable resolution to better support HiDPI monitors</li>
+      <li>The Lua API has been extended to support the new methods of the <code class="language-plaintext highlighter-rouge">IGfxDevice</code> class</li>
+      <li>There is a new <code class="language-plaintext highlighter-rouge">apptest_scaling</code> application that shows automatic window size scaling</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="improvements-21">Improvements</h3>
+<ul>
+  <li>Failing to load a file will now never exit the application</li>
+</ul>
+
+<h3 id="fixes-6">Fixes</h3>
+<ul>
+  <li>Various fixes about window size, window position, and full screen</li>
+</ul>
+
+<h2 id="september-2022">September 2022</h2>
+
+<h3 id="new-features-5">New Features</h3>
+<ul>
+  <li>There is a new <code class="language-plaintext highlighter-rouge">onFilesDropped()</code> input callback to support drag’n’drop from the system to the application window</li>
+</ul>
+
+<h3 id="improvements-22">Improvements</h3>
+<ul>
+  <li>The JNI helper classes have been refactored to use global references and be more stable and secure</li>
+  <li>Shader programs now detach shaders before deleting them, so they are really deleted and memory is freed</li>
+  <li>The new <code class="language-plaintext highlighter-rouge">NCINE_UNDEFINED_SANITIZER</code> CMake options adds support for the UBSan of GCC and Clang</li>
+</ul>
+
+<h3 id="fixes-7">Fixes</h3>
+<ul>
+  <li>The Android manifest has been updated to allow compilation on latest Android versions</li>
+</ul>
+
+<h2 id="august-2022">August 2022</h2>
+
+<h3 id="improvements-23">Improvements</h3>
+<ul>
+  <li>Improvements to <code class="language-plaintext highlighter-rouge">ParticleSystem</code> and to particle affector classes
+    <ul>
+      <li>It is now possible to add affector steps out of order</li>
+      <li>A new getter method in <code class="language-plaintext highlighter-rouge">ParticleSystem</code> allows the manipulation of affectors</li>
+      <li>Affector steps can be manipulated via a new Lua API</li>
+    </ul>
+  </li>
+  <li>A new <code class="language-plaintext highlighter-rouge">AudioStreamPlayer</code> getter returns the sample offset relative to the whole stream</li>
+  <li>The audio, font, and particles apptests have brand new ImGui interfaces</li>
+</ul>
+
+<h2 id="july-2022">July 2022</h2>
+
+<h3 id="breaking-changes-8">Breaking Changes</h3>
+<ul>
+  <li>The viewport chain is now an array accessible with the static <code class="language-plaintext highlighter-rouge">Viewport::chain()</code> method</li>
+  <li>The <code class="language-plaintext highlighter-rouge">Application::rootViewport()</code> method has been renamed to <code class="language-plaintext highlighter-rouge">screenViewport()</code>
+</li>
+  <li>The <code class="language-plaintext highlighter-rouge">GLShaderAttributes</code> class have been deleted and its functionalities transferred to <code class="language-plaintext highlighter-rouge">GLShaderProgram</code>
+</li>
+  <li>Added the <code class="language-plaintext highlighter-rouge">get_</code> prefix to some Lua getters of the <code class="language-plaintext highlighter-rouge">MeshSprite</code> class</li>
+  <li>The Android sources are now an independant module inside the <code class="language-plaintext highlighter-rouge">app</code> directory</li>
+</ul>
+
+<h3 id="new-features-6">New Features</h3>
+<ul>
+  <li>New <code class="language-plaintext highlighter-rouge">Shader</code> and <code class="language-plaintext highlighter-rouge">ShaderState</code> classes to support custom user shaders (Lua API too)
+    <ul>
+      <li>Mesh sprites now support custom vertex format, if the appropriate shader is provided</li>
+      <li>The <code class="language-plaintext highlighter-rouge">script.lua</code> example has been updated to show post-processing using viewports and shaders</li>
+    </ul>
+  </li>
+  <li>Added support for multi-texturing and multiple render targets</li>
+  <li>A new <code class="language-plaintext highlighter-rouge">apptest_shaders</code> application has been added to test custom shaders with batching
+    <ul>
+      <li>It shows post-processing blur, normal mapping, and bloom</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="improvements-24">Improvements</h3>
+<ul>
+  <li>The version of the integrated Tracy has been updated to <a href="https://github.com/wolfpld/tracy/releases/tag/v0.8.2">v0.8.2</a>
+</li>
+  <li>The render batcher is now able to deal with custom shaders, providing the user writes a batched shader</li>
+  <li>Improved and simplified API for viewports (also ported to Lua)</li>
+  <li>Added methods to set OpenGL debugging labels for shaders, textures, and viewport’s FBOs</li>
+  <li>There is now an <code class="language-plaintext highlighter-rouge">onDrawViewport()</code> callback that you can use to set shader uniforms when drawing a particular viewport</li>
+  <li>There is also an <code class="language-plaintext highlighter-rouge">onResizeWindow()</code> callback that can be useful to recreate post-processing viewport textures</li>
+  <li>Added missing getters and more methods to the Lua API of the <code class="language-plaintext highlighter-rouge">MeshSprite</code> class</li>
+  <li>Updated support for Gradle plugin 7.2.0, build tools 33.0.0, and NDK r25 on Android</li>
+  <li>Added support for the <code class="language-plaintext highlighter-rouge">Vector4</code> class in the Lua API</li>
+</ul>
+
+<h3 id="fixes-8">Fixes</h3>
+<ul>
+  <li>Added the missing SceneNode::lastFrameUpdated() method to the Lua API</li>
+  <li>You will never see again errors about reserved OpenGL uniforms or attributes not being found (like <code class="language-plaintext highlighter-rouge">gl_VertexID</code>)</li>
+  <li>Non-compiling shaders will not fatal assert like they did before</li>
+  <li>Fixes to the methods dealing with vertices and indices of the Lua API of the <code class="language-plaintext highlighter-rouge">MeshSprite</code> class</li>
+  <li>The <code class="language-plaintext highlighter-rouge">minBatchSize</code>/<code class="language-plaintext highlighter-rouge">maxBatchSize</code> rendering settings have been fixed and will not cause flickering when batching</li>
+</ul>
+
+<h2 id="june-2022">June 2022</h2>
+
+<h3 id="breaking-changes-9">Breaking Changes</h3>
+<ul>
+  <li>Added the <code class="language-plaintext highlighter-rouge">get_</code> prefix to some Lua getters of the <code class="language-plaintext highlighter-rouge">Application</code> and <code class="language-plaintext highlighter-rouge">IAudioDevice</code> classes</li>
+</ul>
+
+<h3 id="improvements-25">Improvements</h3>
+<ul>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.88">v1.88</a>
+</li>
+  <li>No more crashes when dereferencing Lua light user data pointers of the wrong type
+    <ul>
+      <li>The tracking of pointers to C++ objects created in Lua has improved a lot</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="fixes-9">Fixes</h3>
+<ul>
+  <li>Trying to play a sound when there are no available audio players will not crash the application</li>
+  <li>Fixed the parameters retrieving of Lua joystick state functions</li>
+</ul>
+
+<h2 id="may-2022">May 2022</h2>
+
+<h3 id="breaking-changes-10">Breaking Changes</h3>
+<ul>
+  <li>Added the <code class="language-plaintext highlighter-rouge">get_</code> prefix to the Lua getters of the <code class="language-plaintext highlighter-rouge">Font</code> class</li>
+</ul>
+
+<h3 id="improvements-26">Improvements</h3>
+<ul>
+  <li>The version of the integrated Tracy has been updated to <a href="https://github.com/wolfpld/tracy/releases/tag/v0.8.1">v0.8.1</a>
+</li>
+  <li>Added a static method to the <code class="language-plaintext highlighter-rouge">TextNode</code> class to calculate the boundaries for arbitrary text and font</li>
+  <li>The <code class="language-plaintext highlighter-rouge">Font</code> class can now be constructed using an existent <code class="language-plaintext highlighter-rouge">Texture</code> object
+    <ul>
+      <li>This allows for texture sharing (like an atlas) or textures constructed from texels</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="april-2022">April 2022</h2>
+
+<h3 id="breaking-changes-11">Breaking Changes</h3>
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">DrawableNode::LayerBase</code> enumeration has been deleted
+    <ul>
+      <li>This also means that <code class="language-plaintext highlighter-rouge">TextNode</code> will not be on a higher layer by default</li>
+    </ul>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">SceneNode::draw()</code> method now returns a boolean to indicate if it has been rendered</li>
+</ul>
+
+<h3 id="new-features-7">New Features</h3>
+<ul>
+  <li>You can set the layer of a <code class="language-plaintext highlighter-rouge">SceneNode</code> and it will carry this value over to its children
+    <ul>
+      <li>A child node with a layer different than 0 will not inherit it from its parent</li>
+    </ul>
+  </li>
+  <li>Added a scenegraph visit order when sorting the rendering commands</li>
+</ul>
+
+<h3 id="improvements-27">Improvements</h3>
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">apptest_anchor</code> application can now show and modify all the different order and layer values</li>
+</ul>
+
+<h3 id="fixes-10">Fixes</h3>
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">apptest_scene</code> and <code class="language-plaintext highlighter-rouge">apptest_viewports</code> applications now work correctly on Qt5</li>
+</ul>
+
+<h2 id="march-2022">March 2022</h2>
+
+<h3 id="breaking-changes-12">Breaking Changes</h3>
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">Object::name()</code> method now returns an array of characters</li>
+  <li>Inverted position and rotation view values for the <code class="language-plaintext highlighter-rouge">Camera</code>. It will now behave as an object that you move around the scene.</li>
+</ul>
+
+<h3 id="improvements-28">Improvements</h3>
+<ul>
+  <li>The version of the integrated Tracy has been updated to <a href="https://github.com/wolfpld/tracy/releases/tag/v0.8">v0.8</a>
+</li>
+  <li>Allow a relative path from executables to data on Linux</li>
+</ul>
+
+<h3 id="fixes-11">Fixes</h3>
+<ul>
+  <li>Fixed an issue with ImGui and Nuklear uploading VBOs before setting a vertex format (and consequently a VAO)</li>
+  <li>Map and set containers can now perform a rehash when their values or keys are non-copyable classes</li>
+  <li>Updating node transformation before committing uniform blocks</li>
+</ul>
+
+<h2 id="february-2022">February 2022</h2>
+
+<h3 id="new-features-8">New Features</h3>
+<ul>
+  <li>There is now a new <code class="language-plaintext highlighter-rouge">nctl::StaticString</code> class that stores its characters on the stack</li>
+</ul>
+
+<h3 id="improvements-29">Improvements</h3>
+<ul>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.87">v1.87</a>
+</li>
+  <li>Using the new event-based ImGui input API on all backends</li>
+  <li>Math classes like vectors, matrices, and quaternions will now initialize their members in the default constructor</li>
+  <li>Disabling the cursor will now enable a relative mouse motion if supported (SDL and GLFW)</li>
+  <li>The Qt5 widget exposes a flag to disable per-frame updates</li>
+  <li>It is now possible to retrieve last frame AABB of a <code class="language-plaintext highlighter-rouge">DrawableNode</code>
+</li>
+  <li>More information will be presented when the OpenGL debug context is enabled (marker annotations)</li>
+</ul>
+
+<h3 id="fixes-12">Fixes</h3>
+<ul>
+  <li>The fixed capacity property is now correctly initialized when copy constructing, move constructing, and move assign a <code class="language-plaintext highlighter-rouge">String</code>
+</li>
+  <li>A <code class="language-plaintext highlighter-rouge">Sprite</code> or a <code class="language-plaintext highlighter-rouge">MeshSprite</code> without a texture would make the application crash when a texture was assigned</li>
+  <li>A <code class="language-plaintext highlighter-rouge">TextNode</code> without a font would make the application crash when a font was assigned</li>
+  <li>A scene node with a negative scale factor will invert its rotation sign</li>
+</ul>
+
+<h2 id="january-2022">January 2022</h2>
+
+<h3 id="breaking-changes-13">Breaking Changes</h3>
+<ul>
+  <li>The public <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> fields of a <code class="language-plaintext highlighter-rouge">SceneNode</code> have been made protected for consistency</li>
+  <li>The <code class="language-plaintext highlighter-rouge">IGfxDevice</code> interface cannot set the OpenGL viewport and clear color, use viewports instead</li>
+  <li>The ImGui and Nuklear layer settings are part of the GUI settings structure in the <code class="language-plaintext highlighter-rouge">Application</code> class</li>
+</ul>
+
+<h3 id="new-features-9">New Features</h3>
+<ul>
+  <li>Multiple viewports to support offscreen rendering or split screen</li>
+  <li>A camera system to move around without transforming a parent node (slow on the CPU)</li>
+  <li>The viewport and camera systems can also be used via the Lua API</li>
+  <li>A new <code class="language-plaintext highlighter-rouge">apptest_viewports</code> application has been added to test the viewport and camera systems</li>
+</ul>
+
+<h3 id="improvements-30">Improvements</h3>
+<ul>
+  <li>Dirty bits to update shader uniforms only when they change</li>
+  <li>Dirty bits to transform a node or update its AABB only when needed</li>
+  <li>There is now a centralized pool of render commands that serves multiple classes</li>
+  <li>There are now OpenGL state classes to track the viewport and the clear color</li>
+  <li>The <code class="language-plaintext highlighter-rouge">Rect</code> class has some new useful manipulation methods (also in the Lua API)</li>
+</ul>
+
+<h2 id="june-2020---december-2021">June 2020 - December 2021</h2>
+
+<h3 id="breaking-changes-14">Breaking Changes</h3>
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">nctl::Array</code> and <code class="language-plaintext highlighter-rouge">nctl::StaticArray</code> subscript operator will not grow the array size</li>
+  <li>The return type of the <code class="language-plaintext highlighter-rouge">createAppEventHandler</code> function has been changed to a unique pointer</li>
+  <li>The <code class="language-plaintext highlighter-rouge">SceneNode</code> query methods for drawing and updating have been prefixed with <code class="language-plaintext highlighter-rouge">is</code>, for example <code class="language-plaintext highlighter-rouge">isEnabled()</code>
+</li>
+  <li>The <code class="language-plaintext highlighter-rouge">setWidth()</code> and <code class="language-plaintext highlighter-rouge">setHeight()</code> methods of the <code class="language-plaintext highlighter-rouge">BaseSprite</code> class have been removed</li>
+  <li>The <code class="language-plaintext highlighter-rouge">errorToString()</code> function of the <code class="language-plaintext highlighter-rouge">LuaDebug</code> namespace has been renamed to correct a typo</li>
+  <li>The parameters order of <code class="language-plaintext highlighter-rouge">LuaStateManager::runFromMemory()</code> has changed</li>
+  <li>The default line height of a <code class="language-plaintext highlighter-rouge">TextNode</code> object is now its font line height instead of the base</li>
+  <li>The <code class="language-plaintext highlighter-rouge">AnimatedSprite</code> class now stores <code class="language-plaintext highlighter-rouge">RectAnimation</code> objects instead of smart pointers</li>
+  <li>The type alias declarations for hash containers with string keys have been removed</li>
+  <li>The <code class="language-plaintext highlighter-rouge">run()</code> method of the <code class="language-plaintext highlighter-rouge">LuaStateManager</code> class has been renamed to <code class="language-plaintext highlighter-rouge">runFromFile()</code>
+</li>
+  <li>The <code class="language-plaintext highlighter-rouge">onFrameEnd()</code> callback is now invoked before the OpenGL buffers swap</li>
+  <li>The <code class="language-plaintext highlighter-rouge">assign()</code> method of <code class="language-plaintext highlighter-rouge">nctl::String</code> will now always truncate the destination
+    <ul>
+      <li>The new <code class="language-plaintext highlighter-rouge">replace()</code> method wil behave like the old <code class="language-plaintext highlighter-rouge">assign()</code> method</li>
+    </ul>
+  </li>
+  <li>Pushing an element beyond the capacity of an array will now cause a fatal assert</li>
+  <li>Popping an element from an empty array will now cause a fatal assert</li>
+  <li>Retrieving a front or a back element from an empty array will now cause a fatal assert</li>
+  <li>Retrieving a front or a back element from an empty list will now cause a fatal assert</li>
+</ul>
+
+<h3 id="new-features-10">New Features</h3>
+<ul>
+  <li>The engine now supports custom memory allocators
+    <ul>
+      <li>All containers have been updated to allow the specification of an allocator</li>
+      <li>Unique pointers support custom deleters in a compressed pair</li>
+      <li>A new <code class="language-plaintext highlighter-rouge">apptest_allocators</code> application has been added to test the four included allocator types</li>
+      <li>You can set a name for an allocator and it will be used in <a href="https://github.com/wolfpld/tracy/releases/tag/v0.7.3">Tracy</a> too</li>
+    </ul>
+  </li>
+  <li>The FileSystem API now supports Android asset FileSystem</li>
+  <li>It is now possible to load textures, sounds and fonts from memory buffers</li>
+  <li>There is a new loading API for resources as textures, sounds, and fonts
+    <ul>
+      <li>The user can create empty resources and load data at a later time</li>
+      <li>Data can be loaded inside a resource multiple times</li>
+      <li>Failed loads will never result in a fatal assert nor modify a resource</li>
+      <li>A texture can be loaded from uncompressed texels and audio from PCM samples</li>
+      <li>A new <code class="language-plaintext highlighter-rouge">apptest_loading</code> application has been added to test the enhanced loading capabilities</li>
+    </ul>
+  </li>
+  <li>Sprites can be created without a texture, they will be rendered in solid color with a simpler shader</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">TextNode</code> objects can be created without assigning a <code class="language-plaintext highlighter-rouge">Font</code>
+</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">AudioBufferPlayer</code> can be created without assigning an <code class="language-plaintext highlighter-rouge">AudioBuffer</code>
+</li>
+  <li>It is now possible to move construct or move assign resource and node classes</li>
+  <li>A <code class="language-plaintext highlighter-rouge">clone()</code> method has been added to node classes to perform an object copy</li>
+  <li>A new <code class="language-plaintext highlighter-rouge">onTextInput</code> event has been added to receive UTF-8 characters</li>
+  <li>It is now possible to query and set the window position on all desktop backends</li>
+  <li>There is now an <code class="language-plaintext highlighter-rouge">onPostUpdate()</code> callback that you can use to access the node transform for the current frame
+    <ul>
+      <li>It is also possible to change it inside the callback by using <code class="language-plaintext highlighter-rouge">SceneNode::setWorldMatrix()</code>
+</li>
+    </ul>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">nctl::String</code> class will now automatically reallocate memory to expand its capacity and never truncate by default
+    <ul>
+      <li>The old behavior is still available by specifying the <code class="language-plaintext highlighter-rouge">nctl::StringMode::FIXED_CAPACITY</code> option</li>
+    </ul>
+  </li>
+  <li>The template project files are now part of the engine
+    <ul>
+      <li>You only need a simple <code class="language-plaintext highlighter-rouge">CMakeLists.txt</code> file for your project</li>
+    </ul>
+  </li>
+  <li>You can save a texture from video memory to RAM and then from RAM to disk as a PNG or WebP image</li>
+  <li>On desktop platforms the <code class="language-plaintext highlighter-rouge">IGfxDevice</code> provides a <code class="language-plaintext highlighter-rouge">flashWindow()</code> method to make the taskbar flash</li>
+  <li>nCine can now run on a <a href="https://www.raspberrypi.com/">Raspberry Pi</a>
+    <ul>
+      <li>Various fixes to better support OpenGL ES features and older CMake versions</li>
+    </ul>
+  </li>
+  <li>It is now possible to disable the scripting API while retaining the Lua integration</li>
+</ul>
+
+<h3 id="improvements-31">Improvements</h3>
+<ul>
+  <li>The version of the integrated Tracy has been updated to <a href="https://github.com/wolfpld/tracy/releases/tag/v0.7.8">v0.7.8</a>
+</li>
+  <li>The version of the integrated ImGui has been updated to <a href="https://github.com/ocornut/imgui/releases/tag/v1.86">v1.86</a>
+</li>
+  <li>The version of the integrated Google Test has been updated to <a href="https://github.com/google/googletest/releases/tag/release-1.11.0">v1.11.0</a>
+</li>
+  <li>The version of the integrated Google Benchmark has been updated to <a href="https://github.com/google/benchmark/releases/tag/v1.6.1">v1.6.1</a>
+</li>
+  <li>All containers now split the allocation phase from object construction
+    <ul>
+      <li>Creating a container will only reserve memory for the elements</li>
+      <li>Inserting or removing elements will trigger construction and destruction</li>
+    </ul>
+  </li>
+  <li>On Android unfound libraries will not be linked anymore to the game library
+    <ul>
+      <li>The Java activity will not load the nCine or OpenAL libraries if unneeded</li>
+    </ul>
+  </li>
+  <li>It is now possible to set the ARGB components of a color with a hexadecimal code</li>
+  <li>The <code class="language-plaintext highlighter-rouge">nctl::String</code> class can now decode <a href="http://unicode.org">Unicode</a> code points from UTF-8 strings and vice versa</li>
+  <li>The <code class="language-plaintext highlighter-rouge">Font</code> class now supports Unicode characters exported in the Fnt descriptor file</li>
+  <li>The Android software keyboard visibility can be toggled on and off</li>
+  <li>The seek position of an audio buffer can be queried and modified</li>
+  <li>It is now possible to set a custom line height for a <code class="language-plaintext highlighter-rouge">TextNode</code> object</li>
+  <li>When loading a RGB texture it is possible to treat a color as transparent</li>
+  <li>You can now use <code class="language-plaintext highlighter-rouge">nctl::String</code> and <code class="language-plaintext highlighter-rouge">const char *</code> as keys for hash containers without specifing an hash function</li>
+  <li>There is a new <code class="language-plaintext highlighter-rouge">removeAllChildrenNodes()</code> method in the <code class="language-plaintext highlighter-rouge">SceneNode</code> class</li>
+  <li>You can retrieve the current <code class="language-plaintext highlighter-rouge">RectAnimation</code> of an <code class="language-plaintext highlighter-rouge">AnimatedSprite</code> with the <code class="language-plaintext highlighter-rouge">currentAnimation()</code> method</li>
+  <li>Errors in Lua scripts will not cause the engine to assert and exit
+    <ul>
+      <li>It is now possible to load a Lua script without running it</li>
+      <li>More information will be provided when a script fails to load or to run</li>
+    </ul>
+  </li>
+  <li>The engine project is now shipping with an <a href="https://editorconfig.org/">.editorconfig</a> configuration file</li>
+  <li>The OpenGL class that keeps track of the blending state can now use separate functions for RRB and alpha</li>
+  <li>The file extension comparison method is now case-insensitive</li>
+  <li>The <code class="language-plaintext highlighter-rouge">FileSystem</code> class returns constant strings to prevent move assignemnt and any modification to the capacity of destination ones</li>
+  <li>There is now a <code class="language-plaintext highlighter-rouge">fixExtension()</code> function in the <code class="language-plaintext highlighter-rouge">FileSystem</code> class to assure that a file has the intended extension</li>
+</ul>
+
+<h3 id="fixes-13">Fixes</h3>
+<ul>
+  <li>GCC hardening compiler flags have been fixed with the explicit addition of PIE flags</li>
+  <li>The root node of the scenegraph now honors its own transformations</li>
+  <li>The buffer of an <code class="language-plaintext highlighter-rouge">AudioBufferPlayer</code> class was not detached from the OpenAL source when it finished playing</li>
+  <li>The <code class="language-plaintext highlighter-rouge">setSize()</code> method of <code class="language-plaintext highlighter-rouge">nctl::Array</code> will now create objects when extending an array size</li>
+  <li>The ImGui and Nuklear drawing commands were previously appended to the render queue with one frame delay</li>
+  <li>Fix <code class="language-plaintext highlighter-rouge">ncine.sprite.set_flipped_x()</code> and <code class="language-plaintext highlighter-rouge">set_flipped_y()</code> functions in the Lua API</li>
+</ul>
+
+<h2 id="november-2019---may-2020">November 2019 - May 2020</h2>
+
+<h3 id="breaking-changes-15">Breaking Changes</h3>
+
+<ul>
+  <li>Removed <code class="language-plaintext highlighter-rouge">flipX()</code> and <code class="language-plaintext highlighter-rouge">flipY()</code> sprite methods
+    <ul>
+      <li>They have been superseded by <code class="language-plaintext highlighter-rouge">setFlippedX()</code> and <code class="language-plaintext highlighter-rouge">setFlippedY()</code>
+</li>
+    </ul>
+  </li>
+  <li>Removed <code class="language-plaintext highlighter-rouge">setOpaqueTexture()</code> sprite method
+    <ul>
+      <li>You can achieve the same result with the general <code class="language-plaintext highlighter-rouge">setBlendingEnabled(false)</code>
+</li>
+    </ul>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">Matrix4x4&lt;T&gt;::scale()</code> static method has been renamed to <code class="language-plaintext highlighter-rouge">Matrix4x4&lt;T&gt;::scaling()</code>
+</li>
+  <li>The <code class="language-plaintext highlighter-rouge">dataPath()</code> and <code class="language-plaintext highlighter-rouge">savePath()</code> methods of <code class="language-plaintext highlighter-rouge">IFile</code> have been moved to the new <code class="language-plaintext highlighter-rouge">FileSystem</code> class
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">access()</code> method of <code class="language-plaintext highlighter-rouge">IFile</code> have been superseded by the more powerful query methods of the <code class="language-plaintext highlighter-rouge">FileSystem</code> class</li>
+      <li>The <code class="language-plaintext highlighter-rouge">nc.application.datapath()</code> Lua function is now <code class="language-plaintext highlighter-rouge">nc.fs.get_datapath()</code>
+</li>
+    </ul>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">children()</code> method of a <code class="language-plaintext highlighter-rouge">SceneNode</code> now returns a <code class="language-plaintext highlighter-rouge">nctl::Array</code>
+</li>
+</ul>
+
+<h3 id="new-features-11">New Features</h3>
+
+<ul>
+  <li>Scene nodes support anchor points and non-uniform scaling
+    <ul>
+      <li>There is a new <code class="language-plaintext highlighter-rouge">apptest_anchor</code> application that shows all new node features</li>
+    </ul>
+  </li>
+  <li>Drawable nodes support custom alpha blending factors</li>
+  <li>
+<a href="https://github.com/Immediate-Mode-UI/Nuklear">Nuklear</a> integration for fully skinnable user interfaces</li>
+  <li>You can now embed the whole engine inside a Qt5 widget by choosing the Qt5 desktop backend
+    <ul>
+      <li>If the <a href="https://doc.qt.io/qt-5/qtgamepad-module.html">Qt Gamepad</a> library is available it will be used for gamepad input events</li>
+    </ul>
+  </li>
+  <li>Touch events are supported on desktop through the SDL2 and Qt5 backends
+    <ul>
+      <li>They now also provide information about touch pressure</li>
+    </ul>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">FileSystem</code> class has been added to help you query and manipulate paths, files, and directories
+    <ul>
+      <li>It comes with a new <code class="language-plaintext highlighter-rouge">apptest_filebrowser</code> application that shows an ImGui based file browser</li>
+    </ul>
+  </li>
+  <li>ImGui and Nuklear integrations support custom fonts loading</li>
+  <li>Added a new unclamped three channels <code class="language-plaintext highlighter-rouge">ColorHdr</code> class</li>
+  <li>The <code class="language-plaintext highlighter-rouge">IAppEventHandler</code> class now receives <code class="language-plaintext highlighter-rouge">onSuspend()</code> and <code class="language-plaintext highlighter-rouge">onResume()</code> events</li>
+</ul>
+
+<h3 id="improvements-32">Improvements</h3>
+
+<ul>
+  <li>The logging system is initialized earlier and can be used inside <code class="language-plaintext highlighter-rouge">onPreInit()</code>
+</li>
+  <li>The Android asset manager is initialized earlier and can be used inside <code class="language-plaintext highlighter-rouge">onPreInit()</code>
+</li>
+  <li>Handling of windows resizing events has been fixed</li>
+  <li>Emscripten applications react to window resizing and fullscreen events</li>
+  <li>Emscripten applications can now load and save local files</li>
+  <li>Sprite flipping methods now take a status flag</li>
+  <li>The version of the integrated Tracy has gone from <a href="https://bitbucket.org/wolfpld/tracy/src/v0.5/">v0.5</a> to <a href="https://bitbucket.org/wolfpld/tracy/src/v0.6.3/">v0.6.3</a>
+</li>
+  <li>The version of the integrated ImGui has gone from <a href="https://github.com/ocornut/imgui/releases/tag/v1.73">v1.73</a> to <a href="https://github.com/ocornut/imgui/releases/tag/v1.76">v1.76</a>
+</li>
+  <li>Deletion of children scene nodes upon parent destruction has been made optional</li>
+  <li>The <code class="language-plaintext highlighter-rouge">Matrix4x4&lt;T&gt;</code> can now translate, rotate and scale in place, avoiding a full matrix multiplication
+    <ul>
+      <li>It can now also be multiplied on the right side of a vector</li>
+    </ul>
+  </li>
+  <li>Automatic sprite batching is now available on Emscripten
+    <ul>
+      <li>You can choose the fixed batch size with a variable in the <code class="language-plaintext highlighter-rouge">AppConfiguration</code> class</li>
+    </ul>
+  </li>
+  <li>Added support for <a href="http://angleproject.org">Google ANGLE</a> libraries on Windows</li>
+  <li>Sorting of render commands is now stable
+    <ul>
+      <li>If two commands have the same material sorting key then a secondary key based on node creation time is used</li>
+    </ul>
+  </li>
+  <li>All kind of hashmap and hashset containers can now correctly use <code class="language-plaintext highlighter-rouge">const char *</code> as key type</li>
+  <li>Added two low-level classes to save textures as Png or WebP images</li>
+  <li>It is now possible to set the swap interval on all desktop backends with <code class="language-plaintext highlighter-rouge">IGfxDevice::setSwapInterval()</code>
+</li>
+  <li>The new <code class="language-plaintext highlighter-rouge">String::append(const char *)</code> overload will prevent allocating a string object when appending</li>
+  <li>Visiting the scenegraph should be faster as children are now stored in an array instead of a list</li>
+  <li>The new unordered remove methods of arrays will remove elements faster when preserving order is not required</li>
+  <li>The debug overlay interface has now a node inspector to query and modify nodes in the scene</li>
+  <li>Android Gradle Plugin, Build Tools, <code class="language-plaintext highlighter-rouge">compileSDKVersion</code> and <code class="language-plaintext highlighter-rouge">targetSDKVersion</code> have all been updated to newer versions</li>
+</ul>
+
+<h3 id="fixes-14">Fixes</h3>
+
+<ul>
+  <li>The Emscripten port compiles with upstream LLVM WebAssembly backend</li>
+  <li>Some minor fixes in the color classes code</li>
+  <li>Culling of drawable nodes works with negative scaling factors</li>
+  <li>Scene nodes are now correctly transformed before children thus eliminating any update delay with nodes chains</li>
+  <li>Caching of <code class="language-plaintext highlighter-rouge">TextNode</code> boundaries does not introduce a one frame delay on update</li>
+  <li>The Lua stack is now cleaned after a failure in calling a function
+    <ul>
+      <li>Previously the stack would easily overflow if some callbacks were not defined</li>
+    </ul>
+  </li>
+  <li>String lenght is now updated if a string is truncated when using a formatting method</li>
+  <li>Fixed OpenGL FBO wrapper class when dealing with reading and drawing buffers</li>
+</ul>
+
+<h2 id="may-2019---october-2019">May 2019 - October 2019</h2>
+
+<h3 id="breaking-changes-16">Breaking Changes</h3>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">Font</code> constructor has now inverted parameters: <code class="language-plaintext highlighter-rouge">fntFilename</code> as first and <code class="language-plaintext highlighter-rouge">texFilename</code> as second
+    <ul>
+      <li>The reason for that is the new single parameter constructor</li>
+    </ul>
+  </li>
+  <li>
+<code class="language-plaintext highlighter-rouge">SceneNode::parentNode()</code> getter has been renamed to just <code class="language-plaintext highlighter-rouge">parent()</code>, to be consistent with the new <code class="language-plaintext highlighter-rouge">setParent()</code> setter</li>
+  <li>The <code class="language-plaintext highlighter-rouge">xResolution</code> and <code class="language-plaintext highlighter-rouge">yResolution</code> fields of the <code class="language-plaintext highlighter-rouge">AppConfiguration</code> class have been replaced by a single 2D resolution vector
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">setResolution()</code> helper method has been removed as it is now possible to call <code class="language-plaintext highlighter-rouge">resolution.set()</code>
+</li>
+      <li>In Lua <code class="language-plaintext highlighter-rouge">x_res</code> and <code class="language-plaintext highlighter-rouge">y_res</code> have been replaced by the <code class="language-plaintext highlighter-rouge">resolution</code> 2D vector</li>
+    </ul>
+  </li>
+  <li>The old non ImGui debug overlay has been deleted. If you need the debug overlay you also need to enable the ImGui integration
+    <ul>
+      <li>As part of this change the <code class="language-plaintext highlighter-rouge">fontTexFilename</code> and <code class="language-plaintext highlighter-rouge">fontFntFilename</code> strings in the <code class="language-plaintext highlighter-rouge">AppConfiguration</code> class have been deleted</li>
+    </ul>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">withProfilerGraphs</code> and <code class="language-plaintext highlighter-rouge">withInfoText</code> flags in the <code class="language-plaintext highlighter-rouge">AppConfiguration</code> class has been unified into a single <code class="language-plaintext highlighter-rouge">withDebugOverlay</code> flag
+    <ul>
+      <li>You have to explicitely set the new flag to <code class="language-plaintext highlighter-rouge">true</code> to enable the debug overlay even when your application is compiled in debug mode</li>
+    </ul>
+  </li>
+  <li>Many <code class="language-plaintext highlighter-rouge">nctl::String::copy()</code> methods have been turned into <code class="language-plaintext highlighter-rouge">assign()</code> methods in order to be more consistent with STL</li>
+  <li>The <code class="language-plaintext highlighter-rouge">Timer::now()</code> method has been removed, refer to the new <code class="language-plaintext highlighter-rouge">TimeStamp</code> class</li>
+</ul>
+
+<h3 id="new-features-12">New Features</h3>
+
+<ul>
+  <li>Emscripten is now supported as a target platform, meaning you can now use the nCine for web games! <img class="emoji" title=":spider_web:" alt=":spider_web:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f578.png" height="20" width="20">
+</li>
+  <li>The user can now query the available fullscreen video modes on PC and choose one
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">IGfxDevice</code> interface has been enriched with methods to query the current video mode, the list of available ones and to set a new mode</li>
+    </ul>
+  </li>
+  <li>A new <code class="language-plaintext highlighter-rouge">deferShaderQueries</code> flag has been added to the <code class="language-plaintext highlighter-rouge">AppConfiguration</code> classes
+    <ul>
+      <li>When it is set to <code class="language-plaintext highlighter-rouge">true</code> all the shader error checks and introspection queries are deferred upon the first use of the shader, if it is ever used.</li>
+      <li>The option allows for decreased starting time at the expense of possible stutters when the shader is first used in a frame</li>
+    </ul>
+  </li>
+  <li>New methods have been added to the audio classes to query their state
+    <ul>
+      <li>They were used in the new <em>Audio Players</em> section of the ImGui debug overlay interface</li>
+    </ul>
+  </li>
+  <li>If you use the nCine compiled as a static library you have now access to more functionalities in the OpenGL classes
+    <ul>
+      <li>You can now create <a href="https://www.khronos.org/opengl/wiki/Pixel_Buffer_Object">PBOs</a> and <a href="https://www.khronos.org/opengl/wiki/Buffer_Texture">TBOs</a>.</li>
+      <li>You can now use <code class="language-plaintext highlighter-rouge">GL_SAMPLER_1D</code> and <code class="language-plaintext highlighter-rouge">GL_SAMPLER_3D</code> types in shaders</li>
+      <li>A new <code class="language-plaintext highlighter-rouge">GLCullFace</code> class has been added to track OpenGL face culling state</li>
+    </ul>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">Font</code> class now relies on <code class="language-plaintext highlighter-rouge">FntParser</code> class to extract all the data from a FNT file
+    <ul>
+      <li>More checks are now performed to ensure the text can be properly rendered</li>
+      <li>More glyph channel configurations are now supported and rendered correctly</li>
+      <li>The <code class="language-plaintext highlighter-rouge">Font</code> class can be constructed with a single parameter: the FNT file. The texture will be loaded according to the file specified in the first <code class="language-plaintext highlighter-rouge">page</code> tag.</li>
+    </ul>
+  </li>
+  <li>When you compile the engine you can now choose to disable the support for various dependency libraries and features
+    <ul>
+      <li>You can disable threads support, Lua bindings, Png or WebP image loading, Ogg Vorbis sound loading or audio altogether</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="improvements-33">Improvements</h3>
+
+<ul>
+  <li>The version of the integrated Tracy has gone from <a href="https://bitbucket.org/wolfpld/tracy/src/v0.4.1/">v0.4.1</a> to <a href="https://bitbucket.org/wolfpld/tracy/src/v0.5/">v0.5</a>
+    <ul>
+      <li>It is now easier to use Tracy in custom nCine projects, including on Android</li>
+      <li>Threads can be named so that they can be tracked in the Tracy profiler</li>
+      <li>You can now also retrieve current thread priority or set a new one</li>
+      <li>All log entries are written out as coloured Tracy messages</li>
+      <li>Threads id are invalidated on join and cancel so that they can be reused</li>
+    </ul>
+  </li>
+  <li>The version of the integrated ImGui has gone from <a href="https://github.com/ocornut/imgui/releases/tag/v1.70">v1.70</a> to <a href="https://github.com/ocornut/imgui/releases/tag/v1.73">v1.73</a>
+</li>
+  <li>The GameController mapping database has been updated from the one included in SDL 2.0.9 to the one in SDL 2.0.10</li>
+  <li>The <code class="language-plaintext highlighter-rouge">SceneNode</code> classes has seen the addition of long awaited helper methods in the shape of <code class="language-plaintext highlighter-rouge">setParent()</code>, <code class="language-plaintext highlighter-rouge">alpha()</code> and <code class="language-plaintext highlighter-rouge">absAlpha()</code>
+    <ul>
+      <li>The first one makes it easy and intuitive to set a node parent without going the opposite way by calling <code class="language-plaintext highlighter-rouge">parent-&gt;addChildNode(this)</code>
+</li>
+      <li>The alpha related methods should make it easier to query for a node alpha value</li>
+      <li>There are also new Lua methods for scene nodes: <code class="language-plaintext highlighter-rouge">set_parent()</code>, <code class="language-plaintext highlighter-rouge">get_alpha()</code> and <code class="language-plaintext highlighter-rouge">set_alpha()</code>
+</li>
+    </ul>
+  </li>
+  <li>The new <code class="language-plaintext highlighter-rouge">TimeStamp</code> class can be used to collect timestamps at the full precision of the internal clock
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">Time</code> class has been enhanced with <code class="language-plaintext highlighter-rouge">stop()</code> and <code class="language-plaintext highlighter-rouge">totalTime()</code> methods to aggregate multiple time spans</li>
+      <li>Most methods of the <code class="language-plaintext highlighter-rouge">TimeStamp</code> class are also accessible through the Lua API</li>
+    </ul>
+  </li>
+  <li>It is now possible to <code class="language-plaintext highlighter-rouge">assign()</code> a certain numbers of characters from a C string to an <code class="language-plaintext highlighter-rouge">nctl::String</code> object</li>
+  <li>You can now enable the ImGui debug overlay even when the scenegraph is disabled
+    <ul>
+      <li>In this case be sure to track OpenGL states using <code class="language-plaintext highlighter-rouge">GLBlending</code>, <code class="language-plaintext highlighter-rouge">GLDepthTest</code> and the new <code class="language-plaintext highlighter-rouge">GLCullFace</code> class</li>
+    </ul>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">Font</code> class has a new query method, <code class="language-plaintext highlighter-rouge">numKernings()</code>, to retrieve the number of kerning pairs in a font (it is called <code class="language-plaintext highlighter-rouge">num_kernings()</code> in Lua)</li>
+  <li>You can access the array of animations in an <code class="language-plaintext highlighter-rouge">AnimatedSprite</code> and the array of rectangles in a <code class="language-plaintext highlighter-rouge">RectAnimation</code>
+</li>
+  <li>On Windows the executables use the Windows subsystem instead of the console one
+    <ul>
+      <li>They will also expose version properties thanks to the <a href="https://docs.microsoft.com/en-us/windows/win32/menurc/versioninfo-resource">VERSIONINFO</a> file</li>
+    </ul>
+  </li>
+  <li>The Android Gradle plugin version has been updated from 3.4.0 to 3.4.1 and Android build tools from 28.0.3 to 29.0.2
+    <ul>
+      <li>The changes have been reflected in the template project as well</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="fixes-15">Fixes</h3>
+
+<ul>
+  <li>Compiler warnings related with <code class="language-plaintext highlighter-rouge">nctl::UniquePtr</code> wrapping forward declared classes have been fixed. They could have sometimes led to incorrect object deletions and possible leaks. <img class="emoji" title=":fearful:" alt=":fearful:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f628.png" height="20" width="20">
+</li>
+  <li>The OpenAL implementation has been rewritten and many bugs that were lurking in the code should have been squashed <img class="emoji" title=":bug:" alt=":bug:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f41b.png" height="20" width="20">
+</li>
+  <li>Some changes dictated by the layout of the new <code class="language-plaintext highlighter-rouge">ncTemplate</code> project
+    <ul>
+      <li>The CMake scripts now expect a <code class="language-plaintext highlighter-rouge">nCine-data/icons/icon.ico</code> file instead of the old <code class="language-plaintext highlighter-rouge">nCine.ico</code>
+</li>
+      <li>Installers are now built with the <code class="language-plaintext highlighter-rouge">CPACK_PACKAGE_VENDOR</code> and <code class="language-plaintext highlighter-rouge">CPACK_PACKAGE_HOMEPAGE_URL</code> variables correctly set</li>
+    </ul>
+  </li>
+  <li>The returned value for <code class="language-plaintext highlighter-rouge">GL_MAX_UNIFORM_BLOCK_SIZE</code> is now clamped to 64kB because some OpenGL drivers might return very big numbers</li>
+</ul>
+
+
+
+      
+
+      
+
+    </div>
+  </div>
+</main>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      
+<ul class="list-inline text-center footer-links">
+<li class="list-inline-item">
+    <a href="/feed.xml" title="RSS">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">RSS</span>
+    </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://github.com/nCine" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://twitter.com/nCine2D" title="X (Twitter)">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">X (Twitter)</span>
+   </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://patreon.com/encelo" title="Patreon">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-patreon fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Patreon</span>
+    </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://www.youtube.com/@nCine" title="YouTube">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">YouTube</span>
+   </a>
+  </li>
+<li class="list-inline-item">
+    <a rel="me" href="https://mastodon.gamedev.place/@encelo" title="Mastodon">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Mastodon</span>
+    </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://discord.com/invite/495ab6Y" title="Discord">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Discord</span>
+   </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://encelo.itch.io/" title="Itchio">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-itch-io fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Itchio</span>
+   </a>
+  </li>
+</ul>
+
+
+      
+      <p class="copyright text-muted">
+      
+        Angelo Theodorou
+         • 
+      
+      2025
+
+      
+         • 
+        <span class="author-site">
+          <a href="/">ncine.github.io</a>
+        </span>
+      
+
+      
+
+      
+
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>
