@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jam on nCine</title>
+    <link>https://ncine.github.io/tags/jam/</link>
+    <description>Recent content in Jam on nCine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)</copyright>
+    <lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ncine.github.io/tags/jam/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Wet Paper</title>
+      <link>https://ncine.github.io/news/2025-06-30-wet-paper/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-06-30-wet-paper/</guid>
+      <description>&lt;p&gt;The complete &lt;a href=&#34;https://github.com/encelo/WetPaper&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;source code&lt;/a&gt; and &lt;a href=&#34;https://github.com/encelo/WetPaper-data&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;game data&lt;/a&gt; for &lt;a href=&#34;https://encelo.itch.io/wet-paper&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Wet Paper&lt;/a&gt; are now available on GitHub!&lt;/p&gt;&#xA;&lt;p&gt;You can also play it &lt;a href=&#34;https://ncine.github.io/wet_paper&#34; &gt;online&lt;/a&gt; and watch a video on the &lt;a href=&#34;https://ncine.github.io/videos&#34; &gt;Videos&lt;/a&gt; page.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>nCine at the GGJ 2025</title>
+      <link>https://ncine.github.io/news/2025-01-27-ncine-global-game-jam-2025/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-01-27-ncine-global-game-jam-2025/</guid>
+      <description>&lt;p&gt;This past weekend me and &lt;a href=&#34;https://bsky.app/profile/cominu.bsky.social&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Cominu&lt;/a&gt; have participated to the Global Game Jam 2025 in &lt;a href=&#34;https://globalgamejam.granadajam.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Granada&lt;/a&gt;.&#xA;I was there as both a jammer and an official sponsor with the nCine! &amp;#x1f4aa;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Fireman game for GMTK 2023</title>
+      <link>https://ncine.github.io/news/2023-07-09-fireman-gmtk/</link>
+      <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2023-07-09-fireman-gmtk/</guid>
+      <description>&lt;p&gt;Made by &lt;a href=&#34;https://ana30.itch.io&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Ana30&lt;/a&gt; as a submission for the &lt;a href=&#34;https://itch.io/jam/gmtk-2023&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;GMTK Game Jam 2023&lt;/a&gt;, &lt;a href=&#34;https://ana30.itch.io/fireman&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Fireman&lt;/a&gt; is an nCine game where you play as the web browser.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

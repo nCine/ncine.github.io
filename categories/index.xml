@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on nCine</title>
+    <link>https://ncine.github.io/categories/</link>
+    <description>Recent content in Categories on nCine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)</copyright>
+    <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ncine.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>News</title>
+      <link>https://ncine.github.io/categories/news/</link>
+      <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/categories/news/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Dev Update</title>
+      <link>https://ncine.github.io/categories/dev-update/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/categories/dev-update/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
