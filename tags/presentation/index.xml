@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presentation on nCine</title>
+    <link>https://ncine.github.io/tags/presentation/</link>
+    <description>Recent content in Presentation on nCine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)</copyright>
+    <lastBuildDate>Thu, 05 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ncine.github.io/tags/presentation/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Presented at /dev/games</title>
+      <link>https://ncine.github.io/news/2025-06-05-dev-games-2025/</link>
+      <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-06-05-dev-games-2025/</guid>
+      <description>&lt;p&gt;On June 5th I attended &lt;a href=&#34;https://devgames.org&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;/dev/games&lt;/a&gt;, a two-day game development conference held in Rome.&lt;/p&gt;&#xA;&lt;p&gt;I gave a talk about my 14-year journey developing nCine, sharing both challenges and achievements, and diving into a selection of technical details.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Video from /dev/games</title>
+      <link>https://ncine.github.io/news/2025-11-19-dev-games-2025-video/</link>
+      <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-11-19-dev-games-2025-video/</guid>
+      <description>&lt;p&gt;On June 5th I attended &lt;a href=&#34;https://devgames.org&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;/dev/games&lt;/a&gt;, a two-day game development conference held in Rome.&lt;/p&gt;&#xA;&lt;p&gt;Now, after five months, the recording of the talk about my 14-year journey developing nCine, has been published on YouTube on the official conference &lt;a href=&#34;https://www.youtube.com/@devgamesconf&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;channel&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Custom engines presentation</title>
+      <link>https://ncine.github.io/news/2024-03-06-custom-engines-presentation/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2024-03-06-custom-engines-presentation/</guid>
+      <description>&lt;p&gt;Today I gave a presentation for &lt;a href=&#34;https://twitter.com/GRinteractiva&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;GRInteractiva&lt;/a&gt; about in-house custom engines: why they are so important, what are some indie games based on custom technology and, of course, a small overview of the nCine.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

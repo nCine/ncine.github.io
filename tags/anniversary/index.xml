@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anniversary on nCine</title>
+    <link>https://ncine.github.io/tags/anniversary/</link>
+    <description>Recent content in Anniversary on nCine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)</copyright>
+    <lastBuildDate>Sat, 19 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ncine.github.io/tags/anniversary/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ten years anniversary</title>
+      <link>https://ncine.github.io/news/2021-06-19-ten-years/</link>
+      <pubDate>Sat, 19 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2021-06-19-ten-years/</guid>
+      <description>&lt;p&gt;Today marks the tenth anniversary since the first &lt;a href=&#34;https://github.com/nCine/nCine/commit/6bf318de68ed5c453eaacd867c8e83c853f64edc&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;commit&lt;/a&gt; in 2011!&lt;/p&gt;&#xA;&lt;p&gt;Happy birthday to the nCine! &amp;#x1f37e;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Eight years in the works</title>
+      <link>https://ncine.github.io/news/2019-06-19-eight-years/</link>
+      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-06-19-eight-years/</guid>
+      <description>&lt;p&gt;This is not the first anniversary post on the site, but there is an interesting difference this year.&lt;/p&gt;&#xA;&lt;p&gt;Now that the source code have been released you can have a look at that very first &lt;a href=&#34;https://github.com/nCine/nCine/commit/6bf318de68ed5c453eaacd867c8e83c853f64edc&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;commit&lt;/a&gt; from eight years ago!&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Six years ago</title>
+      <link>https://ncine.github.io/news/2017-06-19-six-years/</link>
+      <pubDate>Mon, 19 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2017-06-19-six-years/</guid>
+      <description>&lt;p&gt;Another year has passed and the project activity is still as high as it was in the very beginning!&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Five years ago</title>
+      <link>https://ncine.github.io/news/2016-06-19-five-years/</link>
+      <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2016-06-19-five-years/</guid>
+      <description>&lt;p&gt;Five years ago, on June the 19th of 2011, the initial source code for the nCine was committed in Mercurial.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

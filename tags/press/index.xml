@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Press on nCine</title>
+    <link>https://ncine.github.io/tags/press/</link>
+    <description>Recent content in Press on nCine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)</copyright>
+    <lastBuildDate>Sat, 19 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ncine.github.io/tags/press/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>nCine article in SUGO</title>
+      <link>https://ncine.github.io/news/2024-10-19-sugo-magazine/</link>
+      <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2024-10-19-sugo-magazine/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://sugo.gameloop.it/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;SUGO&lt;/a&gt; is a new Italian magazine about indie game development in Italy, with a nice impagination derived from traditional medias and distributed as a PDF.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>The Runtime Podcast</title>
+      <link>https://ncine.github.io/news/2021-07-23-runtime-podcast/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2021-07-23-runtime-podcast/</guid>
+      <description>&lt;p&gt;The nCine and its ten years of development are the main focus of the &lt;a href=&#34;https://runtimepodcast.com/#5&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;fifth episode&lt;/a&gt; of &lt;em&gt;The Runtime&lt;/em&gt;, a podcast about software development.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Article on GameFromScratch</title>
+      <link>https://ncine.github.io/news/2019-06-17-game-from-scratch/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-06-17-game-from-scratch/</guid>
+      <description>&lt;p&gt;Today &lt;a href=&#34;https://www.gamefromscratch.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;GameFromScratch&lt;/a&gt; has talked about the nCine!&lt;/p&gt;&#xA;&lt;p&gt;With an &lt;a href=&#34;https://www.gamefromscratch.com/post/2019/06/17/nCine-2D-Open-Source-Game-Engine.aspx&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;article&lt;/a&gt; on the site, a &lt;a href=&#34;https://twitter.com/gamefromscratch/status/1140649100867751936&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;tweet&lt;/a&gt; (actually &lt;a href=&#34;https://twitter.com/gamefromscratch/status/1140649916609568769&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;two&lt;/a&gt; &amp;#x1f604;) and a ten minutes overview &lt;a href=&#34;https://www.youtube.com/watch?v=RdwuMKq2BmU&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;video&lt;/a&gt; on YouTube.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Article on Phoronix</title>
+      <link>https://ncine.github.io/news/2019-06-01-phoronix/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2019-06-01-phoronix/</guid>
+      <description>&lt;p&gt;It is an honor for the nCine to appear in an &lt;a href=&#34;https://www.phoronix.com/scan.php?page=news_item&amp;amp;px=nCine-Game-Engine&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;article&lt;/a&gt; on &lt;a href=&#34;https://www.phoronix.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Phoronix&lt;/a&gt; today!&lt;/p&gt;&#xA;&lt;p&gt;Many thanks to &lt;a href=&#34;https://michaellarabel.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Michael Larabel&lt;/a&gt; for the very first press coverage about the project.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
