@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  
+
+  <title>Tag Index | nCine</title>
+
+  
+  
+  <meta name="author" content="Angelo Theodorou">
+  
+
+  <meta name="description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:&apos;,&apos; | sort -%} {%- for tag...">
+
+  
+  <meta name="theme-color" content="#96D43D">
+  
+
+  
+  <meta name="keywords" content="engine,2d,gamedev,programming,game programming,development,game development">
+  
+
+  
+  <link rel="alternate" type="application/rss+xml" title="nCine" href="/feed.xml">
+  
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6YXXLVFNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z6YXXLVFNV');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/custom-styles.css">
+    
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="nCine">
+  <meta property="og:title" content="Tag Index | nCine">
+  <meta property="og:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:&apos;,&apos; | sort -%} {%- for tag...">
+
+  
+  <meta property="og:image" content="/img/avatar-icon.png">
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/tags/">
+  <link rel="canonical" href="/tags/">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@nCine2D">
+  <meta name="twitter:creator" content="@nCine2D">
+
+  <meta property="twitter:title" content="Tag Index | nCine">
+  <meta property="twitter:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:&apos;,&apos; | sort -%} {%- for tag...">
+
+  
+  <meta name="twitter:image" content="/img/avatar-icon.png">
+  
+
+  
+
+
+  
+
+  
+  
+  <link rel="icon" href="/favicon.ico" />
+  
+
+  
+
+</head>
+
+
+<body>
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="/">nCine</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/features">Features</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Showcase</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/gallery">Gallery</a>
+                  <a class="dropdown-item" href="/videos">Videos</a>
+                  <a class="dropdown-item" href="/web-tests">Web Tests</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Documentation</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/why">Why nCine?</a>
+                  <a class="dropdown-item" href="/faq">F.A.Q.</a>
+                  <a class="dropdown-item" href="https://github.com/nCine/nCine/wiki/Getting-Started">Getting Started</a>
+                  <a class="dropdown-item" href="/Lua_Tutorial.html">Lua Tutorial</a>
+                  <a class="dropdown-item" href="/docs/master">Documentation (master)</a>
+                  <a class="dropdown-item" href="/docs/lua_master">Lua API (master)</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="https://github.com/nCine/nCine/discussions">Forum</a>
+                  <a class="dropdown-item" href="https://discord.gg/495ab6Y">Discord</a>
+                  <a class="dropdown-item" href="https://github.com/nCine/nCine">GitHub</a>
+                  <a class="dropdown-item" href="/donate">Donate</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/download">General Info</a>
+                  <a class="dropdown-item" href="/changelog">Changelog</a>
+                  <a class="dropdown-item" href="/artifacts">Artifacts</a>
+            </div>
+          </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li></ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="/">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/img/avatar-icon.png" />
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: '/assets/data/searchcorpus.json' 
+    });
+  </script>
+</div>
+
+
+
+
+
+  
+
+
+
+<header class="header-section ">
+<div class="intro-header ">
+  
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>Tag Index</h1>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+
+</header>
+
+
+<main class=" container-md ">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+      
+
+      <a href="#Dev Update" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;Dev Update&nbsp;(26)</a><a href="#News" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;News&nbsp;(39)</a><div id="full-tags-list"><h2 id="Dev Update" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;Dev Update&nbsp;(26)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/2025-01-14-ncine-dev-update-21/">nCine Dev Update 21</a>
+                <div class="entry-date">
+                    <time datetime="2025-01-14T00:00:00+01:00">January 14, 2025</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2023-12-12-ncine-dev-update-20/">nCine Dev Update 20</a>
+                <div class="entry-date">
+                    <time datetime="2023-12-12T00:00:00+01:00">December 12, 2023</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2022-10-06-ncine-compilation-benchmark-2/">nCine Compilation Benchmark 2</a>
+                <div class="entry-date">
+                    <time datetime="2022-10-06T00:00:00+02:00">October 6, 2022</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2022-09-07-ncine-dev-update-19/">nCine Dev Update 19</a>
+                <div class="entry-date">
+                    <time datetime="2022-09-07T00:00:00+02:00">September 7, 2022</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2022-01-30-ncine-dev-update-18/">nCine Dev Update 18</a>
+                <div class="entry-date">
+                    <time datetime="2022-01-30T00:00:00+01:00">January 30, 2022</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2021-06-28-ncine-dev-update-17/">nCine Dev Update 17</a>
+                <div class="entry-date">
+                    <time datetime="2021-06-28T00:00:00+02:00">June 28, 2021</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2021-06-21-ten-years-retrospective/">Ten years of nCine</a>
+                <div class="entry-date">
+                    <time datetime="2021-06-21T00:00:00+02:00">June 21, 2021</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-11-28-ncine-dev-update-16/">nCine Dev Update 16</a>
+                <div class="entry-date">
+                    <time datetime="2020-11-28T00:00:00+01:00">November 28, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-07-14-ncine-dev-update-15/">nCine Dev Update 15</a>
+                <div class="entry-date">
+                    <time datetime="2020-07-14T00:00:00+02:00">July 14, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-03-30-ncine-i965-vs-iris-benchmark/">nCine Intel Mesa 20 Driver Benchmark</a>
+                <div class="entry-date">
+                    <time datetime="2020-03-30T00:00:00+02:00">March 30, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-03-23-ncine-dev-update-14/">nCine Dev Update 14</a>
+                <div class="entry-date">
+                    <time datetime="2020-03-23T00:00:00+01:00">March 23, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-12-24-ncine-dev-update-13/">nCine Dev Update 13</a>
+                <div class="entry-date">
+                    <time datetime="2019-12-24T00:00:00+01:00">December 24, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-09-21-ncine-dev-update-12/">nCine Dev Update 12</a>
+                <div class="entry-date">
+                    <time datetime="2019-09-21T00:00:00+02:00">September 21, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-07-16-ncine-dev-update-11/">nCine Dev Update 11</a>
+                <div class="entry-date">
+                    <time datetime="2019-07-16T00:00:00+02:00">July 16, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-07-03-ncine-dev-update-10/">nCine Dev Update 10</a>
+                <div class="entry-date">
+                    <time datetime="2019-07-03T00:00:00+02:00">July 3, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-05-14-ncine-dev-update-9/">nCine Dev Update 9</a>
+                <div class="entry-date">
+                    <time datetime="2019-05-14T00:00:00+02:00">May 14, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-04-01-ncine-dev-update-8/">nCine Dev Update 8</a>
+                <div class="entry-date">
+                    <time datetime="2019-04-01T00:00:00+02:00">April 1, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-01-08-ncine-dev-update-7/">nCine Dev Update 7</a>
+                <div class="entry-date">
+                    <time datetime="2019-01-08T00:00:00+01:00">January 8, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2018-12-16-ncine-dev-update-6/">nCine Dev Update 6</a>
+                <div class="entry-date">
+                    <time datetime="2018-12-16T00:00:00+01:00">December 16, 2018</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2018-09-29-ncine-dev-update-5/">nCine Dev Update 5</a>
+                <div class="entry-date">
+                    <time datetime="2018-09-29T00:00:00+02:00">September 29, 2018</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2018-08-06-ncine-dev-update-4/">nCine Dev Update 4</a>
+                <div class="entry-date">
+                    <time datetime="2018-08-06T00:00:00+02:00">August 6, 2018</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2018-03-04-ncine-compilation-benchmark/">nCine Compilation Benchmark</a>
+                <div class="entry-date">
+                    <time datetime="2018-03-04T00:00:00+01:00">March 4, 2018</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2018-02-10-ncine-dev-update-3/">nCine Dev Update 3</a>
+                <div class="entry-date">
+                    <time datetime="2018-02-10T00:00:00+01:00">February 10, 2018</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2017-10-22-ncine-dev-update-2/">nCine Dev Update 2</a>
+                <div class="entry-date">
+                    <time datetime="2017-10-22T00:00:00+02:00">October 22, 2017</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2017-09-18-ncine-dev-update-1/">nCine Dev Update 1</a>
+                <div class="entry-date">
+                    <time datetime="2017-09-18T00:00:00+02:00">September 18, 2017</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2017-08-20-get-to-know-the-ncine/">Get to know the nCine</a>
+                <div class="entry-date">
+                    <time datetime="2017-08-20T00:00:00+02:00">August 20, 2017</time>
+                </div>
+            </div></div><h2 id="News" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;News&nbsp;(39)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/2025-01-27-ncine-global-game-jam-2025/">nCine at the GGJ 2025</a>
+                <div class="entry-date">
+                    <time datetime="2025-01-27T00:00:00+01:00">January 27, 2025</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2024-12-18-ldoc-lua-documentation/">LDoc Lua API documentation</a>
+                <div class="entry-date">
+                    <time datetime="2024-12-18T00:00:00+01:00">December 18, 2024</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2024-12-04-lua-language-server/">Lua Language Server support</a>
+                <div class="entry-date">
+                    <time datetime="2024-12-04T00:00:00+01:00">December 4, 2024</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2024-10-19-sugo-magazine/">nCine article in SUGO</a>
+                <div class="entry-date">
+                    <time datetime="2024-10-19T00:00:00+02:00">October 19, 2024</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2024-06-27-one-thousand-stars/">One thousand stars!</a>
+                <div class="entry-date">
+                    <time datetime="2024-06-27T00:00:00+02:00">June 27, 2024</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2024-03-22-getting-started-guide/">Getting started guide</a>
+                <div class="entry-date">
+                    <time datetime="2024-03-22T00:00:00+01:00">March 22, 2024</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2024-03-06-custom-engines-presentation/">Custom engines presentation</a>
+                <div class="entry-date">
+                    <time datetime="2024-03-06T00:00:00+01:00">March 6, 2024</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2023-07-09-fireman-gmtk/">Fireman game for GMTK 2023</a>
+                <div class="entry-date">
+                    <time datetime="2023-07-09T00:00:00+02:00">July 9, 2023</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2022-07-15-jazz2-native-github/">Native version of Jazz² Resurrection</a>
+                <div class="entry-date">
+                    <time datetime="2022-07-15T00:00:00+02:00">July 15, 2022</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2022-03-28-ncjump-on-steam-deck/">ncJump on the Steam Deck</a>
+                <div class="entry-date">
+                    <time datetime="2022-03-28T00:00:00+02:00">March 28, 2022</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2021-10-11-artificial-intelligence-course/">nCine used at university</a>
+                <div class="entry-date">
+                    <time datetime="2021-10-11T00:00:00+02:00">October 11, 2021</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2021-07-23-runtime-podcast/">The Runtime Podcast</a>
+                <div class="entry-date">
+                    <time datetime="2021-07-23T00:00:00+02:00">July 23, 2021</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2021-06-19-ten-years/">Ten years anniversary</a>
+                <div class="entry-date">
+                    <time datetime="2021-06-19T00:00:00+02:00">June 19, 2021</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2021-05-23-spookyghost-foss/">SpookyGhost released on GitHub!</a>
+                <div class="entry-date">
+                    <time datetime="2021-05-23T00:00:00+02:00">May 23, 2021</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2021-04-09-ncjump/">ncJump</a>
+                <div class="entry-date">
+                    <time datetime="2021-04-09T00:00:00+02:00">April 9, 2021</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2021-01-25-nctiledviewer/">ncTiledViewer</a>
+                <div class="entry-date">
+                    <time datetime="2021-01-25T00:00:00+01:00">January 25, 2021</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2021-01-08-icculus-microgrant/">Icculus Microgrant 2020</a>
+                <div class="entry-date">
+                    <time datetime="2021-01-08T00:00:00+01:00">January 8, 2021</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-11-24-jugimap-guidemo/">JugiMapGuiDemo</a>
+                <div class="entry-date">
+                    <time datetime="2020-11-24T00:00:00+01:00">November 24, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-11-04-github-actions/">C.I. migrated to GitHub Actions</a>
+                <div class="entry-date">
+                    <time datetime="2020-11-04T00:00:00+01:00">November 4, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-10-12-nctracer/">ncTracer</a>
+                <div class="entry-date">
+                    <time datetime="2020-10-12T00:00:00+02:00">October 12, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-06-27-jugimap-spritetimelineanimation/">JugiMapSpriteTimelineAnimation demo</a>
+                <div class="entry-date">
+                    <time datetime="2020-06-27T00:00:00+02:00">June 27, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-05-19-release-202005/">Release 2020.05</a>
+                <div class="entry-date">
+                    <time datetime="2020-05-19T00:00:00+02:00">May 19, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-03-30-jugimap-parallaxscrolling/">JugiMapParallaxScrolling demo</a>
+                <div class="entry-date">
+                    <time datetime="2020-03-30T00:00:00+02:00">March 30, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-02-20-qt5-backend/">nCine as a custom Qt5 widget</a>
+                <div class="entry-date">
+                    <time datetime="2020-02-20T00:00:00+01:00">February 20, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-01-30-spookyghost/">SpookyGhost available on itch.io</a>
+                <div class="entry-date">
+                    <time datetime="2020-01-30T00:00:00+01:00">January 30, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-12-17-jugimap/">JugiMap supports the nCine!</a>
+                <div class="entry-date">
+                    <time datetime="2019-12-17T00:00:00+01:00">December 17, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-10-21-release-201910/">Release 2019.10</a>
+                <div class="entry-date">
+                    <time datetime="2019-10-21T00:00:00+02:00">October 21, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-10-20-video-tutorials/">Video Tutorials</a>
+                <div class="entry-date">
+                    <time datetime="2019-10-20T00:00:00+02:00">October 20, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-09-17-ncline/">ncline</a>
+                <div class="entry-date">
+                    <time datetime="2019-09-17T00:00:00+02:00">September 17, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-07-29-template-project/">ncTemplate</a>
+                <div class="entry-date">
+                    <time datetime="2019-07-29T00:00:00+02:00">July 29, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-07-25-ncinvaders/">ncInvaders</a>
+                <div class="entry-date">
+                    <time datetime="2019-07-25T00:00:00+02:00">July 25, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-07-14-emscripten/">Emscripten port</a>
+                <div class="entry-date">
+                    <time datetime="2019-07-14T00:00:00+02:00">July 14, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-06-19-eight-years/">Eight years in the works</a>
+                <div class="entry-date">
+                    <time datetime="2019-06-19T00:00:00+02:00">June 19, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-06-17-game-from-scratch/">Article on GameFromScratch</a>
+                <div class="entry-date">
+                    <time datetime="2019-06-17T00:00:00+02:00">June 17, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-06-01-phoronix/">Article on Phoronix</a>
+                <div class="entry-date">
+                    <time datetime="2019-06-01T00:00:00+02:00">June 1, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2019-05-30-source-released/">Source code released</a>
+                <div class="entry-date">
+                    <time datetime="2019-05-30T00:00:00+02:00">May 30, 2019</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2017-06-19-six-years/">Six years ago</a>
+                <div class="entry-date">
+                    <time datetime="2017-06-19T00:00:00+02:00">June 19, 2017</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2016-06-26-closed-beta/">Closed beta</a>
+                <div class="entry-date">
+                    <time datetime="2016-06-26T00:00:00+02:00">June 26, 2016</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2016-06-19-five-years/">Five years ago</a>
+                <div class="entry-date">
+                    <time datetime="2016-06-19T00:00:00+02:00">June 19, 2016</time>
+                </div>
+            </div></div></div>
+
+
+      
+
+      
+
+    </div>
+  </div>
+</main>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      
+<ul class="list-inline text-center footer-links"><li class="list-inline-item">
+    <a href="/feed.xml" title="RSS">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">RSS</span>
+    </a>
+  </li><li class="list-inline-item">
+    <a href="https://github.com/nCine" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://twitter.com/nCine2D" title="X (Twitter)">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">X (Twitter)</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://patreon.com/encelo" title="Patreon">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-patreon fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Patreon</span>
+    </a>
+  </li><li class="list-inline-item">
+    <a href="https://www.youtube.com/@nCine" title="YouTube">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">YouTube</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a rel="me" href="https://mastodon.gamedev.place/@encelo" title="Mastodon">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Mastodon</span>
+    </a>
+  </li><li class="list-inline-item">
+    <a href="https://discord.com/invite/495ab6Y" title="Discord">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Discord</span>
+   </a>
+  </li><li class="list-inline-item">
+    <a href="https://encelo.itch.io/" title="Itchio">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-itch-io fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Itchio</span>
+   </a>
+  </li></ul>
+
+
+      
+      <p class="copyright text-muted">
+      
+        Angelo Theodorou
+        &nbsp;&bull;&nbsp;
+      
+      2025
+
+      
+        &nbsp;&bull;&nbsp;
+        <span class="author-site">
+          <a href="/">ncine.github.io</a>
+        </span>
+      
+
+      
+
+      
+
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>
