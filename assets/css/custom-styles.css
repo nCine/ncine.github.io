@@ -1,0 +1,7 @@
+/* Add your own CSS rules here to overwrite any Beautiful Jekyll defaults */
+
+.navbar-custom .navbar-nav .nav-item {
+  text-transform: uppercase;
+  font-size: 0.725rem;
+  letter-spacing: 0.0625rem;
+}

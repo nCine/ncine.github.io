@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    
+    <title>nCine</title>
+    
+    
+    <description>An open source cross-platform 2D game engine written in C++ with an emphasis on performance. Suitable for games, prototypes, tools and technical demos.</description>
+    
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Presented at /dev/games</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          A talk on the nCine development journey - 
+          On June 5th I attended /dev/games, a two-day game development conference held in Rome.
+
+I gave a talk about my 14-year journey developing nCine, sharing both challenges and achievements, and diving into a selection of technical details.
+
+You can check out the interactive slides made with Sli.dev, or download the PDF version.
+
+A video recording will be available in the coming months on the conference’s official YouTube channel.
+
+
+
+        </description>
+        <pubDate>Thu, 05 Jun 2025 00:00:00 +0200</pubDate>
+        <link>/2025-06-05-dev-games-2025/</link>
+        <guid isPermaLink="true">/2025-06-05-dev-games-2025/</guid>
+      </item>
+    
+      <item>
+        <title>Getting Started with CLion</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          A new wiki article to get started with JetBrains IDE - 
+          It has been only a bunch of days since JetBrains announced that its C++ IDE is now free for non-commercial use.
+
+To celebrate for this happy news, the wiki has now an article showing how to setup the IDE to work with the nCine and its projects!
+
+
+
+        </description>
+        <pubDate>Sun, 11 May 2025 00:00:00 +0200</pubDate>
+        <link>/2025-05-11-getting-started-clion/</link>
+        <guid isPermaLink="true">/2025-05-11-getting-started-clion/</guid>
+      </item>
+    
+      <item>
+        <title>nCine at the GGJ 2025</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          A game made with the nCine at the jam - 
+          This past weekend me and Cominu have participated to the Global Game Jam 2025 in Granada.
+I was there as both a jammer and an official sponsor with the nCine! :muscle:
+
+With the help of two graphic artists we put together a nice little game made with the nCine, called Papel Mojado.
+
+In the live video from the jam location you can see both a short presentation of our game and me giving away an nCine mug as a sponsor price :D
+
+
+
+        </description>
+        <pubDate>Mon, 27 Jan 2025 00:00:00 +0100</pubDate>
+        <link>/2025-01-27-ncine-global-game-jam-2025/</link>
+        <guid isPermaLink="true">/2025-01-27-ncine-global-game-jam-2025/</guid>
+      </item>
+    
+      <item>
+        <title>nCine Dev Update 21</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          Updates from December 2023 to December 2024 - 
+          https://encelo.github.io/2025-01-14-ncine-dev-update-21/
+
+        </description>
+        <pubDate>Tue, 14 Jan 2025 00:00:00 +0100</pubDate>
+        <link>/2025-01-14-ncine-dev-update-21/</link>
+        <guid isPermaLink="true">/2025-01-14-ncine-dev-update-21/</guid>
+      </item>
+    
+      <item>
+        <title>LDoc Lua API documentation</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          A brand new documentation for the Lua API - 
+          The Lua development experience is getting even better!
+
+The documentation already available through the Lua Language Server is now available online, thanks to LDoc.
+
+        </description>
+        <pubDate>Wed, 18 Dec 2024 00:00:00 +0100</pubDate>
+        <link>/2024-12-18-ldoc-lua-documentation/</link>
+        <guid isPermaLink="true">/2024-12-18-ldoc-lua-documentation/</guid>
+      </item>
+    
+      <item>
+        <title>Lua Language Server support</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          Enjoy a new Lua workflow experience - 
+          Today you can find the nCine among the Lua Language Server official addons!
+
+If you are using Visual Studio Code, autocomplete, type checking, and full API documentation are only one click away.
+
+Lua development experience should be now on par with other Lua scriptable frameworks, making the whole process more pleasant and functional.
+
+If you also install the Local Lua Debugger extension, you should have all the tools needed to create nice games with Lua and the nCine.
+
+Please refer to the updated Wiki for more details.
+
+
+
+        </description>
+        <pubDate>Wed, 04 Dec 2024 00:00:00 +0100</pubDate>
+        <link>/2024-12-04-lua-language-server/</link>
+        <guid isPermaLink="true">/2024-12-04-lua-language-server/</guid>
+      </item>
+    
+      <item>
+        <title>nCine article in SUGO</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          My article in the first issue of an Italian e-magazine - 
+          SUGO is a new Italian magazine about indie game development in Italy, with a nice impagination derived from traditional medias and distributed as a PDF.
+
+In the first issue that just came out today, there is an article I wrote about the story behind nCine development.
+
+If you understand Italian grab a copy and let me know what you think!
+
+
+
+
+        </description>
+        <pubDate>Sat, 19 Oct 2024 00:00:00 +0200</pubDate>
+        <link>/2024-10-19-sugo-magazine/</link>
+        <guid isPermaLink="true">/2024-10-19-sugo-magazine/</guid>
+      </item>
+    
+      <item>
+        <title>One thousand stars!</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          A great recognition from the GitHub community - 
+          After thirteen years of development and five years on GitHub, the nCine has surpassed one thousand stars! :star:
+
+
+
+
+        </description>
+        <pubDate>Thu, 27 Jun 2024 00:00:00 +0200</pubDate>
+        <link>/2024-06-27-one-thousand-stars/</link>
+        <guid isPermaLink="true">/2024-06-27-one-thousand-stars/</guid>
+      </item>
+    
+      <item>
+        <title>Getting started guide</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          New wiki guide and updated site - 
+          There is a new Getting Started guide in the project wiki.
+It comes with many screenshots, covers both Lua and C++, and it should be easy to follow.
+
+The C++ part of the guide targets three different IDEs: Visual Studio 2022, Visual Studio Code, and Qt Creator.
+
+I have removed any references to the old GitHub releases from the site. I have collated all the changes they introduced in a new Changelog page.
+
+I have also removed the links to the video tutorials from the wiki, they were deprecated and confusing. The videos have been unlisted from the Youtube channel.
+
+I hope those changes better reflect the current state of the project and its setup process. :ok_hand:
+
+        </description>
+        <pubDate>Fri, 22 Mar 2024 00:00:00 +0100</pubDate>
+        <link>/2024-03-22-getting-started-guide/</link>
+        <guid isPermaLink="true">/2024-03-22-getting-started-guide/</guid>
+      </item>
+    
+      <item>
+        <title>Custom engines presentation</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          Why custom engines, and the nCine, are important nowadays - 
+          Today I gave a presentation for GRInteractiva about in-house custom engines: why they are so important, what are some indie games based on custom technology and, of course, a small overview of the nCine.
+
+The slides are made with Remark and are available on GitHub.
+
+An attendee also wrote an article in Spanish about the talk. :wink:
+
+
+
+        </description>
+        <pubDate>Wed, 06 Mar 2024 00:00:00 +0100</pubDate>
+        <link>/2024-03-06-custom-engines-presentation/</link>
+        <guid isPermaLink="true">/2024-03-06-custom-engines-presentation/</guid>
+      </item>
+    
+      <item>
+        <title>nCine Dev Update 20</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          Updates from August 2022 to November 2023 - 
+          https://encelo.github.io/2023-12-12-ncine-dev-update-20/
+
+        </description>
+        <pubDate>Tue, 12 Dec 2023 00:00:00 +0100</pubDate>
+        <link>/2023-12-12-ncine-dev-update-20/</link>
+        <guid isPermaLink="true">/2023-12-12-ncine-dev-update-20/</guid>
+      </item>
+    
+      <item>
+        <title>Fireman game for GMTK 2023</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          The first game jam entry - 
+          Made by Ana30 as a submission for the GMTK Game Jam 2023, Fireman is an nCine game where you play as the web browser.
+
+
+
+        </description>
+        <pubDate>Sun, 09 Jul 2023 00:00:00 +0200</pubDate>
+        <link>/2023-07-09-fireman-gmtk/</link>
+        <guid isPermaLink="true">/2023-07-09-fireman-gmtk/</guid>
+      </item>
+    
+      <item>
+        <title>nCine Compilation Benchmark 2</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          How long does it take to compile the nCine on my new laptop? - 
+          https://encelo.github.io/2022-10-06-ncine-compilation-benchmark-2/
+
+        </description>
+        <pubDate>Thu, 06 Oct 2022 00:00:00 +0200</pubDate>
+        <link>/2022-10-06-ncine-compilation-benchmark-2/</link>
+        <guid isPermaLink="true">/2022-10-06-ncine-compilation-benchmark-2/</guid>
+      </item>
+    
+      <item>
+        <title>nCine Dev Update 19</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          Updates from the second half of January to the end of July 2022 - 
+          https://encelo.github.io/2022-09-07-ncine-dev-update-19/
+
+        </description>
+        <pubDate>Wed, 07 Sep 2022 00:00:00 +0200</pubDate>
+        <link>/2022-09-07-ncine-dev-update-19/</link>
+        <guid isPermaLink="true">/2022-09-07-ncine-dev-update-19/</guid>
+      </item>
+    
+      <item>
+        <title>Native version of Jazz² Resurrection</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          Ported to C++ using a customized nCine version - 
+          Jazz² Resurrection is reimplementation of Jazz Jackrabbit 2, a 1998 platform game by Epic Games (at the time called Epic MegaGames).
+The author, DeathKiller, used C# and parts of the Duality 2D framework to put together the project.
+
+He is now porting it to C++ and he decided to use nCine for the job! :muscle:
+
+The native project embeds a modified version of the engine to make the porting easier and faster.
+You can have a look at the source code on GitHub.
+
+
+  
+
+
+        </description>
+        <pubDate>Fri, 15 Jul 2022 00:00:00 +0200</pubDate>
+        <link>/2022-07-15-jazz2-native-github/</link>
+        <guid isPermaLink="true">/2022-07-15-jazz2-native-github/</guid>
+      </item>
+    
+      <item>
+        <title>ncJump on the Steam Deck</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          Fahien&apos;s platform game runs on Valve&apos;s handheld - 
+          I have recorded a video of ncJump running (and jumping :wink:) on the Steam Deck!
+
+
+  
+
+
+        </description>
+        <pubDate>Mon, 28 Mar 2022 00:00:00 +0200</pubDate>
+        <link>/2022-03-28-ncjump-on-steam-deck/</link>
+        <guid isPermaLink="true">/2022-03-28-ncjump-on-steam-deck/</guid>
+      </item>
+    
+      <item>
+        <title>nCine Dev Update 18</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          Updates from the first half of June 2021 to the second half of January 2022 - 
+          https://encelo.github.io/2022-01-30-ncine-dev-update-18/
+
+        </description>
+        <pubDate>Sun, 30 Jan 2022 00:00:00 +0100</pubDate>
+        <link>/2022-01-30-ncine-dev-update-18/</link>
+        <guid isPermaLink="true">/2022-01-30-ncine-dev-update-18/</guid>
+      </item>
+    
+      <item>
+        <title>nCine used at university</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          Recommended for homework in an AI course - 
+          The nCine has been recommended as the framework to be used by students for the second lesson homerwork of the Artificial Intelligence for Computer Games course at the prestigious Charles University in Prague.
+
+Many thanks to Dr. Jakub Gemrot for choosing the project, for providing a custom installation guide for students, and for his feedback about the Windows build instructions.
+
+
+
+        </description>
+        <pubDate>Mon, 11 Oct 2021 00:00:00 +0200</pubDate>
+        <link>/2021-10-11-artificial-intelligence-course/</link>
+        <guid isPermaLink="true">/2021-10-11-artificial-intelligence-course/</guid>
+      </item>
+    
+      <item>
+        <title>The Runtime Podcast</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          The nCine under the spotlight for episode 5 - 
+          The nCine and its ten years of development are the main focus of the fifth episode of The Runtime, a podcast about software development.
+
+I have been interviewed by Rafael Kennedy about my work on the nCine during those years: from why I felt the urge to start developing it to some of the design decisions and trade-offs I had to made.
+
+
+
+        </description>
+        <pubDate>Fri, 23 Jul 2021 00:00:00 +0200</pubDate>
+        <link>/2021-07-23-runtime-podcast/</link>
+        <guid isPermaLink="true">/2021-07-23-runtime-podcast/</guid>
+      </item>
+    
+      <item>
+        <title>nCine Dev Update 17</title>
+        
+        <dc:creator><![CDATA[ Angelo Theodorou ]]></dc:creator>
+        
+        <description>
+          Updates from the second half of November 2020 to the first half of June 2021 - 
+          https://encelo.github.io/2021-06-28-ncine-dev-update-17/
+
+        </description>
+        <pubDate>Mon, 28 Jun 2021 00:00:00 +0200</pubDate>
+        <link>/2021-06-28-ncine-dev-update-17/</link>
+        <guid isPermaLink="true">/2021-06-28-ncine-dev-update-17/</guid>
+      </item>
+    
+  </channel>
+</rss>
