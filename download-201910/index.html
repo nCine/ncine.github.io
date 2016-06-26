@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 4.1 | Copyright Dean Attali 2020 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>Release 2019.10</title>
+
+  
+  <meta name="author" content="Angelo Theodorou">
+  
+
+  <meta name="description" content="Release [2019.10](https://github.com/nCine/nCine/releases/tag/2019.10) is the second nCine release. ## Manifest - [nCine-2019.10-Win64-VS2019.exe](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2019.exe) (md5: `8e505ffe0ec256688e85e00dbbe7ec17`) - [nCine-2019.10-Win64-VS2019.zip](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2019.zip) (md5: `63d93c1cdba532c002fd59b0094e1dd2`) - [nCine-2019.10-Win64-VS2017.exe](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2017.exe) (md5: `99d9fc5b22a51286fe76bf8634316390`) - [nCine-2019.10-Win64-VS2017.zip](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2017.zip) (md5: `1cff45df92503c773ca2dc1d2f31dc78`) - [nCine-2019.10-Darwin.dmg](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Darwin.dmg) (md5: `1554b5a3d906d7c3bd62f50c53eb2f85`) ## Changelog ### Breaking Changes - The `Font` constructor has now inverted parameters: `fntFilename` as first and `texFilename` as second -...">
+
+  
+  <meta name="theme-color" content="#96D43D">
+  
+
+  
+  <meta name="keywords" content="engine,2d,gamedev,programming,game programming,development,game development">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="nCine" href="/feed.xml">
+
+  
+
+  
+
+  
+<!-- Google Analytics -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-494292-5', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="nCine">
+  <meta property="og:title" content="Release 2019.10">
+  <meta property="og:description" content="Release [2019.10](https://github.com/nCine/nCine/releases/tag/2019.10) is the second nCine release. ## Manifest - [nCine-2019.10-Win64-VS2019.exe](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2019.exe) (md5: `8e505ffe0ec256688e85e00dbbe7ec17`) - [nCine-2019.10-Win64-VS2019.zip](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2019.zip) (md5: `63d93c1cdba532c002fd59b0094e1dd2`) - [nCine-2019.10-Win64-VS2017.exe](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2017.exe) (md5: `99d9fc5b22a51286fe76bf8634316390`) - [nCine-2019.10-Win64-VS2017.zip](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2017.zip) (md5: `1cff45df92503c773ca2dc1d2f31dc78`) - [nCine-2019.10-Darwin.dmg](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Darwin.dmg) (md5: `1554b5a3d906d7c3bd62f50c53eb2f85`) ## Changelog ### Breaking Changes - The `Font` constructor has now inverted parameters: `fntFilename` as first and `texFilename` as second -...">
+
+  
+  <meta property="og:image" content="/img/avatar-icon.png">
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/download-201910/">
+  <link rel="canonical" href="/download-201910/">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@nCine2D">
+  <meta name="twitter:creator" content="@nCine2D">
+
+  <meta property="twitter:title" content="Release 2019.10">
+  <meta property="twitter:description" content="Release [2019.10](https://github.com/nCine/nCine/releases/tag/2019.10) is the second nCine release. ## Manifest - [nCine-2019.10-Win64-VS2019.exe](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2019.exe) (md5: `8e505ffe0ec256688e85e00dbbe7ec17`) - [nCine-2019.10-Win64-VS2019.zip](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2019.zip) (md5: `63d93c1cdba532c002fd59b0094e1dd2`) - [nCine-2019.10-Win64-VS2017.exe](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2017.exe) (md5: `99d9fc5b22a51286fe76bf8634316390`) - [nCine-2019.10-Win64-VS2017.zip](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2017.zip) (md5: `1cff45df92503c773ca2dc1d2f31dc78`) - [nCine-2019.10-Darwin.dmg](https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Darwin.dmg) (md5: `1554b5a3d906d7c3bd62f50c53eb2f85`) ## Changelog ### Breaking Changes - The `Font` constructor has now inverted parameters: `fntFilename` as first and `texFilename` as second -...">
+
+  
+  <meta name="twitter:image" content="/img/avatar-icon.png">
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="">nCine</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/why">Why nCine</a>
+                  <a class="dropdown-item" href="/features">Features</a>
+                  <a class="dropdown-item" href="/gallery">Gallery</a>
+                  <a class="dropdown-item" href="/videos">Videos</a>
+                  <a class="dropdown-item" href="/faq">F.A.Q.</a>
+                  <a class="dropdown-item" href="/web-tests">Web Tests</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Learn</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/video-tutorials">Video Tutorials</a>
+                  <a class="dropdown-item" href="/samples">Samples</a>
+                  <a class="dropdown-item" href="/docs/master">Documentation (master)</a>
+                  <a class="dropdown-item" href="/docs/lua_api_master.html">Lua API (master)</a>
+                  <a class="dropdown-item" href="/docs/2020.05">Documentation (2020.05)</a>
+                  <a class="dropdown-item" href="/docs/lua_api_2020.05.html">Lua API (2020.05)</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Build</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/build-linux">Linux</a>
+                  <a class="dropdown-item" href="/build-windows">Windows</a>
+                  <a class="dropdown-item" href="/build-macos">macOS</a>
+                  <a class="dropdown-item" href="/build-android">Android</a>
+                  <a class="dropdown-item" href="/build-emscripten">Emscripten</a>
+                  <a class="dropdown-item" href="/build-dev-dist">Dev Dist</a>
+                  <a class="dropdown-item" href="/cmake-options">CMake options</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/download">General Info</a>
+                  <a class="dropdown-item" href="/download-master">Master Branch</a>
+                  <a class="dropdown-item" href="/download-202005">Release 2020.05</a>
+                  <a class="dropdown-item" href="/download-201910">Release 2019.10</a>
+                  <a class="dropdown-item" href="/download-201905">Release 2019.05</a>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/ci">C.I.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/donate">Donate</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li>
+</ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/img/avatar-icon.png">
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+       \
+        { \
+          "title"    : "nCine Dev Update 17", \
+          "category" : "Dev Update", \
+          "url"      : "/2021-06-28-ncine-dev-update-17/", \
+          "date"     : "June 28, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Ten years of nCine", \
+          "category" : "Dev Update", \
+          "url"      : "/2021-06-21-ten-years-retrospective/", \
+          "date"     : "June 21, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Ten years anniversary", \
+          "category" : "News", \
+          "url"      : "/2021-06-19-ten-years/", \
+          "date"     : "June 19, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "SpookyGhost released on GitHub!", \
+          "category" : "News", \
+          "url"      : "/2021-05-23-spookyghost-foss/", \
+          "date"     : "May 23, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "ncJump", \
+          "category" : "News", \
+          "url"      : "/2021-04-09-ncjump/", \
+          "date"     : "April  9, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "ncTiledViewer", \
+          "category" : "News", \
+          "url"      : "/2021-01-25-nctiledviewer/", \
+          "date"     : "January 25, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Icculus Microgrant 2020", \
+          "category" : "News", \
+          "url"      : "/2021-01-08-icculus-microgrant/", \
+          "date"     : "January  8, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 16", \
+          "category" : "Dev Update", \
+          "url"      : "/2020-11-28-ncine-dev-update-16/", \
+          "date"     : "November 28, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "JugiMapGuiDemo", \
+          "category" : "News", \
+          "url"      : "/2020-11-24-jugimap-guidemo/", \
+          "date"     : "November 24, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "C.I. migrated to GitHub Actions", \
+          "category" : "News", \
+          "url"      : "/2020-11-04-github-actions/", \
+          "date"     : "November  4, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "ncTracer", \
+          "category" : "News", \
+          "url"      : "/2020-10-12-nctracer/", \
+          "date"     : "October 12, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 15", \
+          "category" : "Dev Update", \
+          "url"      : "/2020-07-14-ncine-dev-update-15/", \
+          "date"     : "July 14, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "JugiMapSpriteTimelineAnimation demo", \
+          "category" : "News", \
+          "url"      : "/2020-06-27-jugimap-spritetimelineanimation/", \
+          "date"     : "June 27, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "Release 2020.05", \
+          "category" : "News", \
+          "url"      : "/2020-05-19-release-202005/", \
+          "date"     : "May 19, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Intel Mesa 20 Driver Benchmark", \
+          "category" : "Dev Update", \
+          "url"      : "/2020-03-30-ncine-i965-vs-iris-benchmark/", \
+          "date"     : "March 30, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "JugiMapParallaxScrolling demo", \
+          "category" : "News", \
+          "url"      : "/2020-03-30-jugimap-parallaxscrolling/", \
+          "date"     : "March 30, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 14", \
+          "category" : "Dev Update", \
+          "url"      : "/2020-03-23-ncine-dev-update-14/", \
+          "date"     : "March 23, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "nCine as a custom Qt5 widget", \
+          "category" : "News", \
+          "url"      : "/2020-02-20-qt5-backend/", \
+          "date"     : "February 20, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "SpookyGhost available on itch.io", \
+          "category" : "News", \
+          "url"      : "/2020-01-30-spookyghost/", \
+          "date"     : "January 30, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 13", \
+          "category" : "Dev Update", \
+          "url"      : "/2019-12-24-ncine-dev-update-13/", \
+          "date"     : "December 24, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "JugiMap supports the nCine!", \
+          "category" : "News", \
+          "url"      : "/2019-12-17-jugimap/", \
+          "date"     : "December 17, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "Release 2019.10", \
+          "category" : "News", \
+          "url"      : "/2019-10-21-release-201910/", \
+          "date"     : "October 21, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "Video Tutorials", \
+          "category" : "News", \
+          "url"      : "/2019-10-20-video-tutorials/", \
+          "date"     : "October 20, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 12", \
+          "category" : "Dev Update", \
+          "url"      : "/2019-09-21-ncine-dev-update-12/", \
+          "date"     : "September 21, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "ncline", \
+          "category" : "News", \
+          "url"      : "/2019-09-17-ncline/", \
+          "date"     : "September 17, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "ncTemplate", \
+          "category" : "News", \
+          "url"      : "/2019-07-29-template-project/", \
+          "date"     : "July 29, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "ncInvaders", \
+          "category" : "News", \
+          "url"      : "/2019-07-25-ncinvaders/", \
+          "date"     : "July 25, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 11", \
+          "category" : "Dev Update", \
+          "url"      : "/2019-07-16-ncine-dev-update-11/", \
+          "date"     : "July 16, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "Emscripten port", \
+          "category" : "News", \
+          "url"      : "/2019-07-14-emscripten/", \
+          "date"     : "July 14, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 10", \
+          "category" : "Dev Update", \
+          "url"      : "/2019-07-03-ncine-dev-update-10/", \
+          "date"     : "July  3, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "Eight years in the works", \
+          "category" : "News", \
+          "url"      : "/2019-06-19-eight-years/", \
+          "date"     : "June 19, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "Article on GameFromScratch", \
+          "category" : "News", \
+          "url"      : "/2019-06-17-game-from-scratch/", \
+          "date"     : "June 17, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "Article on Phoronix", \
+          "category" : "News", \
+          "url"      : "/2019-06-01-phoronix/", \
+          "date"     : "June  1, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "Source code released", \
+          "category" : "News", \
+          "url"      : "/2019-05-30-source-released/", \
+          "date"     : "May 30, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 9", \
+          "category" : "Dev Update", \
+          "url"      : "/2019-05-14-ncine-dev-update-9/", \
+          "date"     : "May 14, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 8", \
+          "category" : "Dev Update", \
+          "url"      : "/2019-04-01-ncine-dev-update-8/", \
+          "date"     : "April  1, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 7", \
+          "category" : "Dev Update", \
+          "url"      : "/2019-01-08-ncine-dev-update-7/", \
+          "date"     : "January  8, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 6", \
+          "category" : "Dev Update", \
+          "url"      : "/2018-12-16-ncine-dev-update-6/", \
+          "date"     : "December 16, 2018" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 5", \
+          "category" : "Dev Update", \
+          "url"      : "/2018-09-29-ncine-dev-update-5/", \
+          "date"     : "September 29, 2018" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 4", \
+          "category" : "Dev Update", \
+          "url"      : "/2018-08-06-ncine-dev-update-4/", \
+          "date"     : "August  6, 2018" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Compilation Benchmark", \
+          "category" : "Dev Update", \
+          "url"      : "/2018-03-04-ncine-compilation-benchmark/", \
+          "date"     : "March  4, 2018" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 3", \
+          "category" : "Dev Update", \
+          "url"      : "/2018-02-10-ncine-dev-update-3/", \
+          "date"     : "February 10, 2018" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 2", \
+          "category" : "Dev Update", \
+          "url"      : "/2017-10-22-ncine-dev-update-2/", \
+          "date"     : "October 22, 2017" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 1", \
+          "category" : "Dev Update", \
+          "url"      : "/2017-09-18-ncine-dev-update-1/", \
+          "date"     : "September 18, 2017" \
+        }, \
+       \
+        { \
+          "title"    : "Get to know the nCine", \
+          "category" : "Dev Update", \
+          "url"      : "/2017-08-20-get-to-know-the-ncine/", \
+          "date"     : "August 20, 2017" \
+        }, \
+       \
+        { \
+          "title"    : "Six years ago", \
+          "category" : "News", \
+          "url"      : "/2017-06-19-six-years/", \
+          "date"     : "June 19, 2017" \
+        }, \
+       \
+        { \
+          "title"    : "Closed beta", \
+          "category" : "News", \
+          "url"      : "/2016-06-26-closed-beta/", \
+          "date"     : "June 26, 2016" \
+        }, \
+       \
+        { \
+          "title"    : "Five years ago", \
+          "category" : "News", \
+          "url"      : "/2016-06-19-five-years/", \
+          "date"     : "June 19, 2016" \
+        }, \
+       \
+       \
+        { \
+          "title"    : "Build for Android", \
+          "category" : "page", \
+          "url"      : "/build-android/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Build a Developer Distribution", \
+          "category" : "page", \
+          "url"      : "/build-dev-dist/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Build for Emscripten", \
+          "category" : "page", \
+          "url"      : "/build-emscripten/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Build for Linux", \
+          "category" : "page", \
+          "url"      : "/build-linux/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Build for macOS", \
+          "category" : "page", \
+          "url"      : "/build-macos/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Build for Windows", \
+          "category" : "page", \
+          "url"      : "/build-windows/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Continuous Integration", \
+          "category" : "page", \
+          "url"      : "/ci/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "CMake options", \
+          "category" : "page", \
+          "url"      : "/cmake-options/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Donate", \
+          "category" : "page", \
+          "url"      : "/donate/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Release 2019.05", \
+          "category" : "page", \
+          "url"      : "/download-201905/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Release 2019.10", \
+          "category" : "page", \
+          "url"      : "/download-201910/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Release 2020.05", \
+          "category" : "page", \
+          "url"      : "/download-202005/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Master Branch", \
+          "category" : "page", \
+          "url"      : "/download-master/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Download Information", \
+          "category" : "page", \
+          "url"      : "/download/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "F.A.Q.", \
+          "category" : "page", \
+          "url"      : "/faq/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Features", \
+          "category" : "page", \
+          "url"      : "/features/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Gallery", \
+          "category" : "page", \
+          "url"      : "/gallery/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Samples", \
+          "category" : "page", \
+          "url"      : "/samples/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Tag Index", \
+          "category" : "page", \
+          "url"      : "/tags/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Video Transcript 1", \
+          "category" : "page", \
+          "url"      : "/video-transcript-1/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Video Transcript 2", \
+          "category" : "page", \
+          "url"      : "/video-transcript-2/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Video Tutorials", \
+          "category" : "page", \
+          "url"      : "/video-tutorials/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Videos", \
+          "category" : "page", \
+          "url"      : "/videos/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Web Tests", \
+          "category" : "page", \
+          "url"      : "/web-tests/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Why nCine?", \
+          "category" : "page", \
+          "url"      : "/why/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page2/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page3/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page4/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page5/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page6/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page7/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page8/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page9/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page10/", \
+          "date"     : "January 1, 1970" \
+        } \
+       \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
+
+
+
+
+
+  <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>Release 2019.10</h1>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class=" container-md " role="main">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+      
+
+      <p>Release <a href="https://github.com/nCine/nCine/releases/tag/2019.10">2019.10</a> is the second nCine release.</p>
+
+<h2 id="manifest">Manifest</h2>
+
+<ul>
+  <li>
+<a href="https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2019.exe">nCine-2019.10-Win64-VS2019.exe</a> (md5: <code class="language-plaintext highlighter-rouge">8e505ffe0ec256688e85e00dbbe7ec17</code>)</li>
+  <li>
+<a href="https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2019.zip">nCine-2019.10-Win64-VS2019.zip</a> (md5: <code class="language-plaintext highlighter-rouge">63d93c1cdba532c002fd59b0094e1dd2</code>)</li>
+  <li>
+<a href="https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2017.exe">nCine-2019.10-Win64-VS2017.exe</a> (md5: <code class="language-plaintext highlighter-rouge">99d9fc5b22a51286fe76bf8634316390</code>)</li>
+  <li>
+<a href="https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Win64-VS2017.zip">nCine-2019.10-Win64-VS2017.zip</a> (md5: <code class="language-plaintext highlighter-rouge">1cff45df92503c773ca2dc1d2f31dc78</code>)</li>
+  <li>
+<a href="https://github.com/nCine/nCine/releases/download/2019.10/nCine-2019.10-Darwin.dmg">nCine-2019.10-Darwin.dmg</a> (md5: <code class="language-plaintext highlighter-rouge">1554b5a3d906d7c3bd62f50c53eb2f85</code>)</li>
+</ul>
+
+<h2 id="changelog">Changelog</h2>
+
+<h3 id="breaking-changes">Breaking Changes</h3>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">Font</code> constructor has now inverted parameters: <code class="language-plaintext highlighter-rouge">fntFilename</code> as first and <code class="language-plaintext highlighter-rouge">texFilename</code> as second
+    <ul>
+      <li>The reason for that is the new single parameter constructor</li>
+    </ul>
+  </li>
+  <li>
+<code class="language-plaintext highlighter-rouge">SceneNode::parentNode()</code> getter has been renamed to just <code class="language-plaintext highlighter-rouge">parent()</code>, to be consistent with the new <code class="language-plaintext highlighter-rouge">setParent()</code> setter</li>
+  <li>The <code class="language-plaintext highlighter-rouge">xResolution</code> and <code class="language-plaintext highlighter-rouge">yResolution</code> fields of the <code class="language-plaintext highlighter-rouge">AppConfiguration</code> class have been replaced by a single 2D resolution vector
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">setResolution()</code> helper method has been removed as it is now possible to call <code class="language-plaintext highlighter-rouge">resolution.set()</code>
+</li>
+      <li>In Lua <code class="language-plaintext highlighter-rouge">x_res</code> and <code class="language-plaintext highlighter-rouge">y_res</code> have been replaced by the <code class="language-plaintext highlighter-rouge">resolution</code> 2D vector</li>
+    </ul>
+  </li>
+  <li>The old non ImGui debug overlay has been deleted. If you need the debug overlay you also need to enable the ImGui integration
+    <ul>
+      <li>As part of this change the <code class="language-plaintext highlighter-rouge">fontTexFilename</code> and <code class="language-plaintext highlighter-rouge">fontFntFilename</code> strings in the <code class="language-plaintext highlighter-rouge">AppConfiguration</code> class have been deleted</li>
+    </ul>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">withProfilerGraphs</code> and <code class="language-plaintext highlighter-rouge">withInfoText</code> flags in the <code class="language-plaintext highlighter-rouge">AppConfiguration</code> class has been unified into a single <code class="language-plaintext highlighter-rouge">withDebugOverlay</code> flag
+    <ul>
+      <li>You have to explicitely set the new flag to <code class="language-plaintext highlighter-rouge">true</code> to enable the debug overlay even when your application is compiled in debug mode</li>
+    </ul>
+  </li>
+  <li>Many <code class="language-plaintext highlighter-rouge">nctl::String::copy()</code> methods have been turned into <code class="language-plaintext highlighter-rouge">assign()</code> methods in order to be more consistent with STL</li>
+  <li>The <code class="language-plaintext highlighter-rouge">Timer::now()</code> method has been removed, refer to the new <code class="language-plaintext highlighter-rouge">TimeStamp</code> class</li>
+</ul>
+
+<h3 id="new-features">New Features</h3>
+
+<ul>
+  <li>Emscripten is now supported as a target platform, meaning you can now use the nCine for web games! <img class="emoji" title=":spider_web:" alt=":spider_web:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f578.png" height="20" width="20">
+</li>
+  <li>The user can now query the available fullscreen video modes on PC and choose one
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">IGfxDevice</code> interface has been enriched with methods to query the current video mode, the list of available ones and to set a new mode</li>
+    </ul>
+  </li>
+  <li>A new <code class="language-plaintext highlighter-rouge">deferShaderQueries</code> flag has been added to the <code class="language-plaintext highlighter-rouge">AppConfiguration</code> classes
+    <ul>
+      <li>When it is set to <code class="language-plaintext highlighter-rouge">true</code> all the shader error checks and introspection queries are deferred upon the first use of the shader, if it is ever used.</li>
+      <li>The option allows for decreased starting time at the expense of possible stutters when the shader is first used in a frame</li>
+    </ul>
+  </li>
+  <li>New methods have been added to the audio classes to query their state
+    <ul>
+      <li>They were used in the new <em>Audio Players</em> section of the ImGui debug overlay interface</li>
+    </ul>
+  </li>
+  <li>If you use the nCine compiled as a static library you have now access to more functionalities in the OpenGL classes
+    <ul>
+      <li>You can now create <a href="https://www.khronos.org/opengl/wiki/Pixel_Buffer_Object">PBOs</a> and <a href="https://www.khronos.org/opengl/wiki/Buffer_Texture">TBOs</a>.</li>
+      <li>You can now use <code class="language-plaintext highlighter-rouge">GL_SAMPLER_1D</code> and <code class="language-plaintext highlighter-rouge">GL_SAMPLER_3D</code> types in shaders</li>
+      <li>A new <code class="language-plaintext highlighter-rouge">GLCullFace</code> class has been added to track OpenGL face culling state</li>
+    </ul>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">Font</code> class now relies on <code class="language-plaintext highlighter-rouge">FntParser</code> class to extract all the data from a FNT file
+    <ul>
+      <li>More checks are now performed to ensure the text can be properly rendered</li>
+      <li>More glyph channel configurations are now supported and rendered correctly</li>
+      <li>The <code class="language-plaintext highlighter-rouge">Font</code> class can be constructed with a single parameter: the FNT file. The texture will be loaded according to the file specified in the first <code class="language-plaintext highlighter-rouge">page</code> tag.</li>
+    </ul>
+  </li>
+  <li>When you compile the engine you can now choose to disable the support for various dependency libraries and features
+    <ul>
+      <li>You can disable threads support, Lua bindings, Png or WebP image loading, Ogg Vorbis sound loading or audio altogether</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="improvements">Improvements</h3>
+
+<ul>
+  <li>The version of the integrated Tracy has gone from <a href="https://bitbucket.org/wolfpld/tracy/src/v0.4.1/">v0.4.1</a> to <a href="https://bitbucket.org/wolfpld/tracy/src/v0.5/">v0.5</a>
+    <ul>
+      <li>It is now easier to use Tracy in custom nCine projects, including on Android</li>
+      <li>Threads can be named so that they can be tracked in the Tracy profiler</li>
+      <li>You can now also retrieve current thread priority or set a new one</li>
+      <li>All log entries are written out as coloured Tracy messages</li>
+      <li>Threads id are invalidated on join and cancel so that they can be reused</li>
+    </ul>
+  </li>
+  <li>The version of the integrated ImGui has gone from <a href="https://github.com/ocornut/imgui/releases/tag/v1.70">v1.70</a> to <a href="https://github.com/ocornut/imgui/releases/tag/v1.73">v1.73</a>
+</li>
+  <li>The GameController mapping database has been updated from the one included in SDL 2.0.9 to the one in SDL 2.0.10</li>
+  <li>The <code class="language-plaintext highlighter-rouge">SceneNode</code> classes has seen the addition of long awaited helper methods in the shape of <code class="language-plaintext highlighter-rouge">setParent()</code>, <code class="language-plaintext highlighter-rouge">alpha()</code> and <code class="language-plaintext highlighter-rouge">absAlpha()</code>
+    <ul>
+      <li>The first one makes it easy and intuitive to set a node parent without going the opposite way by calling <code class="language-plaintext highlighter-rouge">parent-&gt;addChildNode(this)</code>
+</li>
+      <li>The alpha related methods should make it easier to query for a node alpha value</li>
+      <li>There are also new Lua methods for scene nodes: <code class="language-plaintext highlighter-rouge">set_parent()</code>, <code class="language-plaintext highlighter-rouge">get_alpha()</code> and <code class="language-plaintext highlighter-rouge">set_alpha()</code>
+</li>
+    </ul>
+  </li>
+  <li>The new <code class="language-plaintext highlighter-rouge">TimeStamp</code> class can be used to collect timestamps at the full precision of the internal clock
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">Time</code> class has been enhanced with <code class="language-plaintext highlighter-rouge">stop()</code> and <code class="language-plaintext highlighter-rouge">totalTime()</code> methods to aggregate multiple time spans</li>
+      <li>Most methods of the <code class="language-plaintext highlighter-rouge">TimeStamp</code> class are also accessible through the Lua API</li>
+    </ul>
+  </li>
+  <li>It is now possible to <code class="language-plaintext highlighter-rouge">assign()</code> a certain numbers of characters from a C string to an <code class="language-plaintext highlighter-rouge">nctl::String</code> object</li>
+  <li>You can now enable the ImGui debug overlay even when the scenegraph is disabled
+    <ul>
+      <li>In this case be sure to track OpenGL states using <code class="language-plaintext highlighter-rouge">GLBlending</code>, <code class="language-plaintext highlighter-rouge">GLDepthTest</code> and the new <code class="language-plaintext highlighter-rouge">GLCullFace</code> class</li>
+    </ul>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">Font</code> class has a new query method, <code class="language-plaintext highlighter-rouge">numKernings()</code>, to retrieve the number of kerning pairs in a font (it is called <code class="language-plaintext highlighter-rouge">num_kernings()</code> in Lua)</li>
+  <li>You can access the array of animations in an <code class="language-plaintext highlighter-rouge">AnimatedSprite</code> and the array of rectangles in a <code class="language-plaintext highlighter-rouge">RectAnimation</code>
+</li>
+  <li>On Windows the executables use the Windows subsystem instead of the console one
+    <ul>
+      <li>They will also expose version properties thanks to the <a href="https://docs.microsoft.com/en-us/windows/win32/menurc/versioninfo-resource">VERSIONINFO</a> file</li>
+    </ul>
+  </li>
+  <li>The Android Gradle plugin version has been updated from 3.4.0 to 3.4.1 and Android build tools from 28.0.3 to 29.0.2
+    <ul>
+      <li>The changes have been reflected in the template project as well</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="fixes">Fixes</h3>
+
+<ul>
+  <li>Compiler warnings related with <code class="language-plaintext highlighter-rouge">nctl::UniquePtr</code> wrapping forward declared classes have been fixed. They could have sometimes led to incorrect object deletions and possible leaks. <img class="emoji" title=":fearful:" alt=":fearful:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f628.png" height="20" width="20">
+</li>
+  <li>The OpenAL implementation has been rewritten and many bugs that were lurking in the code should have been squashed <img class="emoji" title=":bug:" alt=":bug:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f41b.png" height="20" width="20">
+</li>
+  <li>Some changes dictated by the layout of the new <code class="language-plaintext highlighter-rouge">ncTemplate</code> project
+    <ul>
+      <li>The CMake scripts now expect a <code class="language-plaintext highlighter-rouge">nCine-data/icons/icon.ico</code> file instead of the old <code class="language-plaintext highlighter-rouge">nCine.ico</code>
+</li>
+      <li>Installers are now built with the <code class="language-plaintext highlighter-rouge">CPACK_PACKAGE_VENDOR</code> and <code class="language-plaintext highlighter-rouge">CPACK_PACKAGE_HOMEPAGE_URL</code> variables correctly set</li>
+    </ul>
+  </li>
+  <li>The returned value for <code class="language-plaintext highlighter-rouge">GL_MAX_UNIFORM_BLOCK_SIZE</code> is now clamped to 64kB because some OpenGL drivers might return very big numbers</li>
+</ul>
+
+<h2 id="libraries">Libraries</h2>
+
+<p>This release is packaged together with:</p>
+
+<ul>
+  <li>
+<a href="http://glew.sourceforge.net/">GLEW</a> 2.1.0</li>
+  <li>
+<a href="https://www.glfw.org/">GLFW</a> 3.3 (preferred backend over SDL2)</li>
+  <li>
+<a href="https://www.libsdl.org/">SDL</a> 2.0.10</li>
+  <li>
+<a href="http://www.libpng.org/pub/png/libpng.html">libpng</a> 1.6.37</li>
+  <li>
+<a href="https://www.zlib.net/">zlib</a> 1.2.11</li>
+  <li>
+<a href="https://developers.google.com/speed/webp/">libwebp</a> 1.0.3</li>
+  <li>
+<a href="https://openal-soft.org/">OpenAL Soft</a> 1.19.1</li>
+  <li>
+<a href="https://xiph.org/ogg/">libogg</a> 1.3.3</li>
+  <li>
+<a href="https://xiph.org/vorbis/">libvorbis</a> 1.3.6</li>
+  <li>
+<a href="https://www.lua.org/">Lua</a> 5.3.5</li>
+</ul>
+
+<p>The Android libraries have been compiled with <a href="https://developer.android.com/ndk">NDK</a> r20 for <code class="language-plaintext highlighter-rouge">armeabi-v7a</code>, <code class="language-plaintext highlighter-rouge">arm64-v8a</code> and <code class="language-plaintext highlighter-rouge">x86_64</code>.</p>
+
+
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <ul class="list-inline text-center footer-links">
+<li class="list-inline-item">
+    <a href="https://github.com/nCine" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://twitter.com/nCine2D" title="Twitter">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Twitter</span>
+   </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://www.youtube.com/channel/UCpSq3HhW55r8pCY7vqXEsoA" title="YouTube">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">YouTube</span>
+   </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://patreon.com/encelo" title="Patreon">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-patreon fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Patreon</span>
+    </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://encelo.itch.io/" title="Itchio">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-itch-io fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Itchio</span>
+   </a>
+  </li>
+</ul>
+
+      
+      <p class="copyright text-muted">
+      
+        Angelo Theodorou
+         • 
+      
+      2021
+
+      
+         • 
+        <span class="author-site">
+          <a href="">ncine.github.io</a>
+        </span>
+      
+
+      
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    
+    <title>nCine</title>
+    
+    
+    <link></link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+      
+    
+      <item>
+        <title>nCine Dev Update 17</title>
+        <description>
+          Updates from the second half of November 2020 to the first half of June 2021 - 
+          &lt;p&gt;&lt;a href=&quot;https://encelo.github.io/2021-06-28-ncine-dev-update-17/&quot;&gt;https://encelo.github.io/2021-06-28-ncine-dev-update-17/&lt;/a&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Mon, 28 Jun 2021 00:00:00 +0200</pubDate>
+        <link>/2021-06-28-ncine-dev-update-17/</link>
+        <guid isPermaLink="true">/2021-06-28-ncine-dev-update-17/</guid>
+      </item>
+    
+      <item>
+        <title>Ten years of nCine</title>
+        <description>
+          A retrospective ten years after the first commit - 
+          &lt;p&gt;&lt;a href=&quot;https://encelo.github.io/2021-06-21-ten-years-ncine/&quot;&gt;https://encelo.github.io/2021-06-21-ten-years-ncine/&lt;/a&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Mon, 21 Jun 2021 00:00:00 +0200</pubDate>
+        <link>/2021-06-21-ten-years-retrospective/</link>
+        <guid isPermaLink="true">/2021-06-21-ten-years-retrospective/</guid>
+      </item>
+    
+      <item>
+        <title>Ten years anniversary</title>
+        <description>
+          Ten years behind us, hopefully more than ten in front of us! - 
+          &lt;p&gt;Today marks the tenth anniversary since the first &lt;a href=&quot;https://github.com/nCine/nCine/commit/6bf318de68ed5c453eaacd867c8e83c853f64edc&quot;&gt;commit&lt;/a&gt; in 2011!&lt;/p&gt;
+
+&lt;p&gt;Happy birthday to the nCine! :champagne:&lt;/p&gt;
+
+        </description>
+        <pubDate>Sat, 19 Jun 2021 00:00:00 +0200</pubDate>
+        <link>/2021-06-19-ten-years/</link>
+        <guid isPermaLink="true">/2021-06-19-ten-years/</guid>
+      </item>
+    
+      <item>
+        <title>SpookyGhost released on GitHub!</title>
+        <description>
+          The tool is now free and open source - 
+          &lt;p&gt;&lt;a href=&quot;https://encelo.itch.io/spookyghost&quot;&gt;SpookyGhost&lt;/a&gt;, the procedural sprite animation tool made with the nCine, has been released as FOSS.&lt;/p&gt;
+
+&lt;p&gt;Not only it has now a MIT license but it has also been updated with many new features and bug fixes.&lt;/p&gt;
+
+&lt;p&gt;On GitHub you will find the &lt;a href=&quot;https://github.com/SpookyGhost2D/SpookyGhost&quot;&gt;SpookyGhost&lt;/a&gt; and the &lt;a href=&quot;https://github.com/SpookyGhost2D/SpookyGhost-data&quot;&gt;SpookyGhost-data&lt;/a&gt; repositories along with the &lt;a href=&quot;https://spookyghost2d.github.com/docs&quot;&gt;manual&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You will also find the &lt;a href=&quot;/spookyghost&quot;&gt;demo&lt;/a&gt; among the &lt;a href=&quot;/web-tests&quot;&gt;web-tests&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/gallery/SpookyGhost.png&quot; alt=&quot;SpookyGhost&quot; title=&quot;SpookyGhost&quot; class=&quot;center-block&quot; /&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Sun, 23 May 2021 00:00:00 +0200</pubDate>
+        <link>/2021-05-23-spookyghost-foss/</link>
+        <guid isPermaLink="true">/2021-05-23-spookyghost-foss/</guid>
+      </item>
+    
+      <item>
+        <title>ncJump</title>
+        <description>
+          A platform game made by Fahien with the nCine - 
+          &lt;p&gt;A new &lt;a href=&quot;https://github.com/Fahien/ncJump/releases/tag/2021.04&quot;&gt;release&lt;/a&gt; of ncJump has been published today by &lt;a href=&quot;https://www.antoniocaggiano.eu/&quot;&gt;Antonio “Fahien” Caggiano&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;ncJump is a platform game that uses Box2D for the physics, ImGui for the editor and of course the nCine.
+It has been developed as an nCine reference version of the &lt;a href=&quot;https://cs50.harvard.edu/games/2018/weeks/4/&quot;&gt;CS50’s lecture 4&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;On Fahien’s GitHub you can find the &lt;a href=&quot;https://github.com/Fahien/ncJump&quot;&gt;ncJump&lt;/a&gt;, &lt;a href=&quot;https://github.com/Fahien/ncJump-data&quot;&gt;ncJump-data&lt;/a&gt; and &lt;a href=&quot;https://github.com/Fahien/ncJump-artifacts&quot;&gt;ncJump-artifacts&lt;/a&gt; repositories.&lt;/p&gt;
+
+&lt;p&gt;You can read progress update articles and interact with the author on both &lt;a href=&quot;https://github.com/nCine/nCine/discussions/10&quot;&gt;GitHub Discussions&lt;/a&gt; and &lt;a href=&quot;https://fahien.itch.io/ncjump&quot;&gt;Itch.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As with other nCine projects, there is an Emscripten version that you can try &lt;a href=&quot;https://www.antoniocaggiano.eu/ncJump-artifacts/&quot;&gt;online&lt;/a&gt; on Fahien’s site.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/gallery/ncJump.png&quot; alt=&quot;ncJump&quot; title=&quot;ncJump&quot; class=&quot;center-block&quot; /&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Fri, 09 Apr 2021 00:00:00 +0200</pubDate>
+        <link>/2021-04-09-ncjump/</link>
+        <guid isPermaLink="true">/2021-04-09-ncjump/</guid>
+      </item>
+    
+      <item>
+        <title>ncTiledViewer</title>
+        <description>
+          A viewer for Tiled maps made with the nCine - 
+          &lt;p&gt;ncTiledViewer is a viewer for &lt;a href=&quot;https://www.mapeditor.org/&quot;&gt;Tiled&lt;/a&gt; maps with an ImGui interface. It is able to parse TMX and TSX files using &lt;a href=&quot;https://pugixml.org/&quot;&gt;pugixml&lt;/a&gt; and then display the map using sprites.&lt;/p&gt;
+
+&lt;p&gt;On GitHub you will find the &lt;a href=&quot;https://github.com/nCine/ncTiledViewer&quot;&gt;ncTiledViewer&lt;/a&gt; and the &lt;a href=&quot;https://github.com/nCine/ncTiledViewer-data&quot;&gt;ncTiledViewer-data&lt;/a&gt; repositories for you to build the application.&lt;/p&gt;
+
+&lt;p&gt;You will also find the same &lt;a href=&quot;/nctiledviewer&quot;&gt;demo&lt;/a&gt; among the &lt;a href=&quot;/web-tests&quot;&gt;web-tests&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/gallery/ncTiledViewer.png&quot; alt=&quot;ncTiledViewer&quot; title=&quot;ncTiledViewer&quot; class=&quot;center-block&quot; /&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Mon, 25 Jan 2021 00:00:00 +0100</pubDate>
+        <link>/2021-01-25-nctiledviewer/</link>
+        <guid isPermaLink="true">/2021-01-25-nctiledviewer/</guid>
+      </item>
+    
+      <item>
+        <title>Icculus Microgrant 2020</title>
+        <description>
+          nCine has been chosen as one of the recipients - 
+          &lt;p&gt;The new year brings great news: the nCine has been &lt;a href=&quot;https://icculus.org/microgrant2020/&quot;&gt;awarded&lt;/a&gt; one of the $250 microgrants from &lt;a href=&quot;https://twitter.com/icculus&quot;&gt;icculus&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/icculus_sponsor.png&quot; alt=&quot;icculus sponsor&quot; title=&quot;icculus sponsor&quot; class=&quot;center-block&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For more information about previous year projects you can read the &lt;a href=&quot;https://icculus.org/microgrant2019/&quot;&gt;2019 edition&lt;/a&gt; article from icculus’ personal blog.&lt;/p&gt;
+
+        </description>
+        <pubDate>Fri, 08 Jan 2021 00:00:00 +0100</pubDate>
+        <link>/2021-01-08-icculus-microgrant/</link>
+        <guid isPermaLink="true">/2021-01-08-icculus-microgrant/</guid>
+      </item>
+    
+      <item>
+        <title>nCine Dev Update 16</title>
+        <description>
+          Updates from the second half of May to the first half of November 2020 - 
+          &lt;p&gt;&lt;a href=&quot;https://encelo.github.io/2020-11-28-ncine-dev-update-16/&quot;&gt;https://encelo.github.io/2020-11-28-ncine-dev-update-16/&lt;/a&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Sat, 28 Nov 2020 00:00:00 +0100</pubDate>
+        <link>/2020-11-28-ncine-dev-update-16/</link>
+        <guid isPermaLink="true">/2020-11-28-ncine-dev-update-16/</guid>
+      </item>
+    
+      <item>
+        <title>JugiMapGuiDemo</title>
+        <description>
+          A new JugiMap Framework project uploaded on GitHub - 
+          &lt;p&gt;There is a new &lt;a href=&quot;https://github.com/Jugilus/JugiMapFramework&quot;&gt;JugiMap Framework&lt;/a&gt; demo published by &lt;a href=&quot;https://github.com/Jugilus/&quot;&gt;Jugilus&lt;/a&gt; that shows the new GUI system.&lt;/p&gt;
+
+&lt;p&gt;On GitHub you will find the &lt;a href=&quot;https://github.com/nCine/ncJugiMapGuiDemo&quot;&gt;ncJugiMapGuiDemo&lt;/a&gt; and the &lt;a href=&quot;https://github.com/nCine/ncJugiMapGuiDemo-data&quot;&gt;ncJugiMapGuiDemo-data&lt;/a&gt; repositories for you to build the test.&lt;/p&gt;
+
+&lt;p&gt;You will also find the same &lt;a href=&quot;/web-tests/ncjugimap_guidemo&quot;&gt;demo&lt;/a&gt; among the &lt;a href=&quot;/web-tests&quot;&gt;web-tests&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/gallery/ncJugiMapGuiDemo.png&quot; alt=&quot;ncJugiMapGuiDemo&quot; title=&quot;ncJugiMapGuiDemo&quot; class=&quot;center-block&quot; /&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Tue, 24 Nov 2020 00:00:00 +0100</pubDate>
+        <link>/2020-11-24-jugimap-guidemo/</link>
+        <guid isPermaLink="true">/2020-11-24-jugimap-guidemo/</guid>
+      </item>
+    
+      <item>
+        <title>C.I. migrated to GitHub Actions</title>
+        <description>
+          Decommissioning Azure Pipelines for a more integrated solution - 
+          &lt;p&gt;All nCine projects are now continuously integrated using &lt;a href=&quot;https://github.com/features/actions&quot;&gt;GitHub Actions&lt;/a&gt; workflows.
+The old &lt;a href=&quot;https://dev.azure.com/encelo/nCine/&quot;&gt;Azure Pipelines&lt;/a&gt; setup has been disabled and it will not be used anymore.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/github_actions.png&quot; alt=&quot;GitHub Actions&quot; title=&quot;GitHub Actions&quot; class=&quot;center-block&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With this migration, the C.I. is now more integrated with the code as everything is accessible from GitHub.
+For example, have a look at the &lt;a href=&quot;https://github.com/nCine/nCine/actions&quot;&gt;nCine&lt;/a&gt; actions page showing the building workflows.
+You will also notice the new &lt;a href=&quot;https://github.blog/2020-09-30-code-scanning-is-now-available/&quot;&gt;CodeQL&lt;/a&gt; workflow and status badges in the &lt;a href=&quot;https://github.com/nCine/nCine/blob/master/README.md&quot;&gt;README.md&lt;/a&gt; file.&lt;/p&gt;
+
+&lt;p&gt;There is also another news related to building the source code: the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;develop&lt;/code&gt; branch does not exist anymore.
+It is a transition from the &lt;a href=&quot;https://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;Git Flow&lt;/a&gt; model to &lt;a href=&quot;https://guides.github.com/introduction/flow/&quot;&gt;GitHub Flow&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Improvements will appear in feature branches: they will be pushed on GitHub and updated regularly.
+Every feature branch will have one or more accompanying issues with explanations, instructions, and user comments.
+This change will allow for a broader testing phase, a transparent development process, and clearer tracking of progress.&lt;/p&gt;
+
+        </description>
+        <pubDate>Wed, 04 Nov 2020 00:00:00 +0100</pubDate>
+        <link>/2020-11-04-github-actions/</link>
+        <guid isPermaLink="true">/2020-11-04-github-actions/</guid>
+      </item>
+    
+      <item>
+        <title>ncTracer</title>
+        <description>
+          An ImGui front-end to pmTracer made with the nCine - 
+          &lt;p&gt;Today I decided to publish &lt;a href=&quot;https://github.com/encelo/pmTracer&quot;&gt;pmTracer&lt;/a&gt; and &lt;a href=&quot;https://github.com/encelo/ncTracer&quot;&gt;ncTracer&lt;/a&gt; on my personal GitHub space.
+You will also find online the &lt;a href=&quot;https://github.com/encelo/ncTracer-data&quot;&gt;ncTracer-data&lt;/a&gt; and the &lt;a href=&quot;https://github.com/encelo/ncTracer-artifacts&quot;&gt;ncTracer-artifacts&lt;/a&gt; repositories.&lt;/p&gt;
+
+&lt;p&gt;I have been working on the first, a ray tracing and path tracing library, for quite some time now. It is based on my studies of &lt;a href=&quot;http://www.raytracegroundup.com/&quot;&gt;&lt;em&gt;Ray Tracing from the Ground Up&lt;/em&gt;&lt;/a&gt; by Kevin Suffern, a book I recommend if you want to start from scratch on the topic and before delving into the more complete but also harder to understand &lt;a href=&quot;http://www.pbr-book.org/&quot;&gt;&lt;em&gt;Physically Based Rendering:From Theory To Implementation&lt;/em&gt;&lt;/a&gt;. :wink:&lt;/p&gt;
+
+&lt;p&gt;I also developed an ImGui front-end to make it easier to perform tests and gather important feedback about speed and correctness, two things that are severely lacking at the moment. :sweat_smile:&lt;/p&gt;
+
+&lt;p&gt;But I decided to publish both projects either way because it can give me the motivation to refine them and you the opportunity to have a look at an application that uses the OpenGL and the threading private API of nCine by compiling it statically.&lt;/p&gt;
+
+&lt;p&gt;You can try the Emscripten version &lt;a href=&quot;/nctracer&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/gallery/ncTracer.png&quot; alt=&quot;ncTracer&quot; title=&quot;ncTracer&quot; class=&quot;center-block&quot; /&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Mon, 12 Oct 2020 00:00:00 +0200</pubDate>
+        <link>/2020-10-12-nctracer/</link>
+        <guid isPermaLink="true">/2020-10-12-nctracer/</guid>
+      </item>
+    
+      <item>
+        <title>nCine Dev Update 15</title>
+        <description>
+          Updates from April to the first half of May 2020 - 
+          &lt;p&gt;&lt;a href=&quot;https://encelo.github.io/2020-07-14-ncine-dev-update-15/&quot;&gt;https://encelo.github.io/2020-07-14-ncine-dev-update-15/&lt;/a&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Tue, 14 Jul 2020 00:00:00 +0200</pubDate>
+        <link>/2020-07-14-ncine-dev-update-15/</link>
+        <guid isPermaLink="true">/2020-07-14-ncine-dev-update-15/</guid>
+      </item>
+    
+      <item>
+        <title>JugiMapSpriteTimelineAnimation demo</title>
+        <description>
+          A new JugiMap Framework project uploaded on GitHub - 
+          &lt;p&gt;The third &lt;a href=&quot;https://github.com/Jugilus/JugiMapFramework&quot;&gt;JugiMap Framework&lt;/a&gt; demo by &lt;a href=&quot;https://github.com/Jugilus/&quot;&gt;Jugilus&lt;/a&gt; that shows how to animate sprites with the new timeline feature has been published on GitHub.&lt;/p&gt;
+
+&lt;p&gt;You will find the &lt;a href=&quot;https://github.com/nCine/ncJugiMapSpriteTimelineAnimation&quot;&gt;ncJugiMapSpriteTimelineAnimation&lt;/a&gt; and the &lt;a href=&quot;https://github.com/nCine/ncJugiMapSpriteTimelineAnimation-data&quot;&gt;ncJugiMapSpriteTimelineAnimation-data&lt;/a&gt; repositories for you to build the test.&lt;/p&gt;
+
+&lt;p&gt;You will also find the same &lt;a href=&quot;/web-tests/ncjugimap_spritetimelineanimation&quot;&gt;demo&lt;/a&gt; among the &lt;a href=&quot;/web-tests&quot;&gt;web-tests&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/gallery/ncJugiMapSpriteTimelineAnimation.png&quot; alt=&quot;ncJugiMapSpriteTimelineAnimation&quot; title=&quot;ncJugiMapSpriteTimelineAnimation&quot; class=&quot;center-block&quot; /&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Sat, 27 Jun 2020 00:00:00 +0200</pubDate>
+        <link>/2020-06-27-jugimap-spritetimelineanimation/</link>
+        <guid isPermaLink="true">/2020-06-27-jugimap-spritetimelineanimation/</guid>
+      </item>
+    
+      <item>
+        <title>Release 2020.05</title>
+        <description>
+          The third nCine release - 
+          &lt;p&gt;A new release has been just finalised: &lt;a href=&quot;https://github.com/nCine/nCine/releases/tag/2020.05&quot;&gt;nCine 2020.05&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Some of its highlights are covered by the following video:&lt;/p&gt;
+
+&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+  &lt;iframe width=&quot;750&quot; height=&quot;422&quot; src=&quot;https://www.youtube.com/embed/uSysGQPMZ4U&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Most notable entries from the &lt;a href=&quot;/reveal.js/nCine_release_2020-05.html&quot;&gt;slides&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://jugimap.com/&quot;&gt;JugiMap&lt;/a&gt; supports the nCine
+    &lt;ul&gt;
+      &lt;li&gt;Sprite system enhancements&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.qt.io/&quot;&gt;Qt5&lt;/a&gt; desktop backend&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Immediate-Mode-UI/Nuklear&quot;&gt;Nuklear GUI&lt;/a&gt; integration&lt;/li&gt;
+  &lt;li&gt;FileSystem API&lt;/li&gt;
+  &lt;li&gt;Support for &lt;a href=&quot;http://angleproject.org&quot;&gt;ANGLE&lt;/a&gt; rendering libraries on Windows&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a more detailed list of changes and improvements you can refer to the &lt;a href=&quot;/download-202005/&quot;&gt;Release 2020.05&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;p&gt;Don’t forget to check the updated DoxyGen &lt;a href=&quot;/docs/index.html&quot;&gt;documentation&lt;/a&gt; and the &lt;a href=&quot;/lua_api.html&quot;&gt;Lua API&lt;/a&gt; functions list.&lt;/p&gt;
+
+        </description>
+        <pubDate>Tue, 19 May 2020 00:00:00 +0200</pubDate>
+        <link>/2020-05-19-release-202005/</link>
+        <guid isPermaLink="true">/2020-05-19-release-202005/</guid>
+      </item>
+    
+      <item>
+        <title>nCine Intel Mesa 20 Driver Benchmark</title>
+        <description>
+          i965 vs iris - 
+          &lt;p&gt;&lt;a href=&quot;https://encelo.github.io/2020-03-30-2020-03-30-ncine-i965-vs-iris-benchmark/&quot;&gt;https://encelo.github.io/2020-03-30-2020-03-30-ncine-i965-vs-iris-benchmark/&lt;/a&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Mon, 30 Mar 2020 00:00:00 +0200</pubDate>
+        <link>/2020-03-30-ncine-i965-vs-iris-benchmark/</link>
+        <guid isPermaLink="true">/2020-03-30-ncine-i965-vs-iris-benchmark/</guid>
+      </item>
+    
+      <item>
+        <title>JugiMapParallaxScrolling demo</title>
+        <description>
+          A new JugiMap Framework project uploaded on GitHub - 
+          &lt;p&gt;There is a new &lt;a href=&quot;https://github.com/Jugilus/JugiMapFramework&quot;&gt;JugiMap Framework&lt;/a&gt; demo published by &lt;a href=&quot;https://github.com/Jugilus/&quot;&gt;Jugilus&lt;/a&gt; that shows how to render a beautiful parallax scrolling landscape.&lt;/p&gt;
+
+&lt;p&gt;On GitHub you will find the &lt;a href=&quot;https://github.com/nCine/ncJugiMapParallaxScrolling&quot;&gt;ncJugiMapParallaxScrolling&lt;/a&gt; and the &lt;a href=&quot;https://github.com/nCine/ncJugiMapParallaxScrolling-data&quot;&gt;ncJugiMapParallaxScrolling-data&lt;/a&gt; repositories for you to build the test.&lt;/p&gt;
+
+&lt;p&gt;You will also find the same &lt;a href=&quot;/web-tests/ncjugimap_parallaxscrolling&quot;&gt;demo&lt;/a&gt; among the &lt;a href=&quot;/web-tests&quot;&gt;web-tests&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/gallery/ncJugiMapParallaxScrolling.png&quot; alt=&quot;ncJugiMapParallaxScrolling&quot; title=&quot;ncJugiMapParallaxScrolling&quot; class=&quot;center-block&quot; /&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Mon, 30 Mar 2020 00:00:00 +0200</pubDate>
+        <link>/2020-03-30-jugimap-parallaxscrolling/</link>
+        <guid isPermaLink="true">/2020-03-30-jugimap-parallaxscrolling/</guid>
+      </item>
+    
+      <item>
+        <title>nCine Dev Update 14</title>
+        <description>
+          Updates from the second half of December 2019 to the first half of March 2020 - 
+          &lt;p&gt;&lt;a href=&quot;https://encelo.github.io/2020-03-23-ncine-dev-update-14/&quot;&gt;https://encelo.github.io/2020-03-23-ncine-dev-update-14/&lt;/a&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Mon, 23 Mar 2020 00:00:00 +0100</pubDate>
+        <link>/2020-03-23-ncine-dev-update-14/</link>
+        <guid isPermaLink="true">/2020-03-23-ncine-dev-update-14/</guid>
+      </item>
+    
+      <item>
+        <title>nCine as a custom Qt5 widget</title>
+        <description>
+          New backend added on desktop platforms - 
+          &lt;p&gt;It is now possible to use &lt;a href=&quot;https://www.qt.io/&quot;&gt;Qt5&lt;/a&gt; as an input and window management backend on desktop platforms.&lt;/p&gt;
+
+&lt;p&gt;The engine will render inside a custom &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;QOpenGLWidget&lt;/code&gt; and receive all input events from Qt5.
+if &lt;a href=&quot;https://doc.qt.io/qt-5/qtgamepad-index.html&quot;&gt;Qt Gamepad&lt;/a&gt; is available gamepad events will be received as well.&lt;/p&gt;
+
+&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+  &lt;iframe width=&quot;750&quot; height=&quot;422&quot; src=&quot;https://www.youtube.com/embed/PpVLD3ShiCw&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+        </description>
+        <pubDate>Thu, 20 Feb 2020 00:00:00 +0100</pubDate>
+        <link>/2020-02-20-qt5-backend/</link>
+        <guid isPermaLink="true">/2020-02-20-qt5-backend/</guid>
+      </item>
+    
+      <item>
+        <title>SpookyGhost available on itch.io</title>
+        <description>
+          A procedural sprite animation tool - 
+          &lt;p&gt;An initial demo of &lt;a href=&quot;https://encelo.itch.io/spookyghost&quot;&gt;SpookyGhost&lt;/a&gt; has been published on itch.io.&lt;/p&gt;
+
+&lt;p&gt;SpookyGhost is a procedural sprite animation tool made with the nCine.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/posts/SpookyGhost_prototype.png&quot; alt=&quot;SpookyGhost prototype&quot; title=&quot;SpookyGhost prototype&quot; class=&quot;center-block&quot; /&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Thu, 30 Jan 2020 00:00:00 +0100</pubDate>
+        <link>/2020-01-30-spookyghost/</link>
+        <guid isPermaLink="true">/2020-01-30-spookyghost/</guid>
+      </item>
+    
+      <item>
+        <title>nCine Dev Update 13</title>
+        <description>
+          Updates from the second half of September to the first half of December 2019 - 
+          &lt;p&gt;&lt;a href=&quot;https://encelo.github.io/2019-12-24-ncine-dev-update-13/&quot;&gt;https://encelo.github.io/2019-12-24-ncine-dev-update-13/&lt;/a&gt;&lt;/p&gt;
+
+        </description>
+        <pubDate>Tue, 24 Dec 2019 00:00:00 +0100</pubDate>
+        <link>/2019-12-24-ncine-dev-update-13/</link>
+        <guid isPermaLink="true">/2019-12-24-ncine-dev-update-13/</guid>
+      </item>
+    
+  </channel>
+</rss>

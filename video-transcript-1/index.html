@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 4.1 | Copyright Dean Attali 2020 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>Video Transcript 1</title>
+
+  
+  <meta name="author" content="Angelo Theodorou">
+  
+
+  <meta name="description" content="Complete transcript of the first video tutorial">
+
+  
+  <meta name="theme-color" content="#96D43D">
+  
+
+  
+  <meta name="keywords" content="engine,2d,gamedev,programming,game programming,development,game development">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="nCine" href="/feed.xml">
+
+  
+
+  
+
+  
+<!-- Google Analytics -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-494292-5', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+
+  
+  
+  
+
+  
+
+  
+  <meta property="og:site_name" content="nCine">
+  <meta property="og:title" content="Video Transcript 1">
+  <meta property="og:description" content="Complete transcript of the first video tutorial">
+
+  
+  <meta property="og:image" content="/img/avatar-icon.png">
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/video-transcript-1/">
+  <link rel="canonical" href="/video-transcript-1/">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@nCine2D">
+  <meta name="twitter:creator" content="@nCine2D">
+
+  <meta property="twitter:title" content="Video Transcript 1">
+  <meta property="twitter:description" content="Complete transcript of the first video tutorial">
+
+  
+  <meta name="twitter:image" content="/img/avatar-icon.png">
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="">nCine</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/why">Why nCine</a>
+                  <a class="dropdown-item" href="/features">Features</a>
+                  <a class="dropdown-item" href="/gallery">Gallery</a>
+                  <a class="dropdown-item" href="/videos">Videos</a>
+                  <a class="dropdown-item" href="/faq">F.A.Q.</a>
+                  <a class="dropdown-item" href="/web-tests">Web Tests</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Learn</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/video-tutorials">Video Tutorials</a>
+                  <a class="dropdown-item" href="/samples">Samples</a>
+                  <a class="dropdown-item" href="/docs/master">Documentation (master)</a>
+                  <a class="dropdown-item" href="/docs/lua_api_master.html">Lua API (master)</a>
+                  <a class="dropdown-item" href="/docs/2020.05">Documentation (2020.05)</a>
+                  <a class="dropdown-item" href="/docs/lua_api_2020.05.html">Lua API (2020.05)</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Build</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/build-linux">Linux</a>
+                  <a class="dropdown-item" href="/build-windows">Windows</a>
+                  <a class="dropdown-item" href="/build-macos">macOS</a>
+                  <a class="dropdown-item" href="/build-android">Android</a>
+                  <a class="dropdown-item" href="/build-emscripten">Emscripten</a>
+                  <a class="dropdown-item" href="/build-dev-dist">Dev Dist</a>
+                  <a class="dropdown-item" href="/cmake-options">CMake options</a>
+            </div>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/download">General Info</a>
+                  <a class="dropdown-item" href="/download-master">Master Branch</a>
+                  <a class="dropdown-item" href="/download-202005">Release 2020.05</a>
+                  <a class="dropdown-item" href="/download-201910">Release 2019.10</a>
+                  <a class="dropdown-item" href="/download-201905">Release 2019.05</a>
+            </div>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/ci">C.I.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/donate">Donate</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-search-link" href="#" title="Search">
+            <span id="nav-search-icon" class="fa fa-search"></span>
+            <span id="nav-search-text">Search</span>
+          </a>
+        </li>
+</ul>
+  </div>
+
+  
+
+  
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/img/avatar-icon.png">
+        </a>
+      </div>
+    </div>
+  
+
+</nav>
+
+
+
+<div id="beautifuljekyll-search-overlay">
+
+  <div id="nav-search-exit" title="Exit search">✕</div>
+  <input type="text" id="nav-search-input" placeholder="Search">
+  <ul id="search-results-container"></ul>
+  
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    var searchjson = '[ \
+       \
+        { \
+          "title"    : "nCine Dev Update 17", \
+          "category" : "Dev Update", \
+          "url"      : "/2021-06-28-ncine-dev-update-17/", \
+          "date"     : "June 28, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Ten years of nCine", \
+          "category" : "Dev Update", \
+          "url"      : "/2021-06-21-ten-years-retrospective/", \
+          "date"     : "June 21, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Ten years anniversary", \
+          "category" : "News", \
+          "url"      : "/2021-06-19-ten-years/", \
+          "date"     : "June 19, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "SpookyGhost released on GitHub!", \
+          "category" : "News", \
+          "url"      : "/2021-05-23-spookyghost-foss/", \
+          "date"     : "May 23, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "ncJump", \
+          "category" : "News", \
+          "url"      : "/2021-04-09-ncjump/", \
+          "date"     : "April  9, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "ncTiledViewer", \
+          "category" : "News", \
+          "url"      : "/2021-01-25-nctiledviewer/", \
+          "date"     : "January 25, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "Icculus Microgrant 2020", \
+          "category" : "News", \
+          "url"      : "/2021-01-08-icculus-microgrant/", \
+          "date"     : "January  8, 2021" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 16", \
+          "category" : "Dev Update", \
+          "url"      : "/2020-11-28-ncine-dev-update-16/", \
+          "date"     : "November 28, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "JugiMapGuiDemo", \
+          "category" : "News", \
+          "url"      : "/2020-11-24-jugimap-guidemo/", \
+          "date"     : "November 24, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "C.I. migrated to GitHub Actions", \
+          "category" : "News", \
+          "url"      : "/2020-11-04-github-actions/", \
+          "date"     : "November  4, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "ncTracer", \
+          "category" : "News", \
+          "url"      : "/2020-10-12-nctracer/", \
+          "date"     : "October 12, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 15", \
+          "category" : "Dev Update", \
+          "url"      : "/2020-07-14-ncine-dev-update-15/", \
+          "date"     : "July 14, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "JugiMapSpriteTimelineAnimation demo", \
+          "category" : "News", \
+          "url"      : "/2020-06-27-jugimap-spritetimelineanimation/", \
+          "date"     : "June 27, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "Release 2020.05", \
+          "category" : "News", \
+          "url"      : "/2020-05-19-release-202005/", \
+          "date"     : "May 19, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Intel Mesa 20 Driver Benchmark", \
+          "category" : "Dev Update", \
+          "url"      : "/2020-03-30-ncine-i965-vs-iris-benchmark/", \
+          "date"     : "March 30, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "JugiMapParallaxScrolling demo", \
+          "category" : "News", \
+          "url"      : "/2020-03-30-jugimap-parallaxscrolling/", \
+          "date"     : "March 30, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 14", \
+          "category" : "Dev Update", \
+          "url"      : "/2020-03-23-ncine-dev-update-14/", \
+          "date"     : "March 23, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "nCine as a custom Qt5 widget", \
+          "category" : "News", \
+          "url"      : "/2020-02-20-qt5-backend/", \
+          "date"     : "February 20, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "SpookyGhost available on itch.io", \
+          "category" : "News", \
+          "url"      : "/2020-01-30-spookyghost/", \
+          "date"     : "January 30, 2020" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 13", \
+          "category" : "Dev Update", \
+          "url"      : "/2019-12-24-ncine-dev-update-13/", \
+          "date"     : "December 24, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "JugiMap supports the nCine!", \
+          "category" : "News", \
+          "url"      : "/2019-12-17-jugimap/", \
+          "date"     : "December 17, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "Release 2019.10", \
+          "category" : "News", \
+          "url"      : "/2019-10-21-release-201910/", \
+          "date"     : "October 21, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "Video Tutorials", \
+          "category" : "News", \
+          "url"      : "/2019-10-20-video-tutorials/", \
+          "date"     : "October 20, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 12", \
+          "category" : "Dev Update", \
+          "url"      : "/2019-09-21-ncine-dev-update-12/", \
+          "date"     : "September 21, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "ncline", \
+          "category" : "News", \
+          "url"      : "/2019-09-17-ncline/", \
+          "date"     : "September 17, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "ncTemplate", \
+          "category" : "News", \
+          "url"      : "/2019-07-29-template-project/", \
+          "date"     : "July 29, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "ncInvaders", \
+          "category" : "News", \
+          "url"      : "/2019-07-25-ncinvaders/", \
+          "date"     : "July 25, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 11", \
+          "category" : "Dev Update", \
+          "url"      : "/2019-07-16-ncine-dev-update-11/", \
+          "date"     : "July 16, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "Emscripten port", \
+          "category" : "News", \
+          "url"      : "/2019-07-14-emscripten/", \
+          "date"     : "July 14, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 10", \
+          "category" : "Dev Update", \
+          "url"      : "/2019-07-03-ncine-dev-update-10/", \
+          "date"     : "July  3, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "Eight years in the works", \
+          "category" : "News", \
+          "url"      : "/2019-06-19-eight-years/", \
+          "date"     : "June 19, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "Article on GameFromScratch", \
+          "category" : "News", \
+          "url"      : "/2019-06-17-game-from-scratch/", \
+          "date"     : "June 17, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "Article on Phoronix", \
+          "category" : "News", \
+          "url"      : "/2019-06-01-phoronix/", \
+          "date"     : "June  1, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "Source code released", \
+          "category" : "News", \
+          "url"      : "/2019-05-30-source-released/", \
+          "date"     : "May 30, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 9", \
+          "category" : "Dev Update", \
+          "url"      : "/2019-05-14-ncine-dev-update-9/", \
+          "date"     : "May 14, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 8", \
+          "category" : "Dev Update", \
+          "url"      : "/2019-04-01-ncine-dev-update-8/", \
+          "date"     : "April  1, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 7", \
+          "category" : "Dev Update", \
+          "url"      : "/2019-01-08-ncine-dev-update-7/", \
+          "date"     : "January  8, 2019" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 6", \
+          "category" : "Dev Update", \
+          "url"      : "/2018-12-16-ncine-dev-update-6/", \
+          "date"     : "December 16, 2018" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 5", \
+          "category" : "Dev Update", \
+          "url"      : "/2018-09-29-ncine-dev-update-5/", \
+          "date"     : "September 29, 2018" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 4", \
+          "category" : "Dev Update", \
+          "url"      : "/2018-08-06-ncine-dev-update-4/", \
+          "date"     : "August  6, 2018" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Compilation Benchmark", \
+          "category" : "Dev Update", \
+          "url"      : "/2018-03-04-ncine-compilation-benchmark/", \
+          "date"     : "March  4, 2018" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 3", \
+          "category" : "Dev Update", \
+          "url"      : "/2018-02-10-ncine-dev-update-3/", \
+          "date"     : "February 10, 2018" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 2", \
+          "category" : "Dev Update", \
+          "url"      : "/2017-10-22-ncine-dev-update-2/", \
+          "date"     : "October 22, 2017" \
+        }, \
+       \
+        { \
+          "title"    : "nCine Dev Update 1", \
+          "category" : "Dev Update", \
+          "url"      : "/2017-09-18-ncine-dev-update-1/", \
+          "date"     : "September 18, 2017" \
+        }, \
+       \
+        { \
+          "title"    : "Get to know the nCine", \
+          "category" : "Dev Update", \
+          "url"      : "/2017-08-20-get-to-know-the-ncine/", \
+          "date"     : "August 20, 2017" \
+        }, \
+       \
+        { \
+          "title"    : "Six years ago", \
+          "category" : "News", \
+          "url"      : "/2017-06-19-six-years/", \
+          "date"     : "June 19, 2017" \
+        }, \
+       \
+        { \
+          "title"    : "Closed beta", \
+          "category" : "News", \
+          "url"      : "/2016-06-26-closed-beta/", \
+          "date"     : "June 26, 2016" \
+        }, \
+       \
+        { \
+          "title"    : "Five years ago", \
+          "category" : "News", \
+          "url"      : "/2016-06-19-five-years/", \
+          "date"     : "June 19, 2016" \
+        }, \
+       \
+       \
+        { \
+          "title"    : "Build for Android", \
+          "category" : "page", \
+          "url"      : "/build-android/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Build a Developer Distribution", \
+          "category" : "page", \
+          "url"      : "/build-dev-dist/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Build for Emscripten", \
+          "category" : "page", \
+          "url"      : "/build-emscripten/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Build for Linux", \
+          "category" : "page", \
+          "url"      : "/build-linux/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Build for macOS", \
+          "category" : "page", \
+          "url"      : "/build-macos/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Build for Windows", \
+          "category" : "page", \
+          "url"      : "/build-windows/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Continuous Integration", \
+          "category" : "page", \
+          "url"      : "/ci/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "CMake options", \
+          "category" : "page", \
+          "url"      : "/cmake-options/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Donate", \
+          "category" : "page", \
+          "url"      : "/donate/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Release 2019.05", \
+          "category" : "page", \
+          "url"      : "/download-201905/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Release 2019.10", \
+          "category" : "page", \
+          "url"      : "/download-201910/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Release 2020.05", \
+          "category" : "page", \
+          "url"      : "/download-202005/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Master Branch", \
+          "category" : "page", \
+          "url"      : "/download-master/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Download Information", \
+          "category" : "page", \
+          "url"      : "/download/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "F.A.Q.", \
+          "category" : "page", \
+          "url"      : "/faq/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Features", \
+          "category" : "page", \
+          "url"      : "/features/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Gallery", \
+          "category" : "page", \
+          "url"      : "/gallery/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Samples", \
+          "category" : "page", \
+          "url"      : "/samples/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Tag Index", \
+          "category" : "page", \
+          "url"      : "/tags/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Video Transcript 1", \
+          "category" : "page", \
+          "url"      : "/video-transcript-1/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Video Transcript 2", \
+          "category" : "page", \
+          "url"      : "/video-transcript-2/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Video Tutorials", \
+          "category" : "page", \
+          "url"      : "/video-tutorials/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Videos", \
+          "category" : "page", \
+          "url"      : "/videos/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Web Tests", \
+          "category" : "page", \
+          "url"      : "/web-tests/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "Why nCine?", \
+          "category" : "page", \
+          "url"      : "/why/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page2/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page3/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page4/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page5/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page6/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page7/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page8/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page9/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "nCine", \
+          "category" : "page", \
+          "url"      : "/page10/", \
+          "date"     : "January 1, 1970" \
+        } \
+       \
+    ]';
+    searchjson = JSON.parse(searchjson);
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: searchjson
+    });
+  </script>
+</div>
+
+
+
+
+
+  <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>Video Transcript 1</h1>
+          
+            
+              <hr class="small">
+              <span class="page-subheading">Complete transcript of the first video tutorial</span>
+            
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class=" container-md " role="main">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+      
+
+      <hr>
+<p>The video is available at: <a href="https://www.youtube.com/watch?v=WHgyTdM2_wU">https://www.youtube.com/watch?v=WHgyTdM2_wU</a></p>
+
+<hr>
+
+<p>Hi everyone, I’m Encelo, the nCine author, and in this video I will show you how you can start using the engine.</p>
+
+<p>nCine is a 2D multi-platform engine available on Windows, Linux, macOS, MinGW and Android, and capable of running inside a browser thanks to Emscripten.</p>
+
+<p>Today I’m on Windows but most of the things I will say are valid on all supported platforms.</p>
+
+<p>The nCine is written in C++ and uses CMake to carry out the compilation process. The flexibility and amount of combinations supported by the CMake scripts is what makes possible to tailor the engine to your needs.
+It is also what makes this process a bit scary the first time.</p>
+
+<p>Fortunately you can completely skip the compilation process and download binaries.
+You can download an <a href="https://github.com/nCine/nCine/releases">engine release</a> from GitHub or you can access the continuous integration artifacts. The artifacts are automatically built at each commit and are the easiest way to use the development version of the engine or test one of the side projects.</p>
+
+<p>But there is yet another way, one that combines flexibility and ease of use: ncline.
+ncline is the nCine command line tool, it can download, configure and build dependency libraries, the engine and the side projects.</p>
+
+<p>The first step is downloading the tool itself. You can download the source code if you want, but being ncline a tool to automate compilation let’s just not start by compiling it. <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"></p>
+
+<p>The repository that contains ncline artifacts has different <a href="https://github.com/nCine/ncline-artifacts/branches/all">branches</a>, pick one according to your platform and compiler. In my case I will download the archive in the Visual Studio 2019 branch.</p>
+
+<p>Let’s extract the archive and then rename the corresponding folder for simplicity.
+Inside the folder you will find a license, a readme file with detailed instructions and the tool executable.</p>
+
+<p>Let’s open a Command Prompt or a PowerShell and change directory to the one we have just extracted and renamed.</p>
+
+<p>If we execute the command alone it will output a summary of all supported options.
+Additional information will be printed if we add the <code class="language-plaintext highlighter-rouge">--help</code> option.</p>
+
+<p>In this video I will cover the following use case: I want to compile the ncInvaders project from sources. Compiling from sources will make it possible to perform some experiments later on.</p>
+
+<p>The first step is of course downloading the engine. Let’s also say that I would like to use the latest development version of it.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncline set -branch develop
+</code></pre></div></div>
+
+<p>This command invokes ncline in <code class="language-plaintext highlighter-rouge">set</code> mode and with the -branch option. It will set the branch to <em>develop</em> and save this configuration in the <code class="language-plaintext highlighter-rouge">ncline.ini</code> file. The output of the command in <code class="language-plaintext highlighter-rouge">set</code> mode is the current content of this file.</p>
+
+<p>And now back to downloading the engine.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncline download engine -artifact
+</code></pre></div></div>
+
+<p>The command has printed an error in red: the Git executable cannot be found, and it is needed to use ncline in <code class="language-plaintext highlighter-rouge">download</code> mode.
+Let’s fix the problem by downloading Git from the <a href="https://git-scm.com/">official site</a>.</p>
+
+<p>If we click the download button an installer for our platform is going to be automatically downloaded. On Windows we can install this or we can choose to download a portable setup, both are supported by ncline.</p>
+
+<p>After the portable archive has been downloaded let’s extract it in the same directory where ncline is.
+Now it’s time to tell the tool where it can find the Git executable.
+The way to do it is, again, using the <code class="language-plaintext highlighter-rouge">set</code> mode with a specific option, in this case <code class="language-plaintext highlighter-rouge">-git-exe</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncline set -git-exe ..\PortableGit\bin\git.exe
+</code></pre></div></div>
+
+<p>Everything should now be correctly setup for the download to succeed:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncline download engine -artifact
+</code></pre></div></div>
+
+<p>With this command we tell ncline that we want to download the engine artifact from GitHub. Without the <code class="language-plaintext highlighter-rouge">-artifact</code> option the tool would have downloaded the nCine sources and then checked out the <em>develop</em> branch.</p>
+
+<p>As you may have noticed ncline has automatically found the CMake executable installed on my system.
+If you don’t have CMake installed go on the official <a href="https://cmake.org/download/">download page</a> and then choose an option according to your platform.
+On Windows you will again be presented with the option to download an installer or a portable archive. If you install the first ncline will find CMake as it did on my system, if you extract the second you need to specify the location of the executable using the <code class="language-plaintext highlighter-rouge">-cmake-exe</code> option.</p>
+
+<p>The last line of the output is telling us that ncline has automatically set the nCine directory to the one it has just extracted from the engine artifact archive.
+We can check that the configuration relative to the nCine directory has changed by invoking the set command alone:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncline set
+</code></pre></div></div>
+
+<p>Now that we have downloaded the engine it is time to download the game source. Let’s first specify which game we want to download.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncline set -game ncInvaders
+</code></pre></div></div>
+
+<p>Now that ncline knows the name of the game let’s download it. The command is very similar to the one we used for the engine, we are in <code class="language-plaintext highlighter-rouge">download</code> mode but we use a different target: <code class="language-plaintext highlighter-rouge">game</code>.
+We also omit the <code class="language-plaintext highlighter-rouge">-artifact</code> option this time as we want to download the source code.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncline download game
+</code></pre></div></div>
+
+<p>The command has automatically downloaded both the data and the code repositories from GitHub. For we have set the <em>develop</em> branch for the engine, the tool tries to checkout the <em>develop</em> branch for the game too. In this case the branch exists and it contains all the changes needed to compile ncInvaders against the latest engine version.</p>
+
+<p>But enough with the download command, it is time to compile the game!
+The compilation process is divided into two phases: configuration and building. It is the way CMake organizes its work and it is mirrored in the way ncline works.</p>
+
+<p>Let’s first see what the configuration command is going to perform without actually executing anything.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncline conf game -dry-run
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">-dry-run</code> option is supported by every ncline mode and shows the commands that would have been executed. It’s a valuable way to fix issues or to learn more about the compilation or the building processes.</p>
+
+<p>Now that we have checked how CMake is going to be invoked we can let the configuration process to start.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncline conf game
+</code></pre></div></div>
+
+<p>There is an important difference in how you would invoke the configuration command on other platforms. As Visual Studio is a multi-configuration CMake generator there is no need to specify the build type at this time. You configure the project once and CMake will generate a solution that can be used to build the game either in debug or release mode.</p>
+
+<p>Let’s build the game in debug mode so that we can set breakpoints and step into the source code.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncline build game debug
+</code></pre></div></div>
+
+<p>The game has been compiled and the <code class="language-plaintext highlighter-rouge">ncinvaders.exe</code> file created in <code class="language-plaintext highlighter-rouge">ncInvaders-build\Debug</code>.</p>
+
+<p>As I anticipated earlier, to achieve the same result on other platforms we would have invoked the configuration command together with the build type:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncline conf game debug
+</code></pre></div></div>
+
+<p>And then the build command without it:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncline build game
+</code></pre></div></div>
+
+<p>The game has successfully been compiled but in order to start it we first have to change the current directory to <code class="language-plaintext highlighter-rouge">ncInvaders-build</code>. By doing so we ensure that the executable will find and load the required libraries that have been copied there.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ncInvaders-build
+Debug\ncinvaders.exe
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">ncInvaders-build</code> directory is also the directory that contains the Visual Studio solution file. This ensures that when we open the project inside the IDE and press <em>F5</em> to debug it, the game will load the required libraries and then run.</p>
+
+<p>In case we want to start the game by double clicking it, we need to have the required libraries and the game executable in the same directory.</p>
+
+<p>This video ends here but more will come in the future to show you how the nCine works and how you can use it to build your games!</p>
+
+
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <ul class="list-inline text-center footer-links">
+<li class="list-inline-item">
+    <a href="https://github.com/nCine" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://twitter.com/nCine2D" title="Twitter">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Twitter</span>
+   </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://www.youtube.com/channel/UCpSq3HhW55r8pCY7vqXEsoA" title="YouTube">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">YouTube</span>
+   </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://patreon.com/encelo" title="Patreon">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-patreon fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Patreon</span>
+    </a>
+  </li>
+<li class="list-inline-item">
+    <a href="https://encelo.itch.io/" title="Itchio">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-itch-io fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Itchio</span>
+   </a>
+  </li>
+</ul>
+
+      
+      <p class="copyright text-muted">
+      
+        Angelo Theodorou
+         • 
+      
+      2021
+
+      
+         • 
+        <span class="author-site">
+          <a href="">ncine.github.io</a>
+        </span>
+      
+
+      
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>
