@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Features on nCine</title>
+    <link>https://ncine.github.io/features/</link>
+    <description>Recent content in Features on nCine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)</copyright>
+    <atom:link href="https://ncine.github.io/features/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Modern Renderer</title>
+      <link>https://ncine.github.io/features/renderer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/renderer/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Modern Renderer&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/render_batcher.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Multiple viewports for offscreen rendering or split-screen&lt;/li&gt;&#xA;&lt;li&gt;Custom shaders for post-processing or bespoke effects&lt;/li&gt;&#xA;&lt;li&gt;Automatic batching for sprites and text&lt;/li&gt;&#xA;&lt;li&gt;Sprite meshes for deformation or tight bounding&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://registry.khronos.org/OpenGL/extensions/ARB/ARB_get_program_binary.txt&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Binary shader&lt;/a&gt; caching for faster startup&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.khronos.org/opengl/wiki/Vertex_Specification#Vertex_Array_Object&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;VAO&lt;/a&gt; and &lt;a href=&#34;https://www.khronos.org/opengl/wiki/Texture_Storage#Immutable_storage&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;immutable texture&lt;/a&gt; support&lt;/li&gt;&#xA;&lt;li&gt;Efficient OpenGL buffer updates (&lt;a href=&#34;https://www.khronos.org/opengl/wiki/Buffer_Object#Mapping&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;mapped&lt;/a&gt; or direct)&lt;/li&gt;&#xA;&lt;li&gt;Indexed and instanced drawing&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://renderdoc.org/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;RenderDoc&lt;/a&gt; &lt;a href=&#34;https://renderdoc.org/docs/in_application_api.html&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;In-application&lt;/a&gt; integration&lt;/li&gt;&#xA;&lt;li&gt;Optional Google &lt;a href=&#34;http://angleproject.org&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;ANGLE&lt;/a&gt; backend on Windows&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Animated Sprites</title>
+      <link>https://ncine.github.io/features/animated-sprites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/animated-sprites/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Animated Sprites&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/animated_sprites.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Play animations from spritesheet textures&lt;/li&gt;&#xA;&lt;li&gt;Forward and backward looping support&lt;/li&gt;&#xA;&lt;li&gt;Transformable sprites (scale, rotate)&lt;/li&gt;&#xA;&lt;li&gt;Automatic culling when off-screen&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Particle Simulation</title>
+      <link>https://ncine.github.io/features/particles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/particles/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Particle Simulation&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/particles.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Simulate particles in world or local space&lt;/li&gt;&#xA;&lt;li&gt;Affectors for color, size, rotation, position, velocity&lt;/li&gt;&#xA;&lt;li&gt;Randomized emission properties: amount, life, rotation, position, velocity&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Sound and Music</title>
+      <link>https://ncine.github.io/features/sound/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/sound/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Sound and Music&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/sound.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Play memory sound buffers or stream music from disk&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/WAV&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;WAVE&lt;/a&gt; and &lt;a href=&#34;http://www.vorbis.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Ogg Vorbis&lt;/a&gt; format support with looping&lt;/li&gt;&#xA;&lt;li&gt;Control gain, pitch, panning, and more via &lt;a href=&#34;http://kcat.strangesoft.net/openal.html&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;OpenAL Soft&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Apply OpenAL EFX effects and filters (reverb, chorus, echo, flanger, etc.)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Scenegraph</title>
+      <link>https://ncine.github.io/features/scenegraph/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/scenegraph/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Scenegraph&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/scenegraph.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Parent–child relationships for nodes&lt;/li&gt;&#xA;&lt;li&gt;Position, scale, rotation, and color inheritance&lt;/li&gt;&#xA;&lt;li&gt;Per-node update and draw toggles&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Text Rendering</title>
+      <link>https://ncine.github.io/features/text-rendering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/text-rendering/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Text Rendering&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/text_rendering.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bitmap font support via &lt;a href=&#34;http://www.angelcode.com/products/bmfont/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;AngelCode’s generator&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Text alignment: left, center, right&lt;/li&gt;&#xA;&lt;li&gt;Kerning pairs for precise spacing&lt;/li&gt;&#xA;&lt;li&gt;UTF-8 encoded Unicode characters&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Input</title>
+      <link>https://ncine.github.io/features/input/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/input/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Input&#34;&#xA;    src=&#34;https://ncine.github.io/img/apptests/apptest_joystick.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.glfw.org/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;GLFW 3&lt;/a&gt;, &lt;a href=&#34;https://www.libsdl.org/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;SDL 2&lt;/a&gt;, or &lt;a href=&#34;https://www.qt.io/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Qt 5&lt;/a&gt; backends for window and input on PC&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Native input backend on Android&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Handles mouse, keyboard, touch, and controller inputs&lt;/li&gt;&#xA;&lt;li&gt;Joystick support with hot swap and SDL 2 &lt;a href=&#34;https://wiki.libsdl.org/CategoryGameController&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;gamepad mappings&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Lua Scripting</title>
+      <link>https://ncine.github.io/features/lua-scripting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/lua-scripting/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Lua Scripting&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/lua_scripting.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Extensive &lt;a href=&#34;http://lua.org/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Lua&lt;/a&gt; API &lt;a href=&#34;https://ncine.github.io/docs/lua_master&#34; &gt;bindings&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Use Lua for full games or selective behaviors/data&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/LuaCATS&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;LuaCATS&lt;/a&gt; annotations for type-checking and IDE autocompletion (with the &lt;a href=&#34;https://github.com/LuaLS/lua-language-server&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Lua Language Server&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;Hot-reloading: full state reset or fast reload&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Job System</title>
+      <link>https://ncine.github.io/features/job-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/job-system/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Tracy capture of the job system&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/jobsystem.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Lock-free work-stealing queue with parent–child jobs, continuations, and parallel loops&lt;/li&gt;&#xA;&lt;li&gt;CPU-topology aware thread pool with automatic affinity assignment&lt;/li&gt;&#xA;&lt;li&gt;Fast user-space semaphore for efficient thread synchronization&lt;/li&gt;&#xA;&lt;li&gt;Batch job submission for reduced scheduling overhead&lt;/li&gt;&#xA;&lt;li&gt;Built-in debug tools: job state tracking, detailed logging, Tracy zones, statistical counters&lt;/li&gt;&#xA;&lt;li&gt;Public API for direct access to the job system&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Texture Formats</title>
+      <link>https://ncine.github.io/features/texture-formats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/texture-formats/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Texture Formats&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/texture_formats.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Image formats: &lt;a href=&#34;http://www.libpng.org/pub/png/libpng.html&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;PNG&lt;/a&gt;, &lt;a href=&#34;https://developers.google.com/speed/webp/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;WebP&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;GPU compressed formats: ASTC, ETC2, ATC, PVR, DXT&lt;/li&gt;&#xA;&lt;li&gt;Container formats: KTX, PVR, DDS&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ImGui Integration</title>
+      <link>https://ncine.github.io/features/imgui-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/imgui-integration/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;ImGui Integration&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/imgui.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Full &lt;a href=&#34;https://github.com/ocornut/imgui&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Dear ImGui&lt;/a&gt; integration&lt;/li&gt;&#xA;&lt;li&gt;Usable for in-game UIs or debug overlays&lt;/li&gt;&#xA;&lt;li&gt;On-screen statistics for rendering and Lua&lt;/li&gt;&#xA;&lt;li&gt;Line plots for inspecting values over time&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;h3 class=&#34;relative group&#34;&gt;More&#xA;    &lt;div id=&#34;more&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/Immediate-Mode-UI/Nuklear&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Nuklear&lt;/a&gt; integration for skinnable userc interfaces&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Low-Level</title>
+      <link>https://ncine.github.io/features/low-level/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/low-level/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;apptest_allocators&#34;&#xA;    src=&#34;https://ncine.github.io/img/apptests/apptest_allocators.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Fully C++11-compliant codebase&lt;/li&gt;&#xA;&lt;li&gt;High-precision monotonic timers&lt;/li&gt;&#xA;&lt;li&gt;Atomic counters with multiple memory orders&lt;/li&gt;&#xA;&lt;li&gt;Thread creation, synchronization, and affinity control&lt;/li&gt;&#xA;&lt;li&gt;Lightweight math library for vectors, matrices, and quaternions&lt;/li&gt;&#xA;&lt;li&gt;Flexible logging system with console and file output&lt;/li&gt;&#xA;&lt;li&gt;FileSystem API for querying and manipulating paths, files, and directories&lt;/li&gt;&#xA;&lt;li&gt;Custom memory allocators (linear, stack, pool, free list)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Template Library</title>
+      <link>https://ncine.github.io/features/template-library/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/template-library/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Template Library&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/template_library.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Custom containers: arrays, lists, hashmaps, hashsets, sparse sets&lt;/li&gt;&#xA;&lt;li&gt;Forward and reverse iterators for containers and strings&lt;/li&gt;&#xA;&lt;li&gt;Unique and shared pointer implementations&lt;/li&gt;&#xA;&lt;li&gt;STL-like algorithm and method naming for easy adoption&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Tracy Instrumentation</title>
+      <link>https://ncine.github.io/features/tracy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/tracy/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Tracy Instrumentation&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/tracy.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;CPU and GPU zone profiling&lt;/li&gt;&#xA;&lt;li&gt;Plot custom values (vertices, render commands, etc.)&lt;/li&gt;&#xA;&lt;li&gt;Call stack collection support&lt;/li&gt;&#xA;&lt;li&gt;Memory profiling via overloaded &lt;code&gt;new&lt;/code&gt;/&lt;code&gt;delete&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Lua script zone markers&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Cross-Platform</title>
+      <link>https://ncine.github.io/features/cross-platform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/cross-platform/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Cross-platform&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/android.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Platforms: Linux, Windows, macOS, Android, and &lt;a href=&#34;https://emscripten.org/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Emscripten&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tested on Raspberry Pi 4B, Android TV, Android Wear, Chrome, and Firefox&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Compilers: GCC, Clang, Apple Clang, MSVC, MinGW-w64, and Emscripten&lt;/li&gt;&#xA;&lt;li&gt;Build options: static or dynamic library, CMake-based scripts&lt;/li&gt;&#xA;&lt;li&gt;Packages: Windows and macOS installers, Arch Linux and MSYS2 pacman packages&lt;/li&gt;&#xA;&lt;li&gt;Android &lt;a href=&#34;https://developer.android.com/reference/android/content/res/AssetManager&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;asset files&lt;/a&gt; support for streamlined mobile integration&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Development Tools</title>
+      <link>https://ncine.github.io/features/dev-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/dev-tools/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Development Tools&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/dev_tools.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Unit testing with &lt;a href=&#34;https://github.com/google/googletest&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Google Test&lt;/a&gt; and coverage reports via &lt;a href=&#34;http://gcovr.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Gcovr&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Microbenchmarking with &lt;a href=&#34;https://github.com/google/benchmark&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Google Benchmark&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Automated documentation with &lt;a href=&#34;http://www.stack.nl/~dimitri/doxygen/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Doxygen&lt;/a&gt; and &lt;a href=&#34;https://lunarmodules.github.io/ldoc/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;LDoc&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Static and runtime analysis with &lt;a href=&#34;http://cppcheck.sourceforge.net/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Cppcheck&lt;/a&gt; and &lt;a href=&#34;http://valgrind.org/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Valgrind&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Consistent code style enforced with &lt;a href=&#34;https://clang.llvm.org/docs/ClangFormat.html&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;clang-format&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Long-Term Roadmap</title>
+      <link>https://ncine.github.io/features/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/features/roadmap/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Roadmap&#34;&#xA;    src=&#34;https://ncine.github.io/img/features/roadmap.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Data-oriented ECS for parallel entity updates&lt;/li&gt;&#xA;&lt;li&gt;System-agnostic rendering API with Vulkan backend&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Additional backends: Metal, DirectX 12, WebGPU&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;iOS platform support&lt;/li&gt;&#xA;&lt;li&gt;Cross-platform editor built with Dear ImGui&lt;/li&gt;&#xA;&lt;li&gt;2D skeletal animation system&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

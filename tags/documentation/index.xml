@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on nCine</title>
+    <link>https://ncine.github.io/tags/documentation/</link>
+    <description>Recent content in Documentation on nCine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)</copyright>
+    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ncine.github.io/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Getting Started with CLion</title>
+      <link>https://ncine.github.io/news/2025-05-11-getting-started-clion/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2025-05-11-getting-started-clion/</guid>
+      <description>&lt;p&gt;It has been only a bunch of days since JetBrains &lt;a href=&#34;https://blog.jetbrains.com/clion/2025/05/clion-is-now-free-for-non-commercial-use/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;announced&lt;/a&gt; that its C++ IDE is now free for non-commercial use.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>LDoc Lua API documentation</title>
+      <link>https://ncine.github.io/news/2024-12-18-ldoc-lua-documentation/</link>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2024-12-18-ldoc-lua-documentation/</guid>
+      <description>&lt;p&gt;The Lua development experience is getting even better!&lt;/p&gt;&#xA;&lt;p&gt;The documentation already available through the &lt;a href=&#34;https://luals.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Lua Language Server&lt;/a&gt; is now available &lt;a href=&#34;https://ncine.github.io/docs/lua_master&#34; &gt;online&lt;/a&gt;, thanks to &lt;a href=&#34;https://lunarmodules.github.io/ldoc/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;LDoc&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Lua Language Server support</title>
+      <link>https://ncine.github.io/news/2024-12-04-lua-language-server/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2024-12-04-lua-language-server/</guid>
+      <description>&lt;p&gt;Today you can find the nCine among the &lt;a href=&#34;https://luals.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Lua Language Server&lt;/a&gt; official &lt;a href=&#34;https://github.com/LuaLS/LLS-Addons/tree/main/addons/ncine&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;addons&lt;/a&gt;!&lt;/p&gt;&#xA;&lt;p&gt;If you are using Visual Studio Code, autocomplete, type checking, and full API documentation are only one click away.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Getting started guide</title>
+      <link>https://ncine.github.io/news/2024-03-22-getting-started-guide/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ncine.github.io/news/2024-03-22-getting-started-guide/</guid>
+      <description>&lt;p&gt;There is a new &lt;a href=&#34;https://github.com/nCine/nCine/wiki/Getting-Started&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Getting Started&lt;/a&gt; guide in the project wiki.&#xA;It comes with many screenshots, covers both Lua and C++, and it should be easy to follow.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
